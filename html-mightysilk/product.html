@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mighty Silks — Organza Cream Teal Wavy Stripe Saree</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/products.js"></script>
+  <script defer src="js/product.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <!-- Search panel: opened by the header search button (js/main.js). -->
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel__backdrop" data-search-close></div>
+    <form class="search-bar" role="search" action="#">
+      <img class="search-bar__icon" src="assets/icons/nav-search.svg" alt="">
+      <label class="visually-hidden" for="site-search">Search</label>
+      <input class="search-bar__input" id="site-search" type="search" name="q" placeholder="Search for sarees, lehengas, gowns…" autocomplete="off">
+      <button class="search-bar__close" type="button" aria-label="Close search" data-search-close>&times;</button>
+    </form>
+  </div>
+
+  <!-- ============ Header (Figma 261:47): the site header in dark-on-white colours ============ -->
+  <header class="shop-header">
+    <nav class="site-header site-header--light" aria-label="Main">
+      <!-- Colour logo: the Figma mark and wordmark layers (gradient shapes cut out by their clip
+           paths) at their design positions. Drawn with SVG masks (not CSS mask-image) so it also
+           shows when the page is opened from file://. Shades: 30% multiply, inside two clips. -->
+      <a class="logo logo--color" href="index.html" aria-label="Mighty Silks home">
+        <svg class="logo__art" width="193.468" height="64" viewBox="0 0 193.468 64" aria-hidden="true">
+          <defs>
+            <mask id="lg-mark-a" style="mask-type:alpha"><image href="assets/logo/mark-a-mask.svg" x="67.875" y="0.079" width="36.0496" height="57.815" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-b" style="mask-type:alpha"><image href="assets/logo/mark-b-mask.svg" x="52.23" y="14.769" width="31.4367" height="43.1226" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-c" style="mask-type:alpha"><image href="assets/logo/mark-c-mask.svg" x="28.56" y="14.769" width="39.7537" height="43.1226" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-d" style="mask-type:alpha"><image href="assets/logo/mark-d-mask.svg" x="19.739" y="21.061" width="25.1981" height="36.8326" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-e" style="mask-type:alpha"><image href="assets/logo/mark-e-mask.svg" x="0.065" y="21.061" width="35.0424" height="37.083" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-clip" style="mask-type:alpha"><image href="assets/logo/shade-clip.svg" x="0" y="0" width="103.957" height="58.2687" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-1" style="mask-type:alpha"><image href="assets/logo/shade-1-mask.svg" x="50.785" y="13.379" width="36.7482" height="48.2861" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-2" style="mask-type:alpha"><image href="assets/logo/shade-2-mask.svg" x="27.098" y="13.379" width="45.1473" height="48.2861" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-3" style="mask-type:alpha"><image href="assets/logo/shade-3-mask.svg" x="18.276" y="19.619" width="30.5107" height="42.043" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-4" style="mask-type:alpha"><image href="assets/logo/shade-4-mask.svg" x="-1.43" y="19.619" width="40.4847" height="42.3559" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-m" style="mask-type:alpha"><image href="assets/logo/letter-m-mask.svg" x="108.585" y="21.501" width="17.3186" height="14.7393" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-i" style="mask-type:alpha"><image href="assets/logo/letter-i-mask.svg" x="128.577" y="21.501" width="3.72122" height="14.7237" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-g" style="mask-type:alpha"><image href="assets/logo/letter-g-mask.svg" x="134.355" y="21.341" width="15.1579" height="15.0053" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-h" style="mask-type:alpha"><image href="assets/logo/letter-h-mask.svg" x="151.582" y="21.501" width="13.2408" height="14.7393" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-t" style="mask-type:alpha"><image href="assets/logo/letter-t-mask.svg" x="166.667" y="21.501" width="11.8274" height="14.7393" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-y" style="mask-type:alpha"><image href="assets/logo/letter-y-mask.svg" x="179.155" y="21.501" width="14.3131" height="14.7393" preserveAspectRatio="none"/></mask>
+          </defs>
+          <image href="assets/logo/mark-a.svg" x="66.996" y="-0.445" width="37.8003" height="58.8248" preserveAspectRatio="none" mask="url(#lg-mark-a)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-1.png" x="50.785" y="13.379" width="35.9034" height="47.1752" preserveAspectRatio="none" mask="url(#lg-shade-1)"/></g>
+          <image href="assets/logo/mark-b.svg" x="51.575" y="14.322" width="32.7223" height="44.0036" preserveAspectRatio="none" mask="url(#lg-mark-b)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-2.png" x="27.098" y="13.379" width="44.1076" height="47.1752" preserveAspectRatio="none" mask="url(#lg-shade-2)"/></g>
+          <image href="assets/logo/mark-c.svg" x="27.898" y="14.183" width="41.0565" height="44.245" preserveAspectRatio="none" mask="url(#lg-mark-c)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-3.png" x="18.276" y="19.619" width="29.8121" height="41.0729" preserveAspectRatio="none" mask="url(#lg-shade-3)"/></g>
+          <image href="assets/logo/mark-d.svg" x="19.167" y="20.717" width="26.3071" height="37.5322" preserveAspectRatio="none" mask="url(#lg-mark-d)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-4.png" x="-1.43" y="19.619" width="39.5587" height="41.3858" preserveAspectRatio="none" mask="url(#lg-shade-4)"/></g>
+          <image href="assets/logo/mark-e.svg" x="-0.495" y="20.551" width="36.1562" height="38.0607" preserveAspectRatio="none" mask="url(#lg-mark-e)"/>
+          <image href="assets/logo/letter-m.svg" x="107.989" y="20.849" width="18.5248" height="16.0546" preserveAspectRatio="none" mask="url(#lg-letter-m)"/>
+          <image href="assets/logo/letter-i.svg" x="127.975" y="21.371" width="4.93254" height="15.0026" preserveAspectRatio="none" mask="url(#lg-letter-i)"/>
+          <image href="assets/logo/letter-g.svg" x="133.747" y="20.752" width="16.3897" height="16.1601" preserveAspectRatio="none" mask="url(#lg-letter-g)"/>
+          <image href="assets/logo/letter-h.svg" x="150.977" y="21.006" width="14.4599" height="15.7427" preserveAspectRatio="none" mask="url(#lg-letter-h)"/>
+          <image href="assets/logo/letter-t.svg" x="166.066" y="21.076" width="13.045" height="15.626" preserveAspectRatio="none" mask="url(#lg-letter-t)"/>
+          <image href="assets/logo/letter-y.svg" x="178.547" y="20.974" width="15.5164" height="15.8144" preserveAspectRatio="none" mask="url(#lg-letter-y)"/>
+        </svg>
+        <span class="logo__silks">Silks</span>
+      </a>
+
+      <ul class="site-menu" id="site-menu">
+        <li><a href="index.html" aria-label="Home"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">H</span><span class="site-menu__char" style="--i:1">o</span><span class="site-menu__char" style="--i:2">m</span><span class="site-menu__char" style="--i:3">e</span></span></a></li>
+        <li><a href="our-shop.html" aria-label="Our Shop" aria-current="page"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">O</span><span class="site-menu__char" style="--i:1">u</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">S</span><span class="site-menu__char" style="--i:5">h</span><span class="site-menu__char" style="--i:6">o</span><span class="site-menu__char" style="--i:7">p</span></span></a></li>
+        <li><a href="new-arrivals.html" aria-label="New Arrivals"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">N</span><span class="site-menu__char" style="--i:1">e</span><span class="site-menu__char" style="--i:2">w</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">A</span><span class="site-menu__char" style="--i:5">r</span><span class="site-menu__char" style="--i:6">r</span><span class="site-menu__char" style="--i:7">i</span><span class="site-menu__char" style="--i:8">v</span><span class="site-menu__char" style="--i:9">a</span><span class="site-menu__char" style="--i:10">l</span><span class="site-menu__char" style="--i:11">s</span></span></a></li>
+        <li><a href="bridal.html" aria-label="Bridal"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">B</span><span class="site-menu__char" style="--i:1">r</span><span class="site-menu__char" style="--i:2">i</span><span class="site-menu__char" style="--i:3">d</span><span class="site-menu__char" style="--i:4">a</span><span class="site-menu__char" style="--i:5">l</span></span></a></li>
+        <li><a href="sarees.html" aria-label="Sarees"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">S</span><span class="site-menu__char" style="--i:1">a</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3">e</span><span class="site-menu__char" style="--i:4">e</span><span class="site-menu__char" style="--i:5">s</span></span></a></li>
+        <li><a href="mighty-signature.html" aria-label="Mighty Signature"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">M</span><span class="site-menu__char" style="--i:1">i</span><span class="site-menu__char" style="--i:2">g</span><span class="site-menu__char" style="--i:3">h</span><span class="site-menu__char" style="--i:4">t</span><span class="site-menu__char" style="--i:5">y</span><span class="site-menu__char" style="--i:6"> </span><span class="site-menu__char" style="--i:7">S</span><span class="site-menu__char" style="--i:8">i</span><span class="site-menu__char" style="--i:9">g</span><span class="site-menu__char" style="--i:10">n</span><span class="site-menu__char" style="--i:11">a</span><span class="site-menu__char" style="--i:12">t</span><span class="site-menu__char" style="--i:13">u</span><span class="site-menu__char" style="--i:14">r</span><span class="site-menu__char" style="--i:15">e</span></span></a></li>
+      </ul>
+
+      <div class="site-actions">
+        <button class="icon-btn site-actions__search" type="button" aria-label="Search" aria-controls="search-panel" aria-expanded="false"><img src="assets/icons/nav-search-dark.svg" alt=""></button>
+        <button class="icon-btn" type="button" aria-label="Wishlist"><img src="assets/icons/nav-heart-dark.svg" alt=""></button>
+        <button class="icon-btn site-actions__account" type="button" aria-label="Account" aria-controls="account-menu" aria-expanded="false" aria-haspopup="true"><img src="assets/icons/nav-user-dark.svg" alt=""></button>
+        <span class="site-actions__divider"><img src="assets/icons/nav-divider-dark.svg" alt=""></span>
+        <button class="icon-btn site-actions__bag" type="button" aria-label="Shopping bag" aria-controls="cart-panel" aria-expanded="false"><img src="assets/icons/bag.svg" alt=""><span class="cart-badge" data-cart-badge aria-hidden="true" hidden>0</span></button>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="site-menu" aria-expanded="false">
+        <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+      </button>
+    </nav>
+    <div class="shop-rule shop-header__rule"><img src="assets/icons/shop-rule.svg" alt=""></div>
+  </header>
+
+  <main>
+
+    <!-- ============ Page title (Figma 273:1602 / 273:1603) ============ -->
+    <div class="shop-hero">
+      <p class="shop-hero__title">Our Shop</p>
+    </div>
+
+    <!-- ============ Product (Figma 273:1937 – 273:2106) ============ -->
+    <!-- js/product.js swaps the main photo when a thumbnail is chosen; js/main.js handles the
+         Add to Cart / Buy Now ([data-add-to-cart]) and wishlist ([data-wishlist]) buttons. -->
+    <section class="pdp" data-product>
+      <div class="pdp__gallery" data-gallery>
+        <div class="pdp__main">
+          <img class="pdp__photo" src="assets/products/na-3a.png" alt="Organza cream teal blue and olive golden wavy stripe saree" style="--x:-2.896px;--y:0.316px;--w:762.977px;--h:1007.368px" data-gallery-main>
+        </div>
+        <div class="pdp__thumbs" role="group" aria-label="Product photos" data-gallery-thumbs>
+          <button class="pdp__thumb is-active" type="button" aria-label="Photo 1" aria-pressed="true" data-full="assets/products/na-3a.png" data-x="-2.896px" data-y="0.316px" data-w="762.977px" data-h="1007.368px"><img src="assets/products/na-3a.png" alt="" style="--y:-5px;--w:148.949px;--h:196.66px"></button>
+          <button class="pdp__thumb" type="button" aria-label="Photo 2" aria-pressed="false" data-full="assets/product-detail/thumb-2.png"><img src="assets/product-detail/thumb-2.png" alt="" style="--y:-5px;--w:150px;--h:199.023px"></button>
+          <button class="pdp__thumb" type="button" aria-label="Photo 3" aria-pressed="false" data-full="assets/product-detail/thumb-3.png"><img src="assets/product-detail/thumb-3.png" alt="" style="--y:-5px;--w:150px;--h:200.977px"></button>
+          <button class="pdp__thumb" type="button" aria-label="Photo 4" aria-pressed="false" data-full="assets/product-detail/thumb-4.png"><img src="assets/product-detail/thumb-4.png" alt="" style="--y:-5px;--w:150px;--h:200.977px"></button>
+          <button class="pdp__thumb" type="button" aria-label="Photo 5" aria-pressed="false" data-full="assets/product-detail/thumb-5.png"><img src="assets/product-detail/thumb-5.png" alt="" style="--y:-5px;--w:150px;--h:200.977px"></button>
+        </div>
+      </div>
+
+      <div class="pdp__info">
+        <p class="pdp__sku" data-product-sku>SKU: K11521997</p>
+        <h1 class="pdp__title" data-product-title>Organza Cream Teal Blue and Olive Golden Wavy Stripe Printed Saree with Beaded Scalloped Border</h1>
+        <p class="pdp__price" data-product-price>₹ 3,330.00</p>
+        <p class="pdp__tax">Tax included. <a href="#">Shipping</a> calculated at checkout.</p>
+
+        <button class="pdp__wish" type="button" data-wishlist><img src="assets/product-detail/heart.svg" alt="">Add Wishlist</button>
+
+        <div class="pdp__buttons">
+          <button class="pdp-btn pdp-btn--outline" type="button" data-add-to-cart>Add to Cart</button>
+          <button class="pdp-btn pdp-btn--solid" type="button" data-add-to-cart data-buy-now>Buy Now</button>
+        </div>
+
+        <ul class="pdp__perks">
+          <li><span class="pdp__icon"><img src="assets/product-detail/truck.svg" alt=""></span>Free Shipping on Orders above Rs 1,999</li>
+          <li><span class="pdp__icon"><img src="assets/product-detail/box.svg" alt=""></span>Shipped within 48 business hours</li>
+          <li><span class="pdp__icon"><img src="assets/product-detail/delivery.svg" alt=""></span><span>Delivery within 7 business days after dispatch. View <a href="#">Shipping Policy</a></span></li>
+        </ul>
+
+        <h2 class="pdp__offers-title">Available Offers</h2>
+        <button class="pdp__offer" type="button" aria-label="Copy offer code WELCOME10" data-copy-code="WELCOME10">
+          <img src="assets/product-detail/offer.png" alt="">
+          <span class="pdp__offer-note" role="status" data-copy-status></span>
+        </button>
+
+        <div class="pdp-accordion">
+          <div class="pdp-accordion__item">
+            <details>
+              <summary>Product Details<img src="assets/product-detail/plus.svg" alt=""></summary>
+              <div class="pdp-accordion__body">
+                <p data-product-detail="product">Organza saree in cream with teal blue and olive golden wavy stripes, finished with a beaded scalloped border. Comes with an unstitched blouse piece.</p>
+              </div>
+            </details>
+            <img class="pdp-accordion__rule" src="assets/product-detail/accordion-rule.svg" alt="">
+          </div>
+          <div class="pdp-accordion__item">
+            <details>
+              <summary>Design Details<img src="assets/product-detail/plus.svg" alt=""></summary>
+              <div class="pdp-accordion__body">
+                <p data-product-detail="design">Printed wavy stripe pattern across the body and pallu, with a hand-beaded scalloped edge.</p>
+              </div>
+            </details>
+            <img class="pdp-accordion__rule" src="assets/product-detail/accordion-rule.svg" alt="">
+          </div>
+          <div class="pdp-accordion__item">
+            <details>
+              <summary>Material &amp; Care<img src="assets/product-detail/plus.svg" alt=""></summary>
+              <div class="pdp-accordion__body">
+                <p data-product-detail="care">Fabric: Organza. Dry clean only. Store folded in a muslin cloth, away from direct sunlight.</p>
+              </div>
+            </details>
+            <img class="pdp-accordion__rule" src="assets/product-detail/accordion-rule.svg" alt="">
+          </div>
+        </div>
+
+        <div class="pdp__share">
+          <span class="pdp__share-label">Share :</span>
+          <a href="#" aria-label="Share on Facebook"><img src="assets/product-detail/share-facebook.svg" alt=""></a>
+          <a href="#" aria-label="Share on Twitter"><img src="assets/product-detail/share-twitter.svg" alt=""></a>
+          <a href="#" aria-label="Share on LinkedIn"><img src="assets/product-detail/share-linkedin.svg" alt=""></a>
+          <a href="#" aria-label="Share on Instagram"><img src="assets/product-detail/share-instagram.svg" alt=""></a>
+          <a href="#" aria-label="Share on Pinterest"><img src="assets/product-detail/share-pinterest.svg" alt=""></a>
+          <a href="#" aria-label="Share on YouTube"><img src="assets/product-detail/share-youtube.svg" alt=""></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ You May Also Like (Figma 273:2116 / 273:2117) ============ -->
+    <section class="pdp-related" aria-labelledby="related-title">
+      <h2 class="pdp-heading" id="related-title">You May Also Like</h2>
+      <!-- Slider: arrows step one card at a time; the track also scrolls by swipe / trackpad (js/product.js). -->
+      <div class="slider slider--related" data-slider>
+        <button class="carousel-nav slider__nav slider__nav--prev" type="button" aria-label="Previous products" aria-controls="related-track" data-slider-prev><img src="assets/carousel/prev.svg" alt=""></button>
+        <button class="carousel-nav slider__nav slider__nav--next" type="button" aria-label="Next products" aria-controls="related-track" data-slider-next><img src="assets/carousel/next.svg" alt=""></button>
+        <div class="product-grid slider__track" id="related-track" data-slider-track>
+        <article class="product" data-category="saree" data-color="mustard magenta" data-pattern="zari-brocade" data-fabric="semi-silk" data-blouse="yes" data-occasion="festive">
+          <div class="product__media">
+            <img class="product__base" src="assets/products/card-base.png" alt="">
+            <img class="product__photo" src="assets/products/ss-1.png" alt="Mustard yellow semi silk saree with silver zari pallu" style="--x:0.875px;--y:0.167px;--w:443.962px;--h:594.839px">
+            <img class="product__photo product__photo--hover" src="assets/products/ss-1-hover.png" alt="" loading="lazy">
+            <div class="product__actions">
+              <div class="product__cta">
+                <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+              </div>
+              <div class="product__quick">
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=ss-1">Quick View</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="product__title"><a href="product.html?p=ss-1">Semi Silk Saree Mustard Yellow with Silver Zari Geometric Brocade Pallu and Magenta Border</a></h3>
+          <p class="product__price">₹ 4,595.00</p>
+        </article>
+        <article class="product" data-category="saree" data-color="purple" data-pattern="zari-brocade stripes" data-fabric="semi-silk" data-blouse="yes" data-occasion="festive wedding">
+          <div class="product__media">
+            <img class="product__base" src="assets/products/card-base.png" alt="">
+            <img class="product__photo" src="assets/products/ss-2.png" alt="Deep purple semi silk saree with rose copper zari pallu" style="--x:-8px;--y:-13px;--w:457.104px;--h:612.448px">
+            <img class="product__photo product__photo--hover" src="assets/products/ss-2-hover.png" alt="" loading="lazy">
+            <div class="product__actions">
+              <div class="product__cta">
+                <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+              </div>
+              <div class="product__quick">
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=ss-2">Quick View</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="product__title"><a href="product.html?p=ss-2">Semi Silk Saree Deep Purple with Rose Copper Zari Brocade Striped Pallu and Paisley Border</a></h3>
+          <p class="product__price">₹ 4,595.00</p>
+        </article>
+        <article class="product" data-category="saree" data-color="mehandi-green" data-pattern="zari-brocade" data-fabric="semi-silk" data-blouse="yes" data-occasion="festive">
+          <div class="product__media">
+            <img class="product__base" src="assets/products/card-base.png" alt="">
+            <img class="product__photo" src="assets/products/na-3a.png" alt="" style="--x:-2px;--y:-12px;--w:454px;--h:599px">
+            <img class="product__photo" src="assets/products/ss-3.png" alt="Olive green semi silk saree with golden zari pallu" style="--x:-6px;--y:-16.89px;--w:450.717px;--h:603.89px">
+            <img class="product__photo product__photo--hover" src="assets/products/ss-3-hover.png" alt="" loading="lazy">
+            <div class="product__actions">
+              <div class="product__cta">
+                <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+              </div>
+              <div class="product__quick">
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=ss-3">Quick View</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="product__title"><a href="product.html?p=ss-3">Semi Silk Saree Olive Green with Golden Zari Geometric Weave Pallu and Purple Tassels</a></h3>
+          <p class="product__price">₹ 3,760.00</p>
+        </article>
+        <article class="product" data-category="saree" data-color="purple magenta" data-pattern="zari-butta" data-fabric="semi-silk" data-blouse="yes" data-occasion="festive wedding">
+          <div class="product__media">
+            <img class="product__base" src="assets/products/card-base.png" alt="">
+            <img class="product__photo" src="assets/products/ss-4.png" alt="Deep purple semi silk saree with magenta pallu" style="--x:-10px;--y:-15px;--w:451px;--h:601.921px">
+            <img class="product__photo product__photo--hover" src="assets/products/ss-4-hover.png" alt="" loading="lazy">
+            <div class="product__actions">
+              <div class="product__cta">
+                <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+              </div>
+              <div class="product__quick">
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=ss-4">Quick View</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="product__title"><a href="product.html?p=ss-4">Semi Silk Deep Purple Zari Floral Jaal Magenta Pallu Diamond Booti saree</a></h3>
+          <p class="product__price">₹ 4,595.00</p>
+        </article>
+        <article class="product" data-category="saree" data-color="teal" data-pattern="plain-body" data-fabric="chiffon" data-blouse="yes" data-occasion="festive party" data-new>
+          <div class="product__media">
+            <img class="product__base" src="assets/products/card-base.png" alt="">
+            <img class="product__photo" src="assets/products/na-1.png" alt="Chiffon peacock green saree" style="--x:1px;--y:0px;--w:440px;--h:587px">
+            <img class="product__photo product__photo--hover" src="assets/products/na-1-hover.png" alt="" loading="lazy">
+            <div class="product__actions">
+              <div class="product__cta">
+                <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+              </div>
+              <div class="product__quick">
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=na-1">Quick View</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="product__title"><a href="product.html?p=na-1">Chiffon Peacock Green Saree with Crystal Embellished Teardrop Lace Border and Plain Body</a></h3>
+          <p class="product__price">₹ 3,580.00</p>
+        </article>
+        <article class="product" data-category="saree" data-color="peacock-blue black" data-pattern="printed floral-print" data-fabric="organza" data-blouse="yes" data-occasion="festive party" data-new>
+          <div class="product__media">
+            <img class="product__base" src="assets/products/card-base.png" alt="">
+            <img class="product__photo" src="assets/products/na-2.png" alt="Organza peacock blue saree" style="--x:-8px;--y:-13px;--w:458px;--h:614px">
+            <img class="product__photo product__photo--hover" src="assets/products/na-2-hover.png" alt="" loading="lazy">
+            <div class="product__actions">
+              <div class="product__cta">
+                <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+              </div>
+              <div class="product__quick">
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=na-2">Quick View</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="product__title"><a href="product.html?p=na-2">Organza Peacock Blue Black Lily Floral Butta Printed Saree with Beaded Zigzag Border</a></h3>
+          <p class="product__price">₹ 3,550.00</p>
+        </article>
+        <article class="product" data-category="saree" data-color="pink multi" data-pattern="embroidery" data-fabric="organza" data-blouse="yes" data-occasion="wedding party" data-new>
+          <div class="product__media">
+            <img class="product__base" src="assets/products/card-base.png" alt="">
+            <img class="product__photo" src="assets/products/na-4.png" alt="Organza pink floral embroidered saree" style="--x:-10px;--y:-15px;--w:457px;--h:613px">
+            <img class="product__photo product__photo--hover" src="assets/products/na-4-hover.png" alt="" loading="lazy">
+            <div class="product__actions">
+              <div class="product__cta">
+                <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+              </div>
+              <div class="product__quick">
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=na-4">Quick View</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="product__title"><a href="product.html?p=na-4">Organza Pink Multicolor Floral Embroidered Scalloped Border Saree with Sequin Work</a></h3>
+          <p class="product__price">₹ 13,900.00</p>
+        </article>
+        <article class="product" data-category="ready-to-wear" data-color="violet" data-pattern="embroidery" data-fabric="georgette" data-blouse="yes" data-occasion="party">
+          <div class="product__media">
+            <img class="product__base" src="assets/products/card-base.png" alt="">
+            <img class="product__photo" src="assets/products/rtw-3.png" alt="Violet georgette ready to wear saree" style="--x:-6px;--y:-23px;--w:454px;--h:679px">
+            <img class="product__photo product__photo--hover" src="assets/products/rtw-3-hover.png" alt="" loading="lazy">
+            <div class="product__actions">
+              <div class="product__cta">
+                <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+              </div>
+              <div class="product__quick">
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=rtw-3">Quick View</a>
+              </div>
+            </div>
+          </div>
+          <h3 class="product__title"><a href="product.html?p=rtw-3">Violet Georgette Ready to Wear Saree with Designer...</a></h3>
+          <p class="product__price">₹ 4,595.00</p>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Testimonials (Figma 273:2164 – 273:2215) ============ -->
+    <section class="pdp-testimonials" aria-labelledby="testimonials-title">
+      <h2 class="pdp-heading" id="testimonials-title">Trusted for Every Special Occasion</h2>
+      <!-- Slider (as You May Also Like): arrows step one review at a time and it auto-slides. -->
+      <div class="slider slider--testimonials" data-slider>
+        <button class="carousel-nav slider__nav slider__nav--dark slider__nav--prev" type="button" aria-label="Previous reviews" aria-controls="testimonial-track" data-slider-prev><img src="assets/carousel/arrow.svg" alt=""></button>
+        <button class="carousel-nav slider__nav slider__nav--dark slider__nav--next" type="button" aria-label="Next reviews" aria-controls="testimonial-track" data-slider-next><img src="assets/carousel/arrow.svg" alt=""></button>
+        <div class="slider__track" id="testimonial-track" data-slider-track>
+        <figure class="testimonial">
+          <span class="stars" role="img" aria-label="5 stars"><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""></span>
+          <blockquote>
+            <p class="testimonial__headline">Quality, Fit, and Care</p>
+            <p class="testimonial__text">I really appreciate the quality and variety, along with the overall experience. The customer care team was professional and quick to assist. When I couldn't find a suitable fit, they arranged same-day custom stitching, Which was impressive. The fit <br>and quality were exactly what I wanted. I also sent a dress to a friend in Oman through their online service, and everything was handled</p>
+          </blockquote>
+          <figcaption><span class="testimonial__name">Stephen James</span><span class="testimonial__place">Dubai, UAE</span></figcaption>
+        </figure>
+        <figure class="testimonial">
+          <span class="stars" role="img" aria-label="5 stars"><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""></span>
+          <blockquote>
+            <p class="testimonial__headline">Quality, Fit, and Care</p>
+            <p class="testimonial__text">I really appreciate the quality and variety, along with the overall experience. The customer care team was professional and quick to assist. When I couldn't find a suitable fit, they arranged same-day custom stitching, Which was impressive. The fit <br>and quality were exactly what I wanted. I also sent a dress to a friend in Oman through their online service, and everything was handled</p>
+          </blockquote>
+          <figcaption><span class="testimonial__name">Stephen James</span><span class="testimonial__place">Dubai, UAE</span></figcaption>
+        </figure>
+        <figure class="testimonial">
+          <span class="stars" role="img" aria-label="5 stars"><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""></span>
+          <blockquote>
+            <p class="testimonial__headline">Quality, Fit, and Care</p>
+            <p class="testimonial__text">I really appreciate the quality and variety, along with the overall experience. The customer care team was professional and quick to assist. When I couldn't find a suitable fit, they arranged same-day custom stitching, Which was impressive. The fit <br>and quality were exactly what I wanted. I also sent a dress to a friend in Oman through their online service, and everything was handled</p>
+          </blockquote>
+          <figcaption><span class="testimonial__name">Stephen James</span><span class="testimonial__place">Dubai, UAE</span></figcaption>
+        </figure>
+        <figure class="testimonial">
+          <span class="stars" role="img" aria-label="5 stars"><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""></span>
+          <blockquote>
+            <p class="testimonial__headline">Beautiful Drape and Finish</p>
+            <p class="testimonial__text">The organza saree looked even better in person. The colours were exactly as shown, the beadwork on the border was neat, and it arrived well packed two days before my event. I received so many compliments.</p>
+          </blockquote>
+          <figcaption><span class="testimonial__name">Priya Nair</span><span class="testimonial__place">Abu Dhabi, UAE</span></figcaption>
+        </figure>
+        <figure class="testimonial">
+          <span class="stars" role="img" aria-label="5 stars"><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""></span>
+          <blockquote>
+            <p class="testimonial__headline">Helpful and Quick Service</p>
+            <p class="testimonial__text">I needed a blouse altered at short notice and the team handled it the same day. They kept me updated on WhatsApp and the fit was perfect. Easily the smoothest shopping experience I have had for ethnic wear.</p>
+          </blockquote>
+          <figcaption><span class="testimonial__name">Fathima Rahman</span><span class="testimonial__place">Sharjah, UAE</span></figcaption>
+        </figure>
+        <figure class="testimonial">
+          <span class="stars" role="img" aria-label="5 stars"><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""></span>
+          <blockquote>
+            <p class="testimonial__headline">Worth Every Dirham</p>
+            <p class="testimonial__text">Lovely fabric quality and the zari work is rich without feeling heavy. I ordered two sarees for a wedding and both were true to the photos. Will definitely shop again for the festive season.</p>
+          </blockquote>
+          <figcaption><span class="testimonial__name">Anjali Menon</span><span class="testimonial__place">Dubai, UAE</span></figcaption>
+        </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Customer Reviews (Figma 273:2227 / 273:2246) ============ -->
+    <section class="pdp-reviews" aria-labelledby="reviews-title">
+      <h2 class="pdp-reviews__title" id="reviews-title">Customer Reviews</h2>
+      <div class="pdp-reviews__row">
+        <div class="pdp-reviews__empty">
+          <span class="stars" role="img" aria-label="5 stars"><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""><img src="assets/product-detail/star.svg" alt=""></span>
+          <p>Be the first to write a review</p>
+        </div>
+        <span class="pdp-reviews__divider"><img src="assets/product-detail/review-divider.svg" alt=""></span>
+        <button class="pdp-btn pdp-btn--solid" type="button" data-write-review>Write a Review</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer (Figma 266:1321) ============ -->
+  <footer class="site-footer">
+    <ul class="footer-features">
+      <li><img src="assets/footer/sustainable.svg" alt=""><h3>Sustainable Materials</h3><p>Thoughtfully crafted from eco-friendly fabrics for a better future.</p></li>
+      <li><img src="assets/footer/secure-payment.svg" alt=""><h3>Secure Payment</h3><p>Shop with confidence using our safe and encrypted checkout.</p></li>
+      <li><img src="assets/footer/free-shipping.svg" alt=""><h3>Free Shipping</h3><p>Free shipping on orders above ₹1,999 across India.</p></li>
+      <li><img src="assets/footer/easy-returns.svg" alt=""><h3>Easy Returns</h3><p>Discover our products with a risk-free 7-day return policy.</p></li>
+    </ul>
+
+    <div class="footer-rule footer-rule--1"><img src="assets/footer/line-1.svg" alt=""></div>
+
+    <div class="footer-columns">
+      <nav class="footer-col" aria-label="About">
+        <h3>About Us</h3>
+        <ul><li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li><li><a href="csr.html">CSR</a></li><li><a href="blog.html">Blogs</a></li></ul>
+      </nav>
+      <nav class="footer-col" aria-label="Policies">
+        <h3>Privacy Policy</h3>
+        <ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="disclaimer.html">Disclaimer Policy</a></li><li><a href="payment-policy.html">Payment Policy</a></li><li><a href="shipping-policy.html">Shipping Policy</a></li><li><a href="return-policy.html">Return Policy</a></li></ul>
+      </nav>
+      <nav class="footer-col" aria-label="Customer care">
+        <h3>Customer Care</h3>
+        <ul><li><a href="help-center.html">Help Center</a></li><li><a href="track-order.html">Track Your Order</a></li><li><a href="corporate-bulk.html">Corporate &amp; Bulk</a></li><li><a href="purchasing.html">Purchasing</a></li></ul>
+      </nav>
+      <div class="footer-col">
+        <h3>Address</h3>
+        <address>Office #816 - 8th Floor<br>The Burlington Tower<br>Marasi Drive, Business Bay-<br>Dubai, UAE.</address>
+      </div>
+      <div class="footer-col footer-col--connect">
+        <h3>Connect</h3>
+        <ul><li>Toll Free : 800644489</li><li>Mob : +971 54 586 4310 | +971 54 586 4309</li><li>Mail : <a href="mailto:info@mightysilks.ae">info@mightysilks.ae</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><img src="assets/footer/facebook.svg" alt=""></a>
+          <a href="#" aria-label="Twitter"><img src="assets/footer/twitter.svg" alt=""></a>
+          <a href="#" aria-label="LinkedIn"><img src="assets/footer/linkedin.svg" alt=""></a>
+          <a href="#" aria-label="Instagram"><img src="assets/footer/instagram.svg" alt=""></a>
+          <a href="#" aria-label="Pinterest"><img src="assets/footer/pinterest.svg" alt=""></a>
+          <a href="#" aria-label="YouTube"><img src="assets/footer/youtube.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-rule footer-rule--2"><img src="assets/footer/line-2.svg" alt=""></div>
+
+    <h3 class="footer-popular__title">Popular Search</h3>
+    <ul class="footer-popular">
+      <li><a href="kanchipuram-silk-sarees.html">Kanchipuram Silk Sarees</a></li><li><a href="semi-silk-sarees.html">Semi Silk Sarees</a></li><li><a href="kerala-sarees.html">Kerala Sarees</a></li><li><a href="#">Kubera Silk Sarees</a></li><li><a href="pure-silk-sarees.html">Pure Silk Sarees</a></li><li><a href="unstitched-salwar-suits.html">Unstitched Salwar Suits</a></li><li><a href="ready-to-wear.html">Ready to Wear Sarees</a></li><li><a href="organza-sarees.html">Organza Sarees</a></li><li><a href="#">Net Kota Sarees</a></li><li><a href="dhawani-collection.html">Dhawani Collection</a></li>
+    </ul>
+    <ul class="footer-popular footer-popular--2">
+      <li><a href="designer-sarees.html">Designer Sarees</a></li><li><a href="frocks-collection.html">Frocks Collection</a></li><li><a href="banarasi-georgette-sarees.html">Banarasi Georgette Saree</a></li><li><a href="#">Crushed Chiffon Sarees</a></li><li><a href="fancy-sarees.html">Fancy Sarees</a></li><li><a href="#">Unstitched Lehenga</a></li><li><a href="semi-banarasi-sarees.html">Semi Banarasi Saree</a></li><li><a href="bridal-sarees.html">Bridal Sarees</a></li>
+    </ul>
+
+    <div class="footer-rule footer-rule--3"><img src="assets/footer/line-3.svg" alt=""></div>
+
+    <div class="footer-bottom">
+      <p>Copyright 2026 MightySilks. AlI Rights Reserved</p>
+      <p>Designed by : <a href="https://www.mightywarner.ae/" target="_blank" rel="noopener">MightyWarners Technoloties</a></p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Account menu: opened by the header account button, placed under it by js/main.js. -->
+<div class="account-menu" id="account-menu" hidden>
+  <a class="account-menu__btn account-menu__btn--primary" href="login.html">Log in</a>
+  <a class="account-menu__btn account-menu__btn--secondary" href="signup.html">Create Account</a>
+</div>
+
+<!-- Cart drawer: slides in from the right, opened by the header bag button and every Add to Cart /
+     Buy Now button (js/main.js renders the items, deals and totals). -->
+<div class="cart-panel" id="cart-panel" hidden>
+  <div class="cart-panel__backdrop" data-cart-close></div>
+  <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" tabindex="-1">
+    <header class="cart-drawer__head">
+      <svg class="cart-drawer__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6.2"/><circle cx="9.5" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg>
+      <h2 class="cart-drawer__title" id="cart-title">Your cart <span data-cart-count>(0 items)</span></h2>
+      <button class="cart-drawer__close" type="button" aria-label="Close cart" data-cart-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+
+    <div class="cart-drawer__body">
+      <ul class="cart-list" data-cart-list></ul>
+      <p class="cart-empty" data-cart-empty hidden>Your cart is empty.</p>
+
+      <div class="cart-extras" data-cart-extras>
+        <div class="cart-card cart-coupon" data-coupon>
+          <svg class="cart-coupon__badge" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 1.8 3-.2.9 2.9 2.5 1.7-1 2.8 1 2.8-2.5 1.7-.9 2.9-3-.2L12 22l-2.4-1.8-3 .2-.9-2.9-2.5-1.7 1-2.8-1-2.8 2.5-1.7.9-2.9 3 .2z"/><path class="cart-coupon__mark" d="M9 15l6-6M9.5 9.5h.01M14.5 14.5h.01"/></svg>
+          <div class="cart-coupon__text">
+            <p class="cart-coupon__title"><span class="cart-coupon__offer">Save <span data-coupon-saving>₹0</span> with <strong>NEW10</strong></span><span class="cart-coupon__done"><strong>NEW10</strong> applied · you save <span data-coupon-saving>₹0</span></span></p>
+            <p class="cart-coupon__sub">Coupons and offers</p>
+          </div>
+          <button class="cart-coupon__apply" type="button" aria-pressed="false" data-coupon-apply>Apply</button>
+        </div>
+
+        <label class="cart-card cart-gift">
+          <input type="checkbox" name="gift-card">
+          <span><strong>Redeem gift card?</strong><small>Select this to apply gift card in next step</small></span>
+        </label>
+
+        <section class="cart-deals" aria-labelledby="cart-deals-title">
+          <h3 class="cart-deals__title" id="cart-deals-title"><span aria-hidden="true">🔥</span> Top deals of the day</h3>
+          <ul class="cart-deals__list" data-cart-deals></ul>
+        </section>
+
+        <div class="cart-card cart-note">
+          <button class="cart-note__toggle" type="button" aria-expanded="false" aria-controls="cart-note" data-cart-note-toggle>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><path d="M18.4 2.6a2 2 0 0 1 2.9 2.9L12 14.8l-3.8 1 1-3.8z"/></svg>
+            Order instructions<span class="cart-note__add">Add</span>
+          </button>
+          <label class="visually-hidden" for="cart-note">Order instructions</label>
+          <textarea class="cart-note__field" id="cart-note" rows="3" placeholder="E.g. gift wrap, delivery notes…" data-cart-note hidden></textarea>
+        </div>
+
+        <section class="cart-bill" aria-labelledby="cart-bill-title" data-cart-bill>
+          <h3 class="cart-bill__title" id="cart-bill-title">Bill summary</h3>
+          <p class="cart-bill__row">
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><span>Cart total (<span data-cart-items>0 items</span>)</span></span>
+            <span data-cart-subtotal>₹0</span>
+          </p>
+          <p class="cart-bill__row cart-bill__row--discount" data-cart-discount-row hidden><span>Coupon (NEW10)</span><span data-cart-discount>−₹0</span></p>
+          <p class="cart-bill__grand"><span>Grand Total</span><strong data-cart-total>₹0</strong></p>
+        </section>
+      </div>
+    </div>
+
+    <footer class="cart-drawer__foot">
+      <div class="cart-foot__total">
+        <strong data-cart-total>₹0</strong>
+        <button type="button" data-cart-view-details>View Details</button>
+      </div>
+      <a class="cart-checkout" href="checkout.html" data-cart-checkout>Checkout</a>
+      <p class="cart-secure"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Secure checkout</p>
+    </footer>
+  </aside>
+</div>
+
+<!-- Review pop-up: opened by Write a Review (js/product.js). Choosing a star rating shows the
+     comment fields; sending shows a thank-you note. -->
+<dialog class="review-dialog" id="review-dialog" aria-labelledby="review-title">
+  <button class="review-dialog__close" type="button" aria-label="Close" data-review-close>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+  <form class="review-form" data-review-form novalidate>
+    <h2 class="review-dialog__title" id="review-title">How would you rate this product?</h2>
+    <p class="review-dialog__lead">We would love it if you would share a bit about your experience.</p>
+    <img class="review-dialog__photo" src="assets/products/na-3a.png" alt="" data-review-photo>
+    <p class="review-dialog__product" data-review-product>Organza Cream Teal Blue and Olive Golden Wavy Stripe Printed Saree with Beaded Scalloped Border</p>
+
+    <fieldset class="review-rating" data-review-rating>
+      <legend class="visually-hidden">Your rating</legend>
+      <div class="review-rating__stars">
+        <label class="review-star"><input class="visually-hidden" type="radio" name="rating" value="1" required><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z"/></svg><span class="visually-hidden">1 star, Poor</span></label>
+        <label class="review-star"><input class="visually-hidden" type="radio" name="rating" value="2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z"/></svg><span class="visually-hidden">2 stars</span></label>
+        <label class="review-star"><input class="visually-hidden" type="radio" name="rating" value="3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z"/></svg><span class="visually-hidden">3 stars</span></label>
+        <label class="review-star"><input class="visually-hidden" type="radio" name="rating" value="4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z"/></svg><span class="visually-hidden">4 stars</span></label>
+        <label class="review-star"><input class="visually-hidden" type="radio" name="rating" value="5"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z"/></svg><span class="visually-hidden">5 stars, Great</span></label>
+      </div>
+      <div class="review-rating__labels" aria-hidden="true"><span>Poor</span><span>Great</span></div>
+    </fieldset>
+
+    <div class="review-form__fields" data-review-fields hidden>
+      <label class="review-field"><span>Review title</span><input type="text" name="title" maxlength="80" placeholder="Sum it up in a few words"></label>
+      <label class="review-field"><span>Your review</span><textarea name="review" rows="4" required placeholder="What did you like or dislike?"></textarea></label>
+      <label class="review-field"><span>Your name</span><input type="text" name="name" required autocomplete="name"></label>
+      <p class="review-form__error" role="alert" data-review-error></p>
+      <button class="pdp-btn pdp-btn--solid review-form__submit" type="submit">Submit Review</button>
+    </div>
+  </form>
+  <div class="review-dialog__thanks" data-review-thanks hidden>
+    <h2 class="review-dialog__title">Thank you for your review!</h2>
+    <p class="review-dialog__lead">Your feedback helps other shoppers choose with confidence.</p>
+    <button class="pdp-btn pdp-btn--solid" type="button" data-review-close>Close</button>
+  </div>
+</dialog>
+</body>
+</html>

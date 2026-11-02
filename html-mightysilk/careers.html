@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mighty Silks — Careers</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script defer src="js/products.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <!-- Search panel: opened by the header search button (js/main.js). -->
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel__backdrop" data-search-close></div>
+    <form class="search-bar" role="search" action="#">
+      <img class="search-bar__icon" src="assets/icons/nav-search.svg" alt="">
+      <label class="visually-hidden" for="site-search">Search</label>
+      <input class="search-bar__input" id="site-search" type="search" name="q" placeholder="Search for sarees, lehengas, gowns…" autocomplete="off">
+      <button class="search-bar__close" type="button" aria-label="Close search" data-search-close>&times;</button>
+    </form>
+  </div>
+
+  <!-- ============ Header (Figma 261:47): the site header in dark-on-white colours ============ -->
+  <header class="shop-header">
+    <nav class="site-header site-header--light" aria-label="Main">
+      <!-- Colour logo: the Figma mark and wordmark layers (gradient shapes cut out by their clip
+           paths) at their design positions. Drawn with SVG masks (not CSS mask-image) so it also
+           shows when the page is opened from file://. Shades: 30% multiply, inside two clips. -->
+      <a class="logo logo--color" href="index.html" aria-label="Mighty Silks home">
+        <svg class="logo__art" width="193.468" height="64" viewBox="0 0 193.468 64" aria-hidden="true">
+          <defs>
+            <mask id="lg-mark-a" style="mask-type:alpha"><image href="assets/logo/mark-a-mask.svg" x="67.875" y="0.079" width="36.0496" height="57.815" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-b" style="mask-type:alpha"><image href="assets/logo/mark-b-mask.svg" x="52.23" y="14.769" width="31.4367" height="43.1226" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-c" style="mask-type:alpha"><image href="assets/logo/mark-c-mask.svg" x="28.56" y="14.769" width="39.7537" height="43.1226" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-d" style="mask-type:alpha"><image href="assets/logo/mark-d-mask.svg" x="19.739" y="21.061" width="25.1981" height="36.8326" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-e" style="mask-type:alpha"><image href="assets/logo/mark-e-mask.svg" x="0.065" y="21.061" width="35.0424" height="37.083" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-clip" style="mask-type:alpha"><image href="assets/logo/shade-clip.svg" x="0" y="0" width="103.957" height="58.2687" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-1" style="mask-type:alpha"><image href="assets/logo/shade-1-mask.svg" x="50.785" y="13.379" width="36.7482" height="48.2861" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-2" style="mask-type:alpha"><image href="assets/logo/shade-2-mask.svg" x="27.098" y="13.379" width="45.1473" height="48.2861" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-3" style="mask-type:alpha"><image href="assets/logo/shade-3-mask.svg" x="18.276" y="19.619" width="30.5107" height="42.043" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-4" style="mask-type:alpha"><image href="assets/logo/shade-4-mask.svg" x="-1.43" y="19.619" width="40.4847" height="42.3559" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-m" style="mask-type:alpha"><image href="assets/logo/letter-m-mask.svg" x="108.585" y="21.501" width="17.3186" height="14.7393" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-i" style="mask-type:alpha"><image href="assets/logo/letter-i-mask.svg" x="128.577" y="21.501" width="3.72122" height="14.7237" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-g" style="mask-type:alpha"><image href="assets/logo/letter-g-mask.svg" x="134.355" y="21.341" width="15.1579" height="15.0053" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-h" style="mask-type:alpha"><image href="assets/logo/letter-h-mask.svg" x="151.582" y="21.501" width="13.2408" height="14.7393" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-t" style="mask-type:alpha"><image href="assets/logo/letter-t-mask.svg" x="166.667" y="21.501" width="11.8274" height="14.7393" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-y" style="mask-type:alpha"><image href="assets/logo/letter-y-mask.svg" x="179.155" y="21.501" width="14.3131" height="14.7393" preserveAspectRatio="none"/></mask>
+          </defs>
+          <image href="assets/logo/mark-a.svg" x="66.996" y="-0.445" width="37.8003" height="58.8248" preserveAspectRatio="none" mask="url(#lg-mark-a)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-1.png" x="50.785" y="13.379" width="35.9034" height="47.1752" preserveAspectRatio="none" mask="url(#lg-shade-1)"/></g>
+          <image href="assets/logo/mark-b.svg" x="51.575" y="14.322" width="32.7223" height="44.0036" preserveAspectRatio="none" mask="url(#lg-mark-b)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-2.png" x="27.098" y="13.379" width="44.1076" height="47.1752" preserveAspectRatio="none" mask="url(#lg-shade-2)"/></g>
+          <image href="assets/logo/mark-c.svg" x="27.898" y="14.183" width="41.0565" height="44.245" preserveAspectRatio="none" mask="url(#lg-mark-c)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-3.png" x="18.276" y="19.619" width="29.8121" height="41.0729" preserveAspectRatio="none" mask="url(#lg-shade-3)"/></g>
+          <image href="assets/logo/mark-d.svg" x="19.167" y="20.717" width="26.3071" height="37.5322" preserveAspectRatio="none" mask="url(#lg-mark-d)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-4.png" x="-1.43" y="19.619" width="39.5587" height="41.3858" preserveAspectRatio="none" mask="url(#lg-shade-4)"/></g>
+          <image href="assets/logo/mark-e.svg" x="-0.495" y="20.551" width="36.1562" height="38.0607" preserveAspectRatio="none" mask="url(#lg-mark-e)"/>
+          <image href="assets/logo/letter-m.svg" x="107.989" y="20.849" width="18.5248" height="16.0546" preserveAspectRatio="none" mask="url(#lg-letter-m)"/>
+          <image href="assets/logo/letter-i.svg" x="127.975" y="21.371" width="4.93254" height="15.0026" preserveAspectRatio="none" mask="url(#lg-letter-i)"/>
+          <image href="assets/logo/letter-g.svg" x="133.747" y="20.752" width="16.3897" height="16.1601" preserveAspectRatio="none" mask="url(#lg-letter-g)"/>
+          <image href="assets/logo/letter-h.svg" x="150.977" y="21.006" width="14.4599" height="15.7427" preserveAspectRatio="none" mask="url(#lg-letter-h)"/>
+          <image href="assets/logo/letter-t.svg" x="166.066" y="21.076" width="13.045" height="15.626" preserveAspectRatio="none" mask="url(#lg-letter-t)"/>
+          <image href="assets/logo/letter-y.svg" x="178.547" y="20.974" width="15.5164" height="15.8144" preserveAspectRatio="none" mask="url(#lg-letter-y)"/>
+        </svg>
+        <span class="logo__silks">Silks</span>
+      </a>
+
+      <ul class="site-menu" id="site-menu">
+        <li><a href="index.html" aria-label="Home"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">H</span><span class="site-menu__char" style="--i:1">o</span><span class="site-menu__char" style="--i:2">m</span><span class="site-menu__char" style="--i:3">e</span></span></a></li>
+        <li><a href="our-shop.html" aria-label="Our Shop"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">O</span><span class="site-menu__char" style="--i:1">u</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">S</span><span class="site-menu__char" style="--i:5">h</span><span class="site-menu__char" style="--i:6">o</span><span class="site-menu__char" style="--i:7">p</span></span></a></li>
+        <li><a href="new-arrivals.html" aria-label="New Arrivals"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">N</span><span class="site-menu__char" style="--i:1">e</span><span class="site-menu__char" style="--i:2">w</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">A</span><span class="site-menu__char" style="--i:5">r</span><span class="site-menu__char" style="--i:6">r</span><span class="site-menu__char" style="--i:7">i</span><span class="site-menu__char" style="--i:8">v</span><span class="site-menu__char" style="--i:9">a</span><span class="site-menu__char" style="--i:10">l</span><span class="site-menu__char" style="--i:11">s</span></span></a></li>
+        <li><a href="bridal.html" aria-label="Bridal"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">B</span><span class="site-menu__char" style="--i:1">r</span><span class="site-menu__char" style="--i:2">i</span><span class="site-menu__char" style="--i:3">d</span><span class="site-menu__char" style="--i:4">a</span><span class="site-menu__char" style="--i:5">l</span></span></a></li>
+        <li><a href="sarees.html" aria-label="Sarees"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">S</span><span class="site-menu__char" style="--i:1">a</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3">e</span><span class="site-menu__char" style="--i:4">e</span><span class="site-menu__char" style="--i:5">s</span></span></a></li>
+        <li><a href="mighty-signature.html" aria-label="Mighty Signature"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">M</span><span class="site-menu__char" style="--i:1">i</span><span class="site-menu__char" style="--i:2">g</span><span class="site-menu__char" style="--i:3">h</span><span class="site-menu__char" style="--i:4">t</span><span class="site-menu__char" style="--i:5">y</span><span class="site-menu__char" style="--i:6"> </span><span class="site-menu__char" style="--i:7">S</span><span class="site-menu__char" style="--i:8">i</span><span class="site-menu__char" style="--i:9">g</span><span class="site-menu__char" style="--i:10">n</span><span class="site-menu__char" style="--i:11">a</span><span class="site-menu__char" style="--i:12">t</span><span class="site-menu__char" style="--i:13">u</span><span class="site-menu__char" style="--i:14">r</span><span class="site-menu__char" style="--i:15">e</span></span></a></li>
+      </ul>
+
+      <div class="site-actions">
+        <button class="icon-btn site-actions__search" type="button" aria-label="Search" aria-controls="search-panel" aria-expanded="false"><img src="assets/icons/nav-search-dark.svg" alt=""></button>
+        <button class="icon-btn" type="button" aria-label="Wishlist"><img src="assets/icons/nav-heart-dark.svg" alt=""></button>
+        <button class="icon-btn site-actions__account" type="button" aria-label="Account" aria-controls="account-menu" aria-expanded="false" aria-haspopup="true"><img src="assets/icons/nav-user-dark.svg" alt=""></button>
+        <span class="site-actions__divider"><img src="assets/icons/nav-divider-dark.svg" alt=""></span>
+        <button class="icon-btn site-actions__bag" type="button" aria-label="Shopping bag" aria-controls="cart-panel" aria-expanded="false"><img src="assets/icons/bag.svg" alt=""><span class="cart-badge" data-cart-badge aria-hidden="true" hidden>0</span></button>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="site-menu" aria-expanded="false">
+        <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+      </button>
+    </nav>
+    <div class="shop-rule shop-header__rule"><img src="assets/icons/shop-rule.svg" alt=""></div>
+  </header>
+
+  <main>
+
+    <!-- ============ Page title (as the cart page, Figma 281:2533 / 281:2534) ============ -->
+    <div class="shop-hero">
+      <h1 class="shop-hero__title">Careers</h1>
+    </div>
+
+    <!-- ============ Careers ============ -->
+    <!-- No Figma frame for this page: built as the About page (its sections, fonts and cards).
+         js/main.js opens a role's Apply Now on the form with that role chosen, checks the form and
+         shows a thank-you (there's no backend, so nothing is sent). -->
+
+    <!-- Intro: text beside a photo. -->
+    <section class="about-story" aria-labelledby="careers-intro-title">
+      <div class="about-story__text">
+        <p class="about-eyebrow">Join Our Team</p>
+        <h2 class="about-heading" id="careers-intro-title">Build a Career Woven in Style</h2>
+        <p>At Mighty Silks, we're passionate about bringing the beauty of Indian craftsmanship to every customer. We're always looking for people who share that passion, whether you love fashion, people, design or the details that make a great experience.</p>
+        <p>Grow with a team that values creativity, care and a genuine love for what we do.</p>
+        <a class="pdp-btn pdp-btn--solid about-btn" href="#open-positions">View Open Positions</a>
+      </div>
+      <div class="about-story__photo about-story__photo--wide">
+        <img src="assets/banners/timeless-1.png" alt="Two women in embroidered lehengas in a sandstone arcade">
+      </div>
+    </section>
+
+    <!-- Why join: four short reasons (the About page's value cards). -->
+    <section class="about-values" aria-labelledby="careers-why-title">
+      <p class="about-eyebrow">Why Work With Us</p>
+      <h2 class="about-heading" id="careers-why-title">Life at Mighty Silks</h2>
+      <ul class="about-values__list">
+        <li class="about-value">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+          <h3>Grow With Us</h3>
+          <p>Training, mentoring and room to take on more as you learn.</p>
+        </li>
+        <li class="about-value">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17.5" cy="9" r="2.5"/><path d="M16 14.2c3 .2 5 2.6 5 5.8"/></svg>
+          <h3>A Supportive Team</h3>
+          <p>Friendly colleagues who share ideas and celebrate each other's wins.</p>
+        </li>
+        <li class="about-value">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8-4.3-4.1 5.9-.9z"/></svg>
+          <h3>Work With Beautiful Things</h3>
+          <p>Spend your days around fine silks, bridal wear and new collections.</p>
+        </li>
+        <li class="about-value">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M12 8v13M3 12h18"/><path d="M12 8c-1.5-3-5-4-5-1.5S12 8 12 8zm0 0c1.5-3 5-4 5-1.5S12 8 12 8z"/></svg>
+          <h3>Staff Benefits</h3>
+          <p>Employee discounts on our collections and recognition for great work.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Open positions: each role opens to its details and an Apply Now button. -->
+    <section class="careers-jobs" id="open-positions" aria-labelledby="careers-jobs-title">
+      <p class="about-eyebrow">Open Positions</p>
+      <h2 class="about-heading" id="careers-jobs-title">Current Openings</h2>
+      <div class="careers-jobs__list">
+        <details class="careers-job">
+          <summary><span class="careers-job__title">Fashion Sales Associate</span><span class="careers-job__meta">Dubai · Full-time</span></summary>
+          <div class="careers-job__body">
+            <p>Help customers find the perfect saree, lehenga or gown, share styling advice and keep the store looking its best.</p>
+            <ul><li>Experience in fashion or luxury retail preferred</li><li>Warm, confident communication in English; Hindi, Malayalam or Arabic a plus</li><li>Flexible to work weekends and festive seasons</li></ul>
+            <div class="careers-job__actions">
+              <button class="pdp-btn pdp-btn--solid careers-job__apply" type="button" data-careers-apply="Fashion Sales Associate">Apply Now</button>
+              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details.html?job=fashion-sales-associate">View Details</a>
+            </div>
+          </div>
+        </details>
+        <details class="careers-job">
+          <summary><span class="careers-job__title">Visual Merchandiser</span><span class="careers-job__meta">Dubai · Full-time</span></summary>
+          <div class="careers-job__body">
+            <p>Bring our collections to life through window displays, in-store styling and seasonal campaigns.</p>
+            <ul><li>A strong eye for colour, texture and composition</li><li>Experience in fashion visual merchandising</li><li>A portfolio of past displays</li></ul>
+            <div class="careers-job__actions">
+              <button class="pdp-btn pdp-btn--solid careers-job__apply" type="button" data-careers-apply="Visual Merchandiser">Apply Now</button>
+              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details.html?job=visual-merchandiser">View Details</a>
+            </div>
+          </div>
+        </details>
+        <details class="careers-job">
+          <summary><span class="careers-job__title">Customer Care Executive</span><span class="careers-job__meta">Dubai · Full-time</span></summary>
+          <div class="careers-job__body">
+            <p>Be the friendly voice of Mighty Silks: answer questions, track orders and make returns easy by phone, email and chat.</p>
+            <ul><li>Customer service experience, ideally in e-commerce</li><li>Clear written and spoken English</li><li>Calm, patient and organised</li></ul>
+            <div class="careers-job__actions">
+              <button class="pdp-btn pdp-btn--solid careers-job__apply" type="button" data-careers-apply="Customer Care Executive">Apply Now</button>
+              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details.html?job=customer-care-executive">View Details</a>
+            </div>
+          </div>
+        </details>
+        <details class="careers-job">
+          <summary><span class="careers-job__title">Social Media &amp; Content Executive</span><span class="careers-job__meta">Dubai · Full-time</span></summary>
+          <div class="careers-job__body">
+            <p>Plan and create content for our social channels, photo shoots and new collection launches.</p>
+            <ul><li>Experience running fashion or lifestyle social accounts</li><li>Photography, video or design skills</li><li>Up to date with trends across Instagram, Pinterest and YouTube</li></ul>
+            <div class="careers-job__actions">
+              <button class="pdp-btn pdp-btn--solid careers-job__apply" type="button" data-careers-apply="Social Media &amp; Content Executive">Apply Now</button>
+              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details.html?job=social-media-content-executive">View Details</a>
+            </div>
+          </div>
+        </details>
+      </div>
+      <p class="careers-jobs__note">Don't see the right role? Send us your CV anyway. We'd love to hear from you.</p>
+    </section>
+
+    <!-- Application form (the checkout's fields). -->
+    <section class="careers-apply" id="apply" aria-labelledby="careers-apply-title" tabindex="-1">
+      <div class="careers-apply__intro">
+        <p class="about-eyebrow">Apply</p>
+        <h2 class="about-heading" id="careers-apply-title">Send Your Application</h2>
+        <p>Fill in your details and attach your CV. Our team will get back to you if your profile matches a current or upcoming role.</p>
+      </div>
+      <form class="careers-apply__form" data-careers-form novalidate>
+        <div class="checkout__grid">
+          <label class="checkout-field"><span>Full name</span><input type="text" name="name" required autocomplete="name"></label>
+          <label class="checkout-field"><span>Email</span><input type="email" name="email" required autocomplete="email"></label>
+          <label class="checkout-field"><span>Phone</span><input type="tel" name="phone" required autocomplete="tel" pattern="[0-9+ ()-]{7,}"></label>
+          <label class="checkout-field"><span>Position</span>
+            <select name="position" required data-careers-position>
+              <option value="">Select a position</option>
+              <option>Fashion Sales Associate</option>
+              <option>Visual Merchandiser</option>
+              <option>Customer Care Executive</option>
+              <option>Social Media &amp; Content Executive</option>
+              <option>Other / General application</option>
+            </select>
+          </label>
+          <label class="checkout-field checkout-field--full"><span>CV / Resume (PDF or Word, up to 5 MB)</span><input class="careers-apply__file" type="file" name="cv" required accept=".pdf,.doc,.docx"></label>
+          <label class="checkout-field checkout-field--full"><span>Tell us about yourself (optional)</span><textarea name="message" rows="5"></textarea></label>
+        </div>
+        <p class="login__status" role="alert" data-careers-status></p>
+        <button class="pdp-btn pdp-btn--solid careers-apply__submit" type="submit">Submit Application</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer (Figma 266:1321) ============ -->
+  <footer class="site-footer">
+    <ul class="footer-features">
+      <li><img src="assets/footer/sustainable.svg" alt=""><h3>Sustainable Materials</h3><p>Thoughtfully crafted from eco-friendly fabrics for a better future.</p></li>
+      <li><img src="assets/footer/secure-payment.svg" alt=""><h3>Secure Payment</h3><p>Shop with confidence using our safe and encrypted checkout.</p></li>
+      <li><img src="assets/footer/free-shipping.svg" alt=""><h3>Free Shipping</h3><p>Free shipping on orders above ₹1,999 across India.</p></li>
+      <li><img src="assets/footer/easy-returns.svg" alt=""><h3>Easy Returns</h3><p>Discover our products with a risk-free 7-day return policy.</p></li>
+    </ul>
+
+    <div class="footer-rule footer-rule--1"><img src="assets/footer/line-1.svg" alt=""></div>
+
+    <div class="footer-columns">
+      <nav class="footer-col" aria-label="About">
+        <h3>About Us</h3>
+        <ul><li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li><li><a href="csr.html">CSR</a></li><li><a href="blog.html">Blogs</a></li></ul>
+      </nav>
+      <nav class="footer-col" aria-label="Policies">
+        <h3>Privacy Policy</h3>
+        <ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="disclaimer.html">Disclaimer Policy</a></li><li><a href="payment-policy.html">Payment Policy</a></li><li><a href="shipping-policy.html">Shipping Policy</a></li><li><a href="return-policy.html">Return Policy</a></li></ul>
+      </nav>
+      <nav class="footer-col" aria-label="Customer care">
+        <h3>Customer Care</h3>
+        <ul><li><a href="help-center.html">Help Center</a></li><li><a href="track-order.html">Track Your Order</a></li><li><a href="corporate-bulk.html">Corporate &amp; Bulk</a></li><li><a href="purchasing.html">Purchasing</a></li></ul>
+      </nav>
+      <div class="footer-col">
+        <h3>Address</h3>
+        <address>Office #816 - 8th Floor<br>The Burlington Tower<br>Marasi Drive, Business Bay-<br>Dubai, UAE.</address>
+      </div>
+      <div class="footer-col footer-col--connect">
+        <h3>Connect</h3>
+        <ul><li>Toll Free : 800644489</li><li>Mob : +971 54 586 4310 | +971 54 586 4309</li><li>Mail : <a href="mailto:info@mightysilks.ae">info@mightysilks.ae</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><img src="assets/footer/facebook.svg" alt=""></a>
+          <a href="#" aria-label="Twitter"><img src="assets/footer/twitter.svg" alt=""></a>
+          <a href="#" aria-label="LinkedIn"><img src="assets/footer/linkedin.svg" alt=""></a>
+          <a href="#" aria-label="Instagram"><img src="assets/footer/instagram.svg" alt=""></a>
+          <a href="#" aria-label="Pinterest"><img src="assets/footer/pinterest.svg" alt=""></a>
+          <a href="#" aria-label="YouTube"><img src="assets/footer/youtube.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-rule footer-rule--2"><img src="assets/footer/line-2.svg" alt=""></div>
+
+    <h3 class="footer-popular__title">Popular Search</h3>
+    <ul class="footer-popular">
+      <li><a href="kanchipuram-silk-sarees.html">Kanchipuram Silk Sarees</a></li><li><a href="semi-silk-sarees.html">Semi Silk Sarees</a></li><li><a href="kerala-sarees.html">Kerala Sarees</a></li><li><a href="#">Kubera Silk Sarees</a></li><li><a href="pure-silk-sarees.html">Pure Silk Sarees</a></li><li><a href="unstitched-salwar-suits.html">Unstitched Salwar Suits</a></li><li><a href="ready-to-wear.html">Ready to Wear Sarees</a></li><li><a href="organza-sarees.html">Organza Sarees</a></li><li><a href="#">Net Kota Sarees</a></li><li><a href="dhawani-collection.html">Dhawani Collection</a></li>
+    </ul>
+    <ul class="footer-popular footer-popular--2">
+      <li><a href="designer-sarees.html">Designer Sarees</a></li><li><a href="frocks-collection.html">Frocks Collection</a></li><li><a href="banarasi-georgette-sarees.html">Banarasi Georgette Saree</a></li><li><a href="#">Crushed Chiffon Sarees</a></li><li><a href="fancy-sarees.html">Fancy Sarees</a></li><li><a href="#">Unstitched Lehenga</a></li><li><a href="semi-banarasi-sarees.html">Semi Banarasi Saree</a></li><li><a href="bridal-sarees.html">Bridal Sarees</a></li>
+    </ul>
+
+    <div class="footer-rule footer-rule--3"><img src="assets/footer/line-3.svg" alt=""></div>
+
+    <div class="footer-bottom">
+      <p>Copyright 2026 MightySilks. AlI Rights Reserved</p>
+      <p>Designed by : <a href="https://www.mightywarner.ae/" target="_blank" rel="noopener">MightyWarners Technoloties</a></p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Account menu: opened by the header account button, placed under it by js/main.js. -->
+<div class="account-menu" id="account-menu" hidden>
+  <a class="account-menu__btn account-menu__btn--primary" href="login.html">Log in</a>
+  <a class="account-menu__btn account-menu__btn--secondary" href="signup.html">Create Account</a>
+</div>
+
+<!-- Cart drawer: slides in from the right, opened by the header bag button and every Add to Cart /
+     Buy Now button (js/main.js renders the items, deals and totals). -->
+<div class="cart-panel" id="cart-panel" hidden>
+  <div class="cart-panel__backdrop" data-cart-close></div>
+  <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" tabindex="-1">
+    <header class="cart-drawer__head">
+      <svg class="cart-drawer__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6.2"/><circle cx="9.5" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg>
+      <h2 class="cart-drawer__title" id="cart-title">Your cart <span data-cart-count>(0 items)</span></h2>
+      <button class="cart-drawer__close" type="button" aria-label="Close cart" data-cart-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+
+    <div class="cart-drawer__body">
+      <ul class="cart-list" data-cart-list></ul>
+      <p class="cart-empty" data-cart-empty hidden>Your cart is empty.</p>
+
+      <div class="cart-extras" data-cart-extras>
+        <div class="cart-card cart-coupon" data-coupon>
+          <svg class="cart-coupon__badge" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 1.8 3-.2.9 2.9 2.5 1.7-1 2.8 1 2.8-2.5 1.7-.9 2.9-3-.2L12 22l-2.4-1.8-3 .2-.9-2.9-2.5-1.7 1-2.8-1-2.8 2.5-1.7.9-2.9 3 .2z"/><path class="cart-coupon__mark" d="M9 15l6-6M9.5 9.5h.01M14.5 14.5h.01"/></svg>
+          <div class="cart-coupon__text">
+            <p class="cart-coupon__title"><span class="cart-coupon__offer">Save <span data-coupon-saving>₹0</span> with <strong>NEW10</strong></span><span class="cart-coupon__done"><strong>NEW10</strong> applied · you save <span data-coupon-saving>₹0</span></span></p>
+            <p class="cart-coupon__sub">Coupons and offers</p>
+          </div>
+          <button class="cart-coupon__apply" type="button" aria-pressed="false" data-coupon-apply>Apply</button>
+        </div>
+
+        <label class="cart-card cart-gift">
+          <input type="checkbox" name="gift-card">
+          <span><strong>Redeem gift card?</strong><small>Select this to apply gift card in next step</small></span>
+        </label>
+
+        <section class="cart-deals" aria-labelledby="cart-deals-title">
+          <h3 class="cart-deals__title" id="cart-deals-title"><span aria-hidden="true">🔥</span> Top deals of the day</h3>
+          <ul class="cart-deals__list" data-cart-deals></ul>
+        </section>
+
+        <div class="cart-card cart-note">
+          <button class="cart-note__toggle" type="button" aria-expanded="false" aria-controls="cart-note" data-cart-note-toggle>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><path d="M18.4 2.6a2 2 0 0 1 2.9 2.9L12 14.8l-3.8 1 1-3.8z"/></svg>
+            Order instructions<span class="cart-note__add">Add</span>
+          </button>
+          <label class="visually-hidden" for="cart-note">Order instructions</label>
+          <textarea class="cart-note__field" id="cart-note" rows="3" placeholder="E.g. gift wrap, delivery notes…" data-cart-note hidden></textarea>
+        </div>
+
+        <section class="cart-bill" aria-labelledby="cart-bill-title" data-cart-bill>
+          <h3 class="cart-bill__title" id="cart-bill-title">Bill summary</h3>
+          <p class="cart-bill__row">
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><span>Cart total (<span data-cart-items>0 items</span>)</span></span>
+            <span data-cart-subtotal>₹0</span>
+          </p>
+          <p class="cart-bill__row cart-bill__row--discount" data-cart-discount-row hidden><span>Coupon (NEW10)</span><span data-cart-discount>−₹0</span></p>
+          <p class="cart-bill__grand"><span>Grand Total</span><strong data-cart-total>₹0</strong></p>
+        </section>
+      </div>
+    </div>
+
+    <footer class="cart-drawer__foot">
+      <div class="cart-foot__total">
+        <strong data-cart-total>₹0</strong>
+        <button type="button" data-cart-view-details>View Details</button>
+      </div>
+      <a class="cart-checkout" href="checkout.html" data-cart-checkout>Checkout</a>
+      <p class="cart-secure"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Secure checkout</p>
+    </footer>
+  </aside>
+</div>
+</body>
+</html>

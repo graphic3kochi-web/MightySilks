@@ -1,0 +1,92 @@
+{
+    "offer": [
+        "Employee discounts on our collections",
+        "Training and clear paths to grow your career",
+        "A friendly, supportive team",
+        "Recognition and rewards for great work"
+    ],
+    "jobs": {
+        "fashion-sales-associate": {
+            "title": "Fashion Sales Associate",
+            "department": "Retail",
+            "location": "Dubai, UAE",
+            "type": "Full-time",
+            "experience": "1 – 3 years",
+            "summary": "As a Fashion Sales Associate you are the face of Mighty Silks. You will help customers find the perfect saree, lehenga or gown for their special occasions, share styling advice and make every visit to our store a memorable one.",
+            "responsibilities": [
+                "Welcome customers and understand what they are looking for",
+                "Recommend pieces, blouses and accessories, and share styling tips",
+                "Keep the store, fitting rooms and displays neat and well stocked",
+                "Handle billing, alterations requests and returns accurately",
+                "Meet individual and store sales goals, especially in festive and wedding seasons"
+            ],
+            "requirements": [
+                "Experience in fashion or luxury retail preferred",
+                "Warm, confident communication in English; Hindi, Malayalam or Arabic a plus",
+                "A genuine interest in Indian ethnic wear and fabrics",
+                "Flexible to work weekends and festive seasons"
+            ]
+        },
+        "visual-merchandiser": {
+            "title": "Visual Merchandiser",
+            "department": "Marketing & Visual",
+            "location": "Dubai, UAE",
+            "type": "Full-time",
+            "experience": "2+ years",
+            "summary": "As our Visual Merchandiser you will bring our collections to life. From window displays to in-store styling and seasonal campaigns, you will make sure every corner of Mighty Silks tells a beautiful story.",
+            "responsibilities": [
+                "Plan and set up window and in-store displays for each collection and festival",
+                "Style mannequins and feature walls to highlight new arrivals and bestsellers",
+                "Work with the marketing team on campaign looks and photo shoots",
+                "Keep displays fresh, consistent and in line with the brand"
+            ],
+            "requirements": [
+                "A strong eye for colour, texture and composition",
+                "Experience in fashion visual merchandising",
+                "A portfolio of past displays",
+                "Comfortable with hands-on work, including some evening set-ups"
+            ]
+        },
+        "customer-care-executive": {
+            "title": "Customer Care Executive",
+            "department": "Customer Service",
+            "location": "Dubai, UAE",
+            "type": "Full-time",
+            "experience": "1+ years",
+            "summary": "As a Customer Care Executive you will be the friendly voice of Mighty Silks. You will answer questions, track orders and make exchanges and returns easy for our customers by phone, email and chat.",
+            "responsibilities": [
+                "Answer customer questions by phone, email, WhatsApp and live chat",
+                "Track orders and keep customers updated on delivery",
+                "Handle exchanges, returns and refunds smoothly",
+                "Share customer feedback with the store and online teams"
+            ],
+            "requirements": [
+                "Customer service experience, ideally in e-commerce",
+                "Clear written and spoken English",
+                "Calm, patient and organised",
+                "Comfortable using order and ticketing systems"
+            ]
+        },
+        "social-media-content-executive": {
+            "title": "Social Media & Content Executive",
+            "department": "Marketing",
+            "location": "Dubai, UAE",
+            "type": "Full-time",
+            "experience": "2+ years",
+            "summary": "As our Social Media & Content Executive you will tell the Mighty Silks story online. You will plan and create content for our social channels, help run photo shoots and launch new collections to our community.",
+            "responsibilities": [
+                "Plan and post content across Instagram, Facebook, Pinterest and YouTube",
+                "Create photos, reels and short videos for new arrivals and campaigns",
+                "Help organise photo shoots and work with models and creators",
+                "Reply to comments and messages and grow our community",
+                "Report on what works and suggest new ideas"
+            ],
+            "requirements": [
+                "Experience running fashion or lifestyle social accounts",
+                "Photography, video or design skills",
+                "Up to date with trends across Instagram, Pinterest and YouTube",
+                "Good written English with a creative voice"
+            ]
+        }
+    }
+}

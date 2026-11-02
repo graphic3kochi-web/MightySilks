@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mighty Silks — Fancy Sarees</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/products.js"></script>
+  <script defer src="js/shop.js"></script>
+</head>
+<body>
+<div class="page">
+
+  <!-- Search panel: opened by the header search button (js/main.js). -->
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel__backdrop" data-search-close></div>
+    <form class="search-bar" role="search" action="#">
+      <img class="search-bar__icon" src="assets/icons/nav-search.svg" alt="">
+      <label class="visually-hidden" for="site-search">Search</label>
+      <input class="search-bar__input" id="site-search" type="search" name="q" placeholder="Search for sarees, lehengas, gowns…" autocomplete="off">
+      <button class="search-bar__close" type="button" aria-label="Close search" data-search-close>&times;</button>
+    </form>
+  </div>
+
+  <!-- ============ Header (Figma 261:47): the site header in dark-on-white colours ============ -->
+  <header class="shop-header">
+    <nav class="site-header site-header--light" aria-label="Main">
+      <!-- Colour logo: the Figma mark and wordmark layers (gradient shapes cut out by their clip
+           paths) at their design positions. Drawn with SVG masks (not CSS mask-image) so it also
+           shows when the page is opened from file://. Shades: 30% multiply, inside two clips. -->
+      <a class="logo logo--color" href="index.html" aria-label="Mighty Silks home">
+        <svg class="logo__art" width="193.468" height="64" viewBox="0 0 193.468 64" aria-hidden="true">
+          <defs>
+            <mask id="lg-mark-a" style="mask-type:alpha"><image href="assets/logo/mark-a-mask.svg" x="67.875" y="0.079" width="36.0496" height="57.815" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-b" style="mask-type:alpha"><image href="assets/logo/mark-b-mask.svg" x="52.23" y="14.769" width="31.4367" height="43.1226" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-c" style="mask-type:alpha"><image href="assets/logo/mark-c-mask.svg" x="28.56" y="14.769" width="39.7537" height="43.1226" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-d" style="mask-type:alpha"><image href="assets/logo/mark-d-mask.svg" x="19.739" y="21.061" width="25.1981" height="36.8326" preserveAspectRatio="none"/></mask>
+            <mask id="lg-mark-e" style="mask-type:alpha"><image href="assets/logo/mark-e-mask.svg" x="0.065" y="21.061" width="35.0424" height="37.083" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-clip" style="mask-type:alpha"><image href="assets/logo/shade-clip.svg" x="0" y="0" width="103.957" height="58.2687" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-1" style="mask-type:alpha"><image href="assets/logo/shade-1-mask.svg" x="50.785" y="13.379" width="36.7482" height="48.2861" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-2" style="mask-type:alpha"><image href="assets/logo/shade-2-mask.svg" x="27.098" y="13.379" width="45.1473" height="48.2861" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-3" style="mask-type:alpha"><image href="assets/logo/shade-3-mask.svg" x="18.276" y="19.619" width="30.5107" height="42.043" preserveAspectRatio="none"/></mask>
+            <mask id="lg-shade-4" style="mask-type:alpha"><image href="assets/logo/shade-4-mask.svg" x="-1.43" y="19.619" width="40.4847" height="42.3559" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-m" style="mask-type:alpha"><image href="assets/logo/letter-m-mask.svg" x="108.585" y="21.501" width="17.3186" height="14.7393" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-i" style="mask-type:alpha"><image href="assets/logo/letter-i-mask.svg" x="128.577" y="21.501" width="3.72122" height="14.7237" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-g" style="mask-type:alpha"><image href="assets/logo/letter-g-mask.svg" x="134.355" y="21.341" width="15.1579" height="15.0053" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-h" style="mask-type:alpha"><image href="assets/logo/letter-h-mask.svg" x="151.582" y="21.501" width="13.2408" height="14.7393" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-t" style="mask-type:alpha"><image href="assets/logo/letter-t-mask.svg" x="166.667" y="21.501" width="11.8274" height="14.7393" preserveAspectRatio="none"/></mask>
+            <mask id="lg-letter-y" style="mask-type:alpha"><image href="assets/logo/letter-y-mask.svg" x="179.155" y="21.501" width="14.3131" height="14.7393" preserveAspectRatio="none"/></mask>
+          </defs>
+          <image href="assets/logo/mark-a.svg" x="66.996" y="-0.445" width="37.8003" height="58.8248" preserveAspectRatio="none" mask="url(#lg-mark-a)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-1.png" x="50.785" y="13.379" width="35.9034" height="47.1752" preserveAspectRatio="none" mask="url(#lg-shade-1)"/></g>
+          <image href="assets/logo/mark-b.svg" x="51.575" y="14.322" width="32.7223" height="44.0036" preserveAspectRatio="none" mask="url(#lg-mark-b)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-2.png" x="27.098" y="13.379" width="44.1076" height="47.1752" preserveAspectRatio="none" mask="url(#lg-shade-2)"/></g>
+          <image href="assets/logo/mark-c.svg" x="27.898" y="14.183" width="41.0565" height="44.245" preserveAspectRatio="none" mask="url(#lg-mark-c)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-3.png" x="18.276" y="19.619" width="29.8121" height="41.0729" preserveAspectRatio="none" mask="url(#lg-shade-3)"/></g>
+          <image href="assets/logo/mark-d.svg" x="19.167" y="20.717" width="26.3071" height="37.5322" preserveAspectRatio="none" mask="url(#lg-mark-d)"/>
+          <g class="logo__shade" mask="url(#lg-shade-clip)"><image href="assets/logo/shade-4.png" x="-1.43" y="19.619" width="39.5587" height="41.3858" preserveAspectRatio="none" mask="url(#lg-shade-4)"/></g>
+          <image href="assets/logo/mark-e.svg" x="-0.495" y="20.551" width="36.1562" height="38.0607" preserveAspectRatio="none" mask="url(#lg-mark-e)"/>
+          <image href="assets/logo/letter-m.svg" x="107.989" y="20.849" width="18.5248" height="16.0546" preserveAspectRatio="none" mask="url(#lg-letter-m)"/>
+          <image href="assets/logo/letter-i.svg" x="127.975" y="21.371" width="4.93254" height="15.0026" preserveAspectRatio="none" mask="url(#lg-letter-i)"/>
+          <image href="assets/logo/letter-g.svg" x="133.747" y="20.752" width="16.3897" height="16.1601" preserveAspectRatio="none" mask="url(#lg-letter-g)"/>
+          <image href="assets/logo/letter-h.svg" x="150.977" y="21.006" width="14.4599" height="15.7427" preserveAspectRatio="none" mask="url(#lg-letter-h)"/>
+          <image href="assets/logo/letter-t.svg" x="166.066" y="21.076" width="13.045" height="15.626" preserveAspectRatio="none" mask="url(#lg-letter-t)"/>
+          <image href="assets/logo/letter-y.svg" x="178.547" y="20.974" width="15.5164" height="15.8144" preserveAspectRatio="none" mask="url(#lg-letter-y)"/>
+        </svg>
+        <span class="logo__silks">Silks</span>
+      </a>
+
+      <ul class="site-menu" id="site-menu">
+        <li><a href="index.html" aria-label="Home"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">H</span><span class="site-menu__char" style="--i:1">o</span><span class="site-menu__char" style="--i:2">m</span><span class="site-menu__char" style="--i:3">e</span></span></a></li>
+        <li><a href="our-shop.html" aria-label="Our Shop"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">O</span><span class="site-menu__char" style="--i:1">u</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">S</span><span class="site-menu__char" style="--i:5">h</span><span class="site-menu__char" style="--i:6">o</span><span class="site-menu__char" style="--i:7">p</span></span></a></li>
+        <li><a href="new-arrivals.html" aria-label="New Arrivals"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">N</span><span class="site-menu__char" style="--i:1">e</span><span class="site-menu__char" style="--i:2">w</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">A</span><span class="site-menu__char" style="--i:5">r</span><span class="site-menu__char" style="--i:6">r</span><span class="site-menu__char" style="--i:7">i</span><span class="site-menu__char" style="--i:8">v</span><span class="site-menu__char" style="--i:9">a</span><span class="site-menu__char" style="--i:10">l</span><span class="site-menu__char" style="--i:11">s</span></span></a></li>
+        <li><a href="bridal.html" aria-label="Bridal"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">B</span><span class="site-menu__char" style="--i:1">r</span><span class="site-menu__char" style="--i:2">i</span><span class="site-menu__char" style="--i:3">d</span><span class="site-menu__char" style="--i:4">a</span><span class="site-menu__char" style="--i:5">l</span></span></a></li>
+        <li><a href="sarees.html" aria-label="Sarees"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">S</span><span class="site-menu__char" style="--i:1">a</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3">e</span><span class="site-menu__char" style="--i:4">e</span><span class="site-menu__char" style="--i:5">s</span></span></a></li>
+        <li><a href="mighty-signature.html" aria-label="Mighty Signature"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">M</span><span class="site-menu__char" style="--i:1">i</span><span class="site-menu__char" style="--i:2">g</span><span class="site-menu__char" style="--i:3">h</span><span class="site-menu__char" style="--i:4">t</span><span class="site-menu__char" style="--i:5">y</span><span class="site-menu__char" style="--i:6"> </span><span class="site-menu__char" style="--i:7">S</span><span class="site-menu__char" style="--i:8">i</span><span class="site-menu__char" style="--i:9">g</span><span class="site-menu__char" style="--i:10">n</span><span class="site-menu__char" style="--i:11">a</span><span class="site-menu__char" style="--i:12">t</span><span class="site-menu__char" style="--i:13">u</span><span class="site-menu__char" style="--i:14">r</span><span class="site-menu__char" style="--i:15">e</span></span></a></li>
+      </ul>
+
+      <div class="site-actions">
+        <button class="icon-btn site-actions__search" type="button" aria-label="Search" aria-controls="search-panel" aria-expanded="false"><img src="assets/icons/nav-search-dark.svg" alt=""></button>
+        <button class="icon-btn" type="button" aria-label="Wishlist"><img src="assets/icons/nav-heart-dark.svg" alt=""></button>
+        <button class="icon-btn site-actions__account" type="button" aria-label="Account" aria-controls="account-menu" aria-expanded="false" aria-haspopup="true"><img src="assets/icons/nav-user-dark.svg" alt=""></button>
+        <span class="site-actions__divider"><img src="assets/icons/nav-divider-dark.svg" alt=""></span>
+        <button class="icon-btn site-actions__bag" type="button" aria-label="Shopping bag" aria-controls="cart-panel" aria-expanded="false"><img src="assets/icons/bag.svg" alt=""><span class="cart-badge" data-cart-badge aria-hidden="true" hidden>0</span></button>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="site-menu" aria-expanded="false">
+        <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+      </button>
+    </nav>
+    <div class="shop-rule shop-header__rule"><img src="assets/icons/shop-rule.svg" alt=""></div>
+  </header>
+
+  <main>
+
+    <!-- ============ Page title (Figma 261:978 / 261:979) ============ -->
+    <div class="shop-hero">
+      <h1 class="shop-hero__title">Fancy Sarees</h1>
+    </div>
+
+    <!-- ============ Filters + sort (Figma 261:987 – 261:1003) ============ -->
+    <!-- js/shop.js opens the drop-downs and filters / sorts the grid. -->
+    <div class="shop-toolbar" data-shop-toolbar>
+      <button class="shop-toolbar__label" type="button" aria-controls="filter-panel" aria-expanded="false" data-filter-open><span class="shop-toolbar__icon"><img src="assets/icons/filter.svg" alt=""></span><span data-filter-total>Filters</span></button>
+
+      <div class="shop-filters">
+        <div class="shop-dropdown" data-dropdown>
+          <button class="shop-dropdown__btn" type="button" aria-expanded="false" aria-controls="filter-price"><span data-label="Price">Price</span><img src="assets/icons/caret-down.svg" alt=""></button>
+          <!-- Price range: two-thumb slider plus From / To fields (js/shop.js sets the limits from
+               the product prices and keeps this and the drawer's copy in sync). -->
+          <fieldset class="shop-dropdown__panel shop-dropdown__panel--list shop-dropdown__panel--range" id="filter-price" hidden>
+            <legend class="visually-hidden">Price</legend>
+            <div class="price-range" data-price-range>
+              <div class="price-range__head">
+                <span class="price-range__title">Price</span>
+                <button class="price-range__reset" type="button" data-price-reset>Reset</button>
+              </div>
+              <div class="price-range__slider">
+                <input type="range" min="0" step="1" aria-label="Minimum price" data-price-thumb="min">
+                <input type="range" min="0" step="1" aria-label="Maximum price" data-price-thumb="max">
+              </div>
+              <div class="price-range__fields">
+                <label class="price-range__field"><span>From</span><input type="number" min="0" step="1" inputmode="numeric" data-price-field="min"></label>
+                <label class="price-range__field"><span>To</span><input type="number" min="0" step="1" inputmode="numeric" data-price-field="max"></label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="shop-dropdown" data-dropdown>
+          <button class="shop-dropdown__btn" type="button" aria-expanded="false" aria-controls="filter-color"><span data-label="Color">Color</span><img src="assets/icons/caret-down.svg" alt=""></button>
+          <!-- Colours with the number of matching products (js/shop.js); the list scrolls. -->
+          <fieldset class="shop-dropdown__panel shop-dropdown__panel--list shop-dropdown__panel--scroll" id="filter-color" hidden>
+            <legend class="visually-hidden">Color</legend>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="green"><span class="shop-option__swatch" style="--swatch:#2e8b3d"></span><span>Green</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="pink"><span class="shop-option__swatch" style="--swatch:#f4a6c0"></span><span>Pink</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="red"><span class="shop-option__swatch" style="--swatch:#d62828"></span><span>Red</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="multi"><span class="shop-option__swatch" style="--swatch:conic-gradient(#e53935, #fdd835, #43a047, #1e88e5, #8e24aa, #e53935)"></span><span>Multi</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="black"><span class="shop-option__swatch" style="--swatch:#111111"></span><span>Black</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="maroon"><span class="shop-option__swatch" style="--swatch:#7b1e2b"></span><span>Maroon</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="yellow"><span class="shop-option__swatch" style="--swatch:#f5d50a"></span><span>Yellow</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="beige"><span class="shop-option__swatch" style="--swatch:#d9c4a0"></span><span>Beige</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="gray"><span class="shop-option__swatch" style="--swatch:#8e8e8e"></span><span>Gray</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="mustard"><span class="shop-option__swatch" style="--swatch:#d4a017"></span><span>Mustard</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="bottle-green"><span class="shop-option__swatch" style="--swatch:#0b5d3b"></span><span>Bottle Green</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="purple"><span class="shop-option__swatch" style="--swatch:#6a2c91"></span><span>Purple</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="blue"><span class="shop-option__swatch" style="--swatch:#1565d8"></span><span>Blue</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="dark-pink"><span class="shop-option__swatch" style="--swatch:#c2185b"></span><span>Dark Pink</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="sandal"><span class="shop-option__swatch" style="--swatch:#e8c99b"></span><span>Sandal</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="orange"><span class="shop-option__swatch" style="--swatch:#f57c00"></span><span>Orange</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="sea-green"><span class="shop-option__swatch" style="--swatch:#2e8b57"></span><span>Sea Green</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="brown"><span class="shop-option__swatch" style="--swatch:#a0522d"></span><span>Brown</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="off-white"><span class="shop-option__swatch" style="--swatch:#f6f1e4"></span><span>Off White</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="peach"><span class="shop-option__swatch" style="--swatch:#ffcba4"></span><span>Peach</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="magenta"><span class="shop-option__swatch" style="--swatch:#c4007a"></span><span>Magenta</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="peacock-blue"><span class="shop-option__swatch" style="--swatch:#00677e"></span><span>Peacock Blue</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="navy-blue"><span class="shop-option__swatch" style="--swatch:#1f2a5c"></span><span>Navy Blue</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="cream"><span class="shop-option__swatch" style="--swatch:#f5f0c8"></span><span>Cream</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="sky-blue"><span class="shop-option__swatch" style="--swatch:#87ceeb"></span><span>Sky Blue</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="pista-green"><span class="shop-option__swatch" style="--swatch:#b5d48c"></span><span>Pista Green</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="lavender"><span class="shop-option__swatch" style="--swatch:#b9a7e0"></span><span>Lavender</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="rose-pink"><span class="shop-option__swatch" style="--swatch:#e8789a"></span><span>Rose Pink</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="parrot-green"><span class="shop-option__swatch" style="--swatch:#4cbb17"></span><span>Parrot Green</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="mehandi-green"><span class="shop-option__swatch" style="--swatch:#6b7a2e"></span><span>Mehandi Green</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="light-blue"><span class="shop-option__swatch" style="--swatch:#add8e6"></span><span>Light Blue</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="light-green"><span class="shop-option__swatch" style="--swatch:#9ed99a"></span><span>Light Green</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="rose-gold"><span class="shop-option__swatch" style="--swatch:#b76e79"></span><span>Rose Gold</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="coral"><span class="shop-option__swatch" style="--swatch:#ff7f50"></span><span>Coral</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="turquoise"><span class="shop-option__swatch" style="--swatch:#30d5c8"></span><span>Turquoise</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="rani-pink"><span class="shop-option__swatch" style="--swatch:#e6007e"></span><span>Rani Pink</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="royal-blue"><span class="shop-option__swatch" style="--swatch:#2a4fb5"></span><span>Royal Blue</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="gold"><span class="shop-option__swatch" style="--swatch:#d4af37"></span><span>Gold</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="coffee-brown"><span class="shop-option__swatch" style="--swatch:#4b3621"></span><span>Coffee Brown</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="violet"><span class="shop-option__swatch" style="--swatch:#7f3fbf"></span><span>Violet</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="rust"><span class="shop-option__swatch" style="--swatch:#b7410e"></span><span>Rust</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="brick-orange"><span class="shop-option__swatch" style="--swatch:#c8501e"></span><span>Brick Orange</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="mauve"><span class="shop-option__swatch" style="--swatch:#b784a7"></span><span>Mauve</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="lemon-yellow"><span class="shop-option__swatch" style="--swatch:#fff44f"></span><span>Lemon Yellow</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="teal"><span class="shop-option__swatch" style="--swatch:#008080"></span><span>Teal</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="white"><span class="shop-option__swatch" style="--swatch:#ffffff"></span><span>White</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="golden-peach"><span class="shop-option__swatch" style="--swatch:#f3c48a"></span><span>Golden Peach</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="dark-beige"><span class="shop-option__swatch" style="--swatch:#b8a07e"></span><span>Dark Beige</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="blue-gray"><span class="shop-option__swatch" style="--swatch:#6c7f99"></span><span>Blue Gray</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="burgundy"><span class="shop-option__swatch" style="--swatch:#6d1a36"></span><span>Burgundy</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="mint-green"><span class="shop-option__swatch" style="--swatch:#98e0b8"></span><span>Mint Green</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="sage-green"><span class="shop-option__swatch" style="--swatch:#9caf88"></span><span>Sage Green</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="deep-red"><span class="shop-option__swatch" style="--swatch:#9b111e"></span><span>Deep Red</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="golden"><span class="shop-option__swatch" style="--swatch:#e1b33a"></span><span>Golden</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="dark-blue"><span class="shop-option__swatch" style="--swatch:#0d2c6c"></span><span>Dark Blue</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count shop-option--swatch"><input type="checkbox" name="color" value="lilac"><span class="shop-option__swatch" style="--swatch:#c8a2c8"></span><span>Lilac</span><span class="shop-option__count" data-count></span></label>
+          </fieldset>
+        </div>
+        <div class="shop-dropdown" data-dropdown>
+          <button class="shop-dropdown__btn" type="button" aria-expanded="false" aria-controls="filter-pattern"><span data-label="Pattern">Pattern</span><img src="assets/icons/caret-down.svg" alt=""></button>
+          <!-- Patterns with the number of matching products (js/shop.js). -->
+          <fieldset class="shop-dropdown__panel shop-dropdown__panel--list shop-dropdown__panel--scroll" id="filter-pattern" hidden>
+            <legend class="visually-hidden">Pattern</legend>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="zari-butta"><span>Zari Butta</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="zari-brocade"><span>Zari Brocade</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="printed"><span>Printed</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="plain-body"><span>Plain Body</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="checks"><span>Checks</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="stripes"><span>Stripes</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="embroidery"><span>Embroidery</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="floral-print"><span>Floral Print</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="thread-butta"><span>Thread Butta</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="pure-ikat"><span>Pure Ikat</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="jacquard"><span>Jacquard</span><span class="shop-option__count" data-count></span></label>
+            <label class="shop-option shop-option--count"><input type="checkbox" name="pattern" value="zari-thread-butta"><span>Zari And Thread Butta</span><span class="shop-option__count" data-count></span></label>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="shop-dropdown shop-sort" data-dropdown>
+        <button class="shop-dropdown__btn" type="button" aria-expanded="false" aria-controls="sort-by" aria-label="Sort by"><span data-label="Featured">Featured</span><img src="assets/icons/caret-down.svg" alt=""></button>
+        <fieldset class="shop-dropdown__panel" id="sort-by" hidden>
+          <legend class="visually-hidden">Sort by</legend>
+          <label class="shop-option"><input type="radio" name="sort" value="featured" checked>Featured</label>
+          <label class="shop-option"><input type="radio" name="sort" value="new">New Arrivals</label>
+          <label class="shop-option"><input type="radio" name="sort" value="price-asc">Price: Low to High</label>
+          <label class="shop-option"><input type="radio" name="sort" value="price-desc">Price: High to Low</label>
+          <label class="shop-option"><input type="radio" name="sort" value="name">Name: A to Z</label>
+        </fieldset>
+      </div>
+
+      <div class="shop-rule shop-toolbar__rule"><img src="assets/icons/shop-rule.svg" alt=""></div>
+    </div>
+
+    <!-- ============ Product grid (Figma 261:1052 – 266:1319) ============ -->
+    <!-- data-color (space-separated) and data-pattern are what the drop-downs filter on. -->
+    <section class="shop-products" aria-label="Products">
+      <div class="product-grid product-grid--shop" data-shop-grid>
+
+        <!-- The Mahalekshmi Fancy Sarees collection -->
+          <article class="product" data-category="saree" data-color="peach" data-pattern="floral-print" data-fabric="net" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-1.jpg" alt="Peach Net Cotta Saree with White Geometric Embroidery">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-1-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-1">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-1">Peach Net Cotta Saree with White Geometric Embroidery</a></h3>
+            <p class="product__price">₹ 1,475.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="pink" data-pattern="floral-print" data-fabric="net" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-2.jpg" alt="Baby Pink Net Cotta Saree with White Floral Embroidery">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-2-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-2">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-2">Baby Pink Net Cotta Saree with White Floral Embroidery</a></h3>
+            <p class="product__price">₹ 1,475.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="rani-pink pink" data-pattern="plain-body" data-fabric="net" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-3.jpg" alt="Rani Pink Soft Net Designer Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-3-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-3">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-3">Rani Pink Soft Net Designer Saree</a></h3>
+            <p class="product__price">₹ 13,795.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="white" data-pattern="embroidery" data-fabric="organza" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-4.jpg" alt="White Organza Silk Bead Work Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-4-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-4">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-4">White Organza Silk Bead Work Saree</a></h3>
+            <p class="product__price">₹ 7,845.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="lavender" data-pattern="plain-body" data-fabric="organza" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-5.jpg" alt="Lavender Designer Organza Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-5-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-5">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-5">Lavender Designer Organza Saree</a></h3>
+            <p class="product__price">₹ 16,495.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="pink" data-pattern="plain-body" data-fabric="organza" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-6.jpg" alt="Pearl Pink Designer Organza Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-6-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-6">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-6">Pearl Pink Designer Organza Saree</a></h3>
+            <p class="product__price">₹ 16,495.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="blue turquoise" data-pattern="plain-body" data-fabric="organza" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-7.jpg" alt="Turquoise Blue Designer Organza Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-7-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-7">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-7">Turquoise Blue Designer Organza Saree</a></h3>
+            <p class="product__price">₹ 16,495.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="blue" data-pattern="plain-body" data-fabric="organza" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-8.jpg" alt="Corn Flower Blue Designer Organza Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-8-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-8">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-8">Corn Flower Blue Designer Organza Saree</a></h3>
+            <p class="product__price">₹ 16,495.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="light-blue blue gray" data-pattern="plain-body" data-fabric="fancy" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-9.jpg" alt="Light Blue and Dark Gray Fancy Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-9-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-9">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-9">Light Blue and Dark Gray Fancy Saree</a></h3>
+            <p class="product__price">₹ 2,145.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="light-green green" data-pattern="plain-body" data-fabric="fancy" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-10.jpg" alt="Light Green and Dark Green Fancy Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-10-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-10">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-10">Light Green and Dark Green Fancy Saree</a></h3>
+            <p class="product__price">₹ 2,145.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="green teal" data-pattern="plain-body" data-fabric="fancy" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-11.jpg" alt="Light Pistachio Green and Dark Teal Green Fancy Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-11-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-11">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-11">Light Pistachio Green and Dark Teal Green Fancy Saree</a></h3>
+            <p class="product__price">₹ 2,145.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="peach maroon" data-pattern="plain-body" data-fabric="fancy" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-12.jpg" alt="Peach and Dark Maroon Multi Shade Fancy Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-12-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-12">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-12">Peach and Dark Maroon Multi Shade Fancy Saree</a></h3>
+            <p class="product__price">₹ 2,145.00</p>
+          </article>
+          <article class="product" data-category="saree" data-color="blue" data-pattern="embroidery" data-fabric="georgette" data-blouse="yes" data-occasion="party festive">
+            <div class="product__media">
+              <img class="product__base" src="assets/products/card-base.png" alt="">
+              <img class="product__photo product__photo--fill" src="assets/fancy/mfs-13.jpg" alt="Space Blue Georgette Fancy Saree">
+              <img class="product__photo product__photo--hover" src="assets/fancy/mfs-13-hover.jpg" alt="" loading="lazy">
+              <div class="product__actions">
+                <div class="product__cta">
+                  <button class="btn-cart" type="button">Add to Cart <img src="assets/icons/bag.svg" alt=""></button>
+                  <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
+                </div>
+                <div class="product__quick">
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=mfs-13">Quick View</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="product__title"><a href="product.html?p=mfs-13">Space Blue Georgette Fancy Saree</a></h3>
+            <p class="product__price">₹ 10,895.00</p>
+          </article>
+
+      </div>
+
+      <div class="shop-empty" data-shop-empty hidden>
+        <p>No products match these filters.</p>
+        <button class="view-all" type="button" data-shop-clear>Clear filters</button>
+      </div>
+
+      <!-- Figma 266:1320 -->
+      <button class="shop-more" type="button">Load more...</button>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer (Figma 266:1321) ============ -->
+  <footer class="site-footer">
+    <ul class="footer-features">
+      <li><img src="assets/footer/sustainable.svg" alt=""><h3>Sustainable Materials</h3><p>Thoughtfully crafted from eco-friendly fabrics for a better future.</p></li>
+      <li><img src="assets/footer/secure-payment.svg" alt=""><h3>Secure Payment</h3><p>Shop with confidence using our safe and encrypted checkout.</p></li>
+      <li><img src="assets/footer/free-shipping.svg" alt=""><h3>Free Shipping</h3><p>Free shipping on orders above ₹1,999 across India.</p></li>
+      <li><img src="assets/footer/easy-returns.svg" alt=""><h3>Easy Returns</h3><p>Discover our products with a risk-free 7-day return policy.</p></li>
+    </ul>
+
+    <div class="footer-rule footer-rule--1"><img src="assets/footer/line-1.svg" alt=""></div>
+
+    <div class="footer-columns">
+      <nav class="footer-col" aria-label="About">
+        <h3>About Us</h3>
+        <ul><li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li><li><a href="csr.html">CSR</a></li><li><a href="blog.html">Blogs</a></li></ul>
+      </nav>
+      <nav class="footer-col" aria-label="Policies">
+        <h3>Privacy Policy</h3>
+        <ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="disclaimer.html">Disclaimer Policy</a></li><li><a href="payment-policy.html">Payment Policy</a></li><li><a href="shipping-policy.html">Shipping Policy</a></li><li><a href="return-policy.html">Return Policy</a></li></ul>
+      </nav>
+      <nav class="footer-col" aria-label="Customer care">
+        <h3>Customer Care</h3>
+        <ul><li><a href="help-center.html">Help Center</a></li><li><a href="track-order.html">Track Your Order</a></li><li><a href="corporate-bulk.html">Corporate &amp; Bulk</a></li><li><a href="purchasing.html">Purchasing</a></li></ul>
+      </nav>
+      <div class="footer-col">
+        <h3>Address</h3>
+        <address>Office #816 - 8th Floor<br>The Burlington Tower<br>Marasi Drive, Business Bay-<br>Dubai, UAE.</address>
+      </div>
+      <div class="footer-col footer-col--connect">
+        <h3>Connect</h3>
+        <ul><li>Toll Free : 800644489</li><li>Mob : +971 54 586 4310 | +971 54 586 4309</li><li>Mail : <a href="mailto:info@mightysilks.ae">info@mightysilks.ae</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><img src="assets/footer/facebook.svg" alt=""></a>
+          <a href="#" aria-label="Twitter"><img src="assets/footer/twitter.svg" alt=""></a>
+          <a href="#" aria-label="LinkedIn"><img src="assets/footer/linkedin.svg" alt=""></a>
+          <a href="#" aria-label="Instagram"><img src="assets/footer/instagram.svg" alt=""></a>
+          <a href="#" aria-label="Pinterest"><img src="assets/footer/pinterest.svg" alt=""></a>
+          <a href="#" aria-label="YouTube"><img src="assets/footer/youtube.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-rule footer-rule--2"><img src="assets/footer/line-2.svg" alt=""></div>
+
+    <h3 class="footer-popular__title">Popular Search</h3>
+    <ul class="footer-popular">
+      <li><a href="kanchipuram-silk-sarees.html">Kanchipuram Silk Sarees</a></li><li><a href="semi-silk-sarees.html">Semi Silk Sarees</a></li><li><a href="kerala-sarees.html">Kerala Sarees</a></li><li><a href="#">Kubera Silk Sarees</a></li><li><a href="pure-silk-sarees.html">Pure Silk Sarees</a></li><li><a href="unstitched-salwar-suits.html">Unstitched Salwar Suits</a></li><li><a href="ready-to-wear.html">Ready to Wear Sarees</a></li><li><a href="organza-sarees.html">Organza Sarees</a></li><li><a href="#">Net Kota Sarees</a></li><li><a href="dhawani-collection.html">Dhawani Collection</a></li>
+    </ul>
+    <ul class="footer-popular footer-popular--2">
+      <li><a href="designer-sarees.html">Designer Sarees</a></li><li><a href="frocks-collection.html">Frocks Collection</a></li><li><a href="banarasi-georgette-sarees.html">Banarasi Georgette Saree</a></li><li><a href="#">Crushed Chiffon Sarees</a></li><li><a href="fancy-sarees.html">Fancy Sarees</a></li><li><a href="#">Unstitched Lehenga</a></li><li><a href="semi-banarasi-sarees.html">Semi Banarasi Saree</a></li><li><a href="bridal-sarees.html">Bridal Sarees</a></li>
+    </ul>
+
+    <div class="footer-rule footer-rule--3"><img src="assets/footer/line-3.svg" alt=""></div>
+
+    <div class="footer-bottom">
+      <p>Copyright 2026 MightySilks. AlI Rights Reserved</p>
+      <p>Designed by : <a href="https://www.mightywarner.ae/" target="_blank" rel="noopener">MightyWarners Technoloties</a></p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Account menu: opened by the header account button, placed under it by js/main.js. -->
+<div class="account-menu" id="account-menu" hidden>
+  <a class="account-menu__btn account-menu__btn--primary" href="login.html">Log in</a>
+  <a class="account-menu__btn account-menu__btn--secondary" href="signup.html">Create Account</a>
+</div>
+
+<!-- Cart drawer: slides in from the right, opened by the header bag button and every Add to Cart /
+     Buy Now button (js/main.js renders the items, deals and totals). -->
+<div class="cart-panel" id="cart-panel" hidden>
+  <div class="cart-panel__backdrop" data-cart-close></div>
+  <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" tabindex="-1">
+    <header class="cart-drawer__head">
+      <svg class="cart-drawer__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6.2"/><circle cx="9.5" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></svg>
+      <h2 class="cart-drawer__title" id="cart-title">Your cart <span data-cart-count>(0 items)</span></h2>
+      <button class="cart-drawer__close" type="button" aria-label="Close cart" data-cart-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+
+    <div class="cart-drawer__body">
+      <ul class="cart-list" data-cart-list></ul>
+      <p class="cart-empty" data-cart-empty hidden>Your cart is empty.</p>
+
+      <div class="cart-extras" data-cart-extras>
+        <div class="cart-card cart-coupon" data-coupon>
+          <svg class="cart-coupon__badge" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 1.8 3-.2.9 2.9 2.5 1.7-1 2.8 1 2.8-2.5 1.7-.9 2.9-3-.2L12 22l-2.4-1.8-3 .2-.9-2.9-2.5-1.7 1-2.8-1-2.8 2.5-1.7.9-2.9 3 .2z"/><path class="cart-coupon__mark" d="M9 15l6-6M9.5 9.5h.01M14.5 14.5h.01"/></svg>
+          <div class="cart-coupon__text">
+            <p class="cart-coupon__title"><span class="cart-coupon__offer">Save <span data-coupon-saving>₹0</span> with <strong>NEW10</strong></span><span class="cart-coupon__done"><strong>NEW10</strong> applied · you save <span data-coupon-saving>₹0</span></span></p>
+            <p class="cart-coupon__sub">Coupons and offers</p>
+          </div>
+          <button class="cart-coupon__apply" type="button" aria-pressed="false" data-coupon-apply>Apply</button>
+        </div>
+
+        <label class="cart-card cart-gift">
+          <input type="checkbox" name="gift-card">
+          <span><strong>Redeem gift card?</strong><small>Select this to apply gift card in next step</small></span>
+        </label>
+
+        <section class="cart-deals" aria-labelledby="cart-deals-title">
+          <h3 class="cart-deals__title" id="cart-deals-title"><span aria-hidden="true">🔥</span> Top deals of the day</h3>
+          <ul class="cart-deals__list" data-cart-deals></ul>
+        </section>
+
+        <div class="cart-card cart-note">
+          <button class="cart-note__toggle" type="button" aria-expanded="false" aria-controls="cart-note" data-cart-note-toggle>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><path d="M18.4 2.6a2 2 0 0 1 2.9 2.9L12 14.8l-3.8 1 1-3.8z"/></svg>
+            Order instructions<span class="cart-note__add">Add</span>
+          </button>
+          <label class="visually-hidden" for="cart-note">Order instructions</label>
+          <textarea class="cart-note__field" id="cart-note" rows="3" placeholder="E.g. gift wrap, delivery notes…" data-cart-note hidden></textarea>
+        </div>
+
+        <section class="cart-bill" aria-labelledby="cart-bill-title" data-cart-bill>
+          <h3 class="cart-bill__title" id="cart-bill-title">Bill summary</h3>
+          <p class="cart-bill__row">
+            <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><span>Cart total (<span data-cart-items>0 items</span>)</span></span>
+            <span data-cart-subtotal>₹0</span>
+          </p>
+          <p class="cart-bill__row cart-bill__row--discount" data-cart-discount-row hidden><span>Coupon (NEW10)</span><span data-cart-discount>−₹0</span></p>
+          <p class="cart-bill__grand"><span>Grand Total</span><strong data-cart-total>₹0</strong></p>
+        </section>
+      </div>
+    </div>
+
+    <footer class="cart-drawer__foot">
+      <div class="cart-foot__total">
+        <strong data-cart-total>₹0</strong>
+        <button type="button" data-cart-view-details>View Details</button>
+      </div>
+      <a class="cart-checkout" href="checkout.html" data-cart-checkout>Checkout</a>
+      <p class="cart-secure"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Secure checkout</p>
+    </footer>
+  </aside>
+</div>
+
+<!-- Filter drawer: opened by the Filters button, slides in from the left (js/shop.js). Outside
+     .page so it is not scaled with the desktop design frame. The Price / Color / Pattern lists are
+     copied from the toolbar drop-downs (data-filter-copy) and kept in sync with them. -->
+<div class="filter-panel" id="filter-panel" hidden>
+  <div class="filter-panel__backdrop" data-filter-close></div>
+  <aside class="filter-drawer" role="dialog" aria-modal="true" aria-labelledby="filter-title" tabindex="-1">
+    <header class="filter-drawer__head">
+      <span class="shop-toolbar__icon"><img src="assets/icons/filter.svg" alt=""></span>
+      <h2 class="filter-drawer__title" id="filter-title">Filters</h2>
+      <button class="filter-drawer__close" type="button" aria-label="Close filters" data-filter-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+    <div class="filter-drawer__body">
+      <details class="filter-section" open>
+        <summary>Category<img src="assets/icons/caret-down.svg" alt=""></summary>
+        <div class="filter-section__options">
+          <label class="shop-option shop-option--count"><input type="checkbox" name="category" value="saree"><span>Saree</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="category" value="lacha"><span>Lacha</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="category" value="ready-to-wear"><span>Ready to Wear</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="category" value="gown"><span>Gown</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="category" value="dhawani"><span>Dhawani</span><span class="shop-option__count" data-count></span></label>
+        </div>
+      </details>
+      <details class="filter-section">
+        <summary>Price<img src="assets/icons/caret-down.svg" alt=""></summary>
+        <div class="filter-section__options" data-filter-copy="filter-price"></div>
+      </details>
+      <details class="filter-section">
+        <summary>Color<img src="assets/icons/caret-down.svg" alt=""></summary>
+        <div class="filter-section__options" data-filter-copy="filter-color"></div>
+      </details>
+      <details class="filter-section">
+        <summary>Fabric<img src="assets/icons/caret-down.svg" alt=""></summary>
+        <div class="filter-section__options">
+          <label class="shop-option shop-option--count"><input type="checkbox" name="fabric" value="pure-silk"><span>Pure Silk</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="fabric" value="semi-silk"><span>Semi Silk</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="fabric" value="banarasi-silk"><span>Banarasi Silk</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="fabric" value="organza"><span>Organza</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="fabric" value="chiffon"><span>Chiffon</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="fabric" value="georgette"><span>Georgette</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="fabric" value="net"><span>Net</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="fabric" value="cotton"><span>Cotton</span><span class="shop-option__count" data-count></span></label>
+        </div>
+      </details>
+      <details class="filter-section">
+        <summary>With Blouse<img src="assets/icons/caret-down.svg" alt=""></summary>
+        <div class="filter-section__options">
+          <label class="shop-option shop-option--count"><input type="checkbox" name="blouse" value="yes"><span>With Blouse</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="blouse" value="no"><span>Without Blouse</span><span class="shop-option__count" data-count></span></label>
+        </div>
+      </details>
+      <details class="filter-section">
+        <summary>Pattern<img src="assets/icons/caret-down.svg" alt=""></summary>
+        <div class="filter-section__options" data-filter-copy="filter-pattern"></div>
+      </details>
+      <details class="filter-section">
+        <summary>Occasion<img src="assets/icons/caret-down.svg" alt=""></summary>
+        <div class="filter-section__options">
+          <label class="shop-option shop-option--count"><input type="checkbox" name="occasion" value="wedding"><span>Wedding</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="occasion" value="bridal"><span>Bridal</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="occasion" value="festive"><span>Festive</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="occasion" value="party"><span>Party</span><span class="shop-option__count" data-count></span></label>
+          <label class="shop-option shop-option--count"><input type="checkbox" name="occasion" value="casual"><span>Casual</span><span class="shop-option__count" data-count></span></label>
+        </div>
+      </details>
+    </div>
+    <footer class="filter-drawer__foot">
+      <button class="filter-btn filter-btn--outline" type="button" data-shop-clear>Clear All</button>
+      <button class="filter-btn filter-btn--primary" type="button" data-filter-close data-filter-show>Show 24 Products</button>
+    </footer>
+  </aside>
+</div>
+</body>
+</html>
