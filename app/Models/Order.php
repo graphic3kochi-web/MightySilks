@@ -49,6 +49,22 @@ class Order extends Model
         return (int) $this->items->sum('qty');
     }
 
+    /** The shopper may cancel until the order is packed (the Help Center: free before dispatch). */
+    public function isCancellable(): bool
+    {
+        return $this->status === 'placed';
+    }
+
+    /** Cancelled by the shopper: the stock goes back and their reason is kept on the order's note. */
+    public function cancelByCustomer(?string $reason): void
+    {
+        foreach ($this->items as $item) {
+            $item->product?->increment('stock', $item->qty);
+        }
+        $line = 'Cancelled by the customer'.($reason ? ": $reason" : '.');
+        $this->update(['status' => 'cancelled', 'note' => trim($this->note."\n\n".$line)]);
+    }
+
     /** "INV-MS123456": one invoice per order, numbered after it. */
     public function invoiceNumber(): string
     {
@@ -75,6 +91,7 @@ class Order extends Model
             'number' => $this->number,
             'date' => $this->created_at->toIso8601String(),
             'status' => $this->status,
+            'cancellable' => $this->isCancellable(),
             'items' => $this->items->map(fn (OrderItem $item) => [
                 'id' => $item->product_code,
                 'name' => $item->name,

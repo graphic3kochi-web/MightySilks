@@ -142,6 +142,27 @@ class OrderController extends Controller
         return ['order' => $this->findViewable($request, $number)->toRecord()];
     }
 
+    /** /order-details' Cancel Order: by the same people who may see it, and only before it's packed. */
+    public function cancel(Request $request, string $number)
+    {
+        $data = $request->validate(['reason' => 'nullable|string|max:200']);
+
+        $order = DB::transaction(function () use ($request, $number, $data) {
+            // Locked, so a double click (or the team changing it at the same time) can't restock twice.
+            $order = Order::with('items')->lockForUpdate()->findOrFail($this->findViewable($request, $number)->id);
+            if (! $order->isCancellable()) {
+                throw ValidationException::withMessages(['order' => $order->status === 'cancelled'
+                    ? 'This order has already been cancelled.'
+                    : 'This order is already being prepared, so it can\'t be cancelled here. Please call 800644489 or email info@mightysilks.ae and we\'ll help.']);
+            }
+            $order->cancelByCustomer($data['reason'] ?? null);
+
+            return $order;
+        });
+
+        return ['order' => $order->load('items')->toRecord()];
+    }
+
     /** orders/<number>/invoice: the PDF invoice, for the same people who may see the order. */
     public function invoice(Request $request, string $number)
     {

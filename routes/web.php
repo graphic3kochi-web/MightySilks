@@ -30,6 +30,7 @@ Route::prefix('api')->group(function () {
     Route::middleware('throttle:forms')->group(function () {
         Route::post('orders', [OrderController::class, 'store']);
         Route::post('orders/track', [OrderController::class, 'track']);
+        Route::post('orders/{number}/cancel', [OrderController::class, 'cancel']);
         Route::post('subscribe', [FormController::class, 'subscribe']);
         Route::post('enquiries', [FormController::class, 'enquiry']);
         Route::post('contact', [FormController::class, 'contact']);

@@ -1192,6 +1192,12 @@ function saveOrderRecord(record) {
     return true
   } catch { return false }
 }
+// The saved copy of an order the store has changed (cancelled from /order-details).
+function updateOrderRecord(record) {
+  try {
+    localStorage.setItem(ORDERS_KEY, JSON.stringify(loadOrders().map((o) => (o.number === record.number ? record : o))))
+  } catch {}
+}
 
 // The Buy Now product for /checkout?buy=<id>: the clicked card's details, else the catalogue's.
 function buyNowItem() {
@@ -1386,13 +1392,13 @@ async function initOrderPage(page) {
     missing.hidden = false
     return
   }
-  const set = (sel, text) => { page.querySelector(sel).textContent = text }
+  // Every match, as the number and date also appear in the cancelled message and the dialog.
+  const set = (sel, text) => document.querySelectorAll(sel).forEach((el) => { el.textContent = text })
   const placed = new Date(record.date)
   const arrives = new Date(placed)
   arrives.setDate(arrives.getDate() + (record.shippingMethod === 'express' ? 3 : 7))
   const a = record.address
 
-  set('[data-order-greeting]', `Thank you, ${a.name.split(' ')[0]}!`)
   set('[data-order-number]', `#${record.number}`)
   set('[data-order-date]', formatDate(placed))
   set('[data-order-email]', record.contact.email)
@@ -1421,6 +1427,60 @@ async function initOrderPage(page) {
   const invoice = page.querySelector('[data-order-invoice]')
   invoice.hidden = !fromStore
   invoice.href = `orders/${encodeURIComponent(record.number)}/invoice`
+
+  // Status: the progress steps follow it (done up to the current status, the next one current);
+  // a cancelled order shows a cross, its own message and no steps. Cancel Order is offered while
+  // the store says it can be (before packing), and only for an order the store showed.
+  const cancelButton = page.querySelector('[data-order-cancel]')
+  const showStatus = () => {
+    const cancelled = record.status === 'cancelled'
+    const at = ['placed', 'packed', 'shipped', 'delivered'].indexOf(record.status)
+    page.querySelector('[data-order-steps]').hidden = cancelled
+    page.querySelectorAll('[data-order-steps] > li').forEach((li, i) => {
+      li.classList.toggle('is-done', i <= at)
+      li.classList.toggle('is-current', i === at + 1)
+      if (i === at + 1) li.setAttribute('aria-current', 'step')
+      else li.removeAttribute('aria-current')
+    })
+    page.querySelector('[data-order-lead]').hidden = cancelled
+    page.querySelector('[data-order-cancelled-lead]').hidden = !cancelled
+    const check = page.querySelector('[data-order-check]')
+    check.classList.toggle('is-cancelled', cancelled)
+    check.querySelector('path').setAttribute('d', cancelled ? 'M7 7l10 10M17 7 7 17' : 'M5 12.5l4.5 4.5L19 7.5')
+    set('[data-order-greeting]', cancelled ? 'Order cancelled' : `Thank you, ${a.name.split(' ')[0]}!`)
+    cancelButton.hidden = !(fromStore && record.cancellable)
+  }
+  showStatus()
+
+  // Cancel Order: a confirm dialog with an optional reason; the store cancels it and returns the
+  // updated order, which replaces the copy saved here.
+  const dialog = document.querySelector('[data-order-cancel-dialog]')
+  const form = dialog.querySelector('[data-order-cancel-form]')
+  const error = dialog.querySelector('[data-order-cancel-error]')
+  const submit = dialog.querySelector('[data-order-cancel-submit]')
+  cancelButton.addEventListener('click', () => {
+    form.reset()
+    error.textContent = ''
+    dialog.showModal()
+  })
+  dialog.querySelectorAll('[data-order-cancel-close]').forEach((btn) => btn.addEventListener('click', () => dialog.close()))
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault()
+    submit.disabled = true
+    error.textContent = ''
+    try {
+      record = (await api(`api/orders/${encodeURIComponent(record.number)}/cancel`, { reason: form.elements.reason.value })).order
+    } catch (err) {
+      error.textContent = err.message
+      return
+    } finally {
+      submit.disabled = false
+    }
+    updateOrderRecord(record)
+    showStatus()
+    dialog.close()
+    page.querySelector('[data-order-greeting]').scrollIntoView({ block: 'center' })
+  })
 }
 
 const orderPage = document.querySelector('[data-order-page]')

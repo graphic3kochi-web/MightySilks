@@ -2295,6 +2295,22 @@ button.shop-toolbar__label:hover span:last-child { text-decoration: underline; }
 .order__head { display: flex; align-items: center; gap: 24px; }
 .order__check { flex: none; display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: #000; }
 .order__check svg { width: 32px; height: 32px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.order__check.is-cancelled { background: #c62828; }
+/* Cancel Order: red text so it isn't mistaken for the main actions; its confirm dialog. */
+.order__cancel { border-color: #c62828; color: #c62828; }
+.order__cancel:hover { background: #c62828; color: #fff; }
+.order__cancel[hidden] { display: none; }
+.order-cancel__form { display: grid; gap: 20px; text-align: left; }
+.order-cancel__form .review-dialog__title,
+.order-cancel__form .review-dialog__lead { padding-right: 24px; }
+.order-cancel__form .review-dialog__lead { margin: 0; }
+.order-cancel__reason select { width: 100%; padding: 10px 12px; border: 1px solid #c9c9c9; border-radius: 4px; background: #fff; color: #000; font: 400 15px/1.4 var(--font-body); }
+.order-cancel__reason select:focus { border-color: #000; outline: none; }
+.order-cancel__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px; }
+.order-cancel__actions .pdp-btn { padding: 14px 28px; }
+.order-cancel__actions [type="submit"] { border-color: #c62828; background: #c62828; }
+.order-cancel__actions [type="submit"]:hover { background: #a61f1f; }
+.order-cancel__actions [type="submit"]:disabled { opacity: 0.6; cursor: wait; }
 .order__intro { flex: 1; min-width: 0; }
 .order__greeting { margin: 0 0 8px; font: 500 32px/normal var(--font-body); }
 .order__lead { margin: 0; color: var(--color-link); font: 400 16px/1.5 var(--font-body); }
@@ -2304,6 +2320,7 @@ button.shop-toolbar__label:hover span:last-child { text-decoration: underline; }
 
 /* Progress: dots on a line; done and current steps are black, the rest grey. */
 .order-steps { display: grid; grid-template-columns: repeat(4, 1fr); margin: 56px 0 0; padding: 40px 0 0; border-top: 1px solid #d9d9d9; list-style: none; }
+.order-steps[hidden] { display: none; }
 .order-step { position: relative; display: grid; gap: 4px; padding-top: 32px; font-size: 16px; }
 .order-step::before { content: ""; position: absolute; top: 8px; left: 0; right: 0; height: 2px; background: #d9d9d9; }
 .order-step:first-child::before { left: 9px; }
