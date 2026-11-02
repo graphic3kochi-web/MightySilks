@@ -18,12 +18,12 @@
 
     <!-- ============ Blog details ============ -->
     <!-- No Figma frame for this page: built as the Blog page. js/main.js fills it from js/blogs.js
-         for blog-details.html?post=<slug> (no slug: the first post), adds the previous / next
+         for /blog-details?post=<slug> (no slug: the first post), adds the previous / next
          links and related stories and, for a slug that isn't there, says the story wasn't found. -->
     <article class="post" aria-labelledby="post-title" data-post-page>
       <div data-post-content>
         <header class="post__head">
-          <nav class="job__crumbs post__crumbs" aria-label="Breadcrumb"><a href="blog.html">Blogs</a><span aria-hidden="true">/</span><span aria-current="page" data-post-crumb></span></nav>
+          <nav class="job__crumbs post__crumbs" aria-label="Breadcrumb"><a href="blog">Blogs</a><span aria-hidden="true">/</span><span aria-current="page" data-post-crumb></span></nav>
           <span class="blog-card__tag" data-post-tag></span>
           <h1 class="post__title" id="post-title" data-post-title></h1>
           <p class="post__meta">By Mighty Silks Team · <time data-post-date></time> · <span data-post-read></span></p>
@@ -48,7 +48,7 @@
             <div class="post__shop">
               <p class="post__aside-title">Shop the Look</p>
               <p>Discover pieces inspired by this story in our collection.</p>
-              <a class="pdp-btn pdp-btn--solid post__shop-btn" href="our-shop.html" data-post-shop>Shop Now</a>
+              <a class="pdp-btn pdp-btn--solid post__shop-btn" href="our-shop" data-post-shop>Shop Now</a>
             </div>
           </aside>
         </div>
@@ -62,7 +62,7 @@
       <div class="job__missing" data-post-missing hidden>
         <h1 class="about-heading">Story Not Found</h1>
         <p>The story you're looking for isn't here. Take a look at our latest stories instead.</p>
-        <a class="pdp-btn pdp-btn--solid about-btn" href="blog.html">See All Stories</a>
+        <a class="pdp-btn pdp-btn--solid about-btn" href="blog">See All Stories</a>
       </div>
     </article>
 
@@ -73,7 +73,7 @@
           <p class="about-eyebrow">Keep Reading</p>
           <h2 class="about-heading" id="post-related-title">You May Also Like</h2>
         </div>
-        <a class="blog-post__more" href="blog.html">View All Stories <span aria-hidden="true">→</span></a>
+        <a class="blog-post__more" href="blog">View All Stories <span aria-hidden="true">→</span></a>
       </div>
       <div class="blog-list" data-post-related></div>
     </section>

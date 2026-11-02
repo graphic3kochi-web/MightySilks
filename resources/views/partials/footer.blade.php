@@ -12,15 +12,15 @@
     <div class="footer-columns">
       <nav class="footer-col" aria-label="About">
         <h3>About Us</h3>
-        <ul><li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li><li><a href="csr.html">CSR</a></li><li><a href="blog.html">Blogs</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+        <ul><li><a href="about">About Us</a></li><li><a href="careers">Careers</a></li><li><a href="csr">CSR</a></li><li><a href="blog">Blogs</a></li><li><a href="contact">Contact Us</a></li></ul>
       </nav>
       <nav class="footer-col" aria-label="Policies">
         <h3>Privacy Policy</h3>
-        <ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="disclaimer.html">Disclaimer Policy</a></li><li><a href="payment-policy.html">Payment Policy</a></li><li><a href="shipping-policy.html">Shipping Policy</a></li><li><a href="return-policy.html">Return Policy</a></li></ul>
+        <ul><li><a href="privacy-policy">Privacy Policy</a></li><li><a href="terms-and-conditions">Terms &amp; Conditions</a></li><li><a href="disclaimer">Disclaimer Policy</a></li><li><a href="payment-policy">Payment Policy</a></li><li><a href="shipping-policy">Shipping Policy</a></li><li><a href="return-policy">Return Policy</a></li></ul>
       </nav>
       <nav class="footer-col" aria-label="Customer care">
         <h3>Customer Care</h3>
-        <ul><li><a href="help-center.html">Help Center</a></li><li><a href="track-order.html">Track Your Order</a></li><li><a href="corporate-bulk.html">Corporate &amp; Bulk</a></li><li><a href="purchasing.html">Purchasing</a></li></ul>
+        <ul><li><a href="help-center">Help Center</a></li><li><a href="track-order">Track Your Order</a></li><li><a href="corporate-bulk">Corporate &amp; Bulk</a></li><li><a href="purchasing">Purchasing</a></li></ul>
       </nav>
       <div class="footer-col">
         <h3>Address</h3>
@@ -47,10 +47,10 @@
 
     <h3 class="footer-popular__title">Popular Search</h3>
     <ul class="footer-popular">
-      <li><a href="kanchipuram-silk-sarees.html">Kanchipuram Silk Sarees</a></li><li><a href="semi-silk-sarees.html">Semi Silk Sarees</a></li><li><a href="kerala-sarees.html">Kerala Sarees</a></li><li><a href="#">Kubera Silk Sarees</a></li><li><a href="pure-silk-sarees.html">Pure Silk Sarees</a></li><li><a href="unstitched-salwar-suits.html">Unstitched Salwar Suits</a></li><li><a href="ready-to-wear.html">Ready to Wear Sarees</a></li><li><a href="organza-sarees.html">Organza Sarees</a></li><li><a href="#">Net Kota Sarees</a></li><li><a href="dhawani-collection.html">Dhawani Collection</a></li>
+      <li><a href="kanchipuram-silk-sarees">Kanchipuram Silk Sarees</a></li><li><a href="semi-silk-sarees">Semi Silk Sarees</a></li><li><a href="kerala-sarees">Kerala Sarees</a></li><li><a href="#">Kubera Silk Sarees</a></li><li><a href="pure-silk-sarees">Pure Silk Sarees</a></li><li><a href="unstitched-salwar-suits">Unstitched Salwar Suits</a></li><li><a href="ready-to-wear">Ready to Wear Sarees</a></li><li><a href="organza-sarees">Organza Sarees</a></li><li><a href="#">Net Kota Sarees</a></li><li><a href="dhawani-collection">Dhawani Collection</a></li>
     </ul>
     <ul class="footer-popular footer-popular--2">
-      <li><a href="designer-sarees.html">Designer Sarees</a></li><li><a href="frocks-collection.html">Frocks Collection</a></li><li><a href="banarasi-georgette-sarees.html">Banarasi Georgette Saree</a></li><li><a href="#">Crushed Chiffon Sarees</a></li><li><a href="fancy-sarees.html">Fancy Sarees</a></li><li><a href="#">Unstitched Lehenga</a></li><li><a href="semi-banarasi-sarees.html">Semi Banarasi Saree</a></li><li><a href="bridal-sarees.html">Bridal Sarees</a></li>
+      <li><a href="designer-sarees">Designer Sarees</a></li><li><a href="frocks-collection">Frocks Collection</a></li><li><a href="banarasi-georgette-sarees">Banarasi Georgette Saree</a></li><li><a href="#">Crushed Chiffon Sarees</a></li><li><a href="fancy-sarees">Fancy Sarees</a></li><li><a href="#">Unstitched Lehenga</a></li><li><a href="semi-banarasi-sarees">Semi Banarasi Saree</a></li><li><a href="bridal-sarees">Bridal Sarees</a></li>
     </ul>
 
     <div class="footer-rule footer-rule--3"><img src="assets/footer/line-3.svg" alt=""></div>

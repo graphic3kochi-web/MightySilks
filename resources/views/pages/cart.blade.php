@@ -89,13 +89,13 @@
         <div class="cart-summary">
           <p class="cart-summary__subtotal">Subtotal: <strong data-cart-page-subtotal>₹ 11,620.00</strong></p>
           <p class="cart-summary__tax">Tax included. <a href="#">Shipping</a> calculated at checkout.</p>
-          <a class="pdp-btn pdp-btn--solid cart-summary__checkout" href="checkout.html">Go to Check Out</a>
+          <a class="pdp-btn pdp-btn--solid cart-summary__checkout" href="checkout">Go to Check Out</a>
         </div>
       </div>
 
       <div class="cart-page__empty" data-cart-page-empty hidden>
         <p>Your cart is empty.</p>
-        <a class="pdp-btn pdp-btn--solid" href="our-shop.html">Continue Shopping</a>
+        <a class="pdp-btn pdp-btn--solid" href="our-shop">Continue Shopping</a>
       </div>
     </section>
 

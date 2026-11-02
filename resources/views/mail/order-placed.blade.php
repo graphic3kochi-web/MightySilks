@@ -44,7 +44,7 @@
       </td></tr>
 
       <tr><td align="center" style="padding:0 28px 28px;">
-        <a href="{{ url('order-details.html?order='.$order->number) }}" style="display:inline-block; padding:12px 28px; background:#0b0b0b; color:#f0cf8f; text-decoration:none; font-size:14px; border-radius:6px;">View your order</a>
+        <a href="{{ url('order-details?order='.$order->number) }}" style="display:inline-block; padding:12px 28px; background:#0b0b0b; color:#f0cf8f; text-decoration:none; font-size:14px; border-radius:6px;">View your order</a>
       </td></tr>
 
       <tr><td style="padding:18px 28px; background:#f5f3fa; font-size:12px; line-height:1.6; color:#8a8399; text-align:center;">

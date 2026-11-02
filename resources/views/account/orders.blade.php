@@ -20,17 +20,17 @@
       @if ($orders === null)
         <div class="track__card my-orders__empty">
           <h2 class="track__title">Log in to see your orders</h2>
-          <p class="track__lead">Your order history and invoices are kept on your account. Ordered as a guest? You can still <a href="track-order.html">track an order</a> with its number.</p>
+          <p class="track__lead">Your order history and invoices are kept on your account. Ordered as a guest? You can still <a href="track-order">track an order</a> with its number.</p>
           <div class="my-orders__cta">
-            <a class="pdp-btn pdp-btn--solid" href="login.html">Log In</a>
-            <a class="pdp-btn pdp-btn--outline" href="signup.html">Create Account</a>
+            <a class="pdp-btn pdp-btn--solid" href="login">Log In</a>
+            <a class="pdp-btn pdp-btn--outline" href="signup">Create Account</a>
           </div>
         </div>
       @elseif ($orders->isEmpty())
         <div class="track__card my-orders__empty">
           <h2 class="track__title">No orders yet</h2>
           <p class="track__lead">When you place an order with <strong>{{ auth()->user()->email }}</strong>, it shows here with its invoice.</p>
-          <div class="my-orders__cta"><a class="pdp-btn pdp-btn--solid" href="our-shop.html">Start Shopping</a></div>
+          <div class="my-orders__cta"><a class="pdp-btn pdp-btn--solid" href="our-shop">Start Shopping</a></div>
         </div>
       @else
         <p class="my-orders__lead">{{ $orders->count() }} {{ Str::plural('order', $orders->count()) }} on <strong>{{ auth()->user()->email }}</strong></p>
@@ -52,7 +52,7 @@
                   <span>{{ $order->itemCount() }} {{ Str::plural('item', $order->itemCount()) }}@if ($order->items->count() > 4) · +{{ $order->items->count() - 4 }} more @endif</span>
                 </div>
                 <div class="my-order__actions">
-                  <a class="pdp-btn pdp-btn--outline" href="order-details.html?order={{ $order->number }}">View Details</a>
+                  <a class="pdp-btn pdp-btn--outline" href="order-details?order={{ $order->number }}">View Details</a>
                   <a class="pdp-btn pdp-btn--solid" href="{{ route('orders.invoice', $order->number) }}">Download Invoice</a>
                 </div>
               </div>

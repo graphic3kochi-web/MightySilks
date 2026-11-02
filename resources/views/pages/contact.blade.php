@@ -53,7 +53,7 @@
         <p class="about-eyebrow">Send a Message</p>
         <h2 class="about-heading" id="contact-form-title">Write to Us</h2>
         <p>Fill in the form and our team will get back to you as soon as possible.</p>
-        <p>Looking for a quick answer? Our <a href="help-center.html">Help Center</a> covers orders, shipping and returns, and you can follow a parcel on <a href="track-order.html">Track Order</a>. For gifting in quantity, see <a href="corporate-bulk.html">Corporate &amp; Bulk</a>.</p>
+        <p>Looking for a quick answer? Our <a href="help-center">Help Center</a> covers orders, shipping and returns, and you can follow a parcel on <a href="track-order">Track Order</a>. For gifting in quantity, see <a href="corporate-bulk">Corporate &amp; Bulk</a>.</p>
       </div>
       <form class="careers-apply__form" data-contact-form novalidate>
         <div class="checkout__grid">

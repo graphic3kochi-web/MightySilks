@@ -12,7 +12,7 @@
   <div class="adm-head__actions">
     <span class="adm-badge adm-badge--{{ $order->status }}">{{ \App\Models\Order::STATUSES[$order->status] }}</span>
     <span class="adm-badge adm-badge--{{ $order->payment_status }}">{{ \App\Models\Order::PAYMENT_STATUSES[$order->payment_status] }}</span>
-    <a class="adm-btn adm-btn--ghost" href="{{ url('order-details.html?order='.$order->number) }}" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Customer view</a>
+    <a class="adm-btn adm-btn--ghost" href="{{ url('order-details?order='.$order->number) }}" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Customer view</a>
     <a class="adm-btn" href="{{ route('admin.orders.invoice', $order) }}"><i class="fa-solid fa-file-invoice"></i> Download Invoice</a>
   </div>
 </div>

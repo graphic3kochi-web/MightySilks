@@ -82,7 +82,7 @@
         </div>
 
         <p class="login__divider"><span>New to Mighty Silks?</span></p>
-        <a class="pdp-btn pdp-btn--outline login__create" href="signup.html">Create Account</a>
+        <a class="pdp-btn pdp-btn--outline login__create" href="signup">Create Account</a>
       </form>
     </section>
 

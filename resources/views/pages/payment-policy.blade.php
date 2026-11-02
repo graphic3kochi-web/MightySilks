@@ -43,7 +43,7 @@
 
         <section id="overview">
           <h2><span>1.</span> Overview</h2>
-          <p>This Payment Policy applies to all orders placed on the Mighty Silks website. It should be read together with our <a href="terms-and-conditions.html">Terms &amp; Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a>.</p>
+          <p>This Payment Policy applies to all orders placed on the Mighty Silks website. It should be read together with our <a href="terms-and-conditions">Terms &amp; Conditions</a> and <a href="privacy-policy">Privacy Policy</a>.</p>
         </section>
 
         <section id="methods">

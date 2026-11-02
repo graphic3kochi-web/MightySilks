@@ -34,7 +34,7 @@
         <x-admin.field name="location" label="Location" :value="$job->location" required />
         <x-admin.field name="type" label="Type" :value="$job->type" required />
         <x-admin.field name="experience" label="Experience" :value="$job->experience" required />
-        <x-admin.field name="slug" label="Address" :value="$job->slug" help="career-details.html?job=address. Empty: made from the role." />
+        <x-admin.field name="slug" label="Address" :value="$job->slug" help="career-details?job=address. Empty: made from the role." />
       </div>
     </section>
     <div class="adm-form__bar">

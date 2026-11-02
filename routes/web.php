@@ -7,11 +7,12 @@ use App\Http\Controllers\Shop\OrderController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
-// ---------- Storefront: the static site's pages, at their old URLs ----------
+// ---------- Storefront: clean URLs (/about); the pages themselves are registered last ----------
 Route::get('/', [SiteController::class, 'page'])->name('home');
-Route::get('my-orders.html', [OrderController::class, 'mine'])->name('my-orders');
+Route::get('my-orders', [OrderController::class, 'mine'])->name('my-orders');
 Route::get('orders/{number}/invoice', [OrderController::class, 'invoice'])->name('orders.invoice');
-Route::get('{page}.html', [SiteController::class, 'page'])->where('page', '[a-z0-9-]+')->name('page');
+// The static site's old addresses (about.html, index.html) move permanently, query string and all.
+Route::get('{page}.html', [SiteController::class, 'legacy'])->where('page', '[a-z0-9-]+');
 // The data scripts the pages load, now generated from the database.
 Route::get('js/products.js', [SiteController::class, 'productsScript']);
 Route::get('js/blogs.js', [SiteController::class, 'blogsScript']);
@@ -68,3 +69,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::put('settings', [Admin\SettingController::class, 'update'])->name('settings.update');
     });
 });
+
+// ---------- Storefront pages (/about, /bridal…): last, so /admin, /api and the rest match first ----------
+// The home page lives at / only, so /index moves there.
+Route::permanentRedirect('index', '/');
+Route::get('{page}', [SiteController::class, 'page'])->where('page', '[a-z0-9-]+')->name('page');

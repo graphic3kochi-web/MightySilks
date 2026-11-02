@@ -17,7 +17,7 @@
 
     <!-- ============ Order details ============ -->
     <!-- No Figma frame for this page: built in the cart / checkout style. js/main.js fills it from
-         the order saved at checkout (order-details.html?order=<number>). -->
+         the order saved at checkout (/order-details?order=<number>). -->
     <section class="order" aria-label="Order details" data-order-page>
       <div class="order__head">
         <span class="order__check" aria-hidden="true">
@@ -30,7 +30,7 @@
         <div class="order__actions">
           <button class="pdp-btn pdp-btn--outline" type="button" data-order-print>Print</button>
           <a class="pdp-btn pdp-btn--outline" href="#" data-order-invoice hidden>Download Invoice</a>
-          <a class="pdp-btn pdp-btn--solid" href="our-shop.html">Continue Shopping</a>
+          <a class="pdp-btn pdp-btn--solid" href="our-shop">Continue Shopping</a>
         </div>
       </div>
 
@@ -83,7 +83,7 @@
     <div class="checkout-message" data-order-missing hidden>
       <h2>We couldn't find that order.</h2>
       <p>Orders placed on this device show here after checkout.</p>
-      <a class="pdp-btn pdp-btn--solid" href="our-shop.html">Continue Shopping</a>
+      <a class="pdp-btn pdp-btn--solid" href="our-shop">Continue Shopping</a>
     </div>
 
   </main>

@@ -9,7 +9,7 @@
   <h1>{{ $post->exists ? 'Edit Post' : 'New Post' }}</h1>
   @if ($post->exists)
     <div class="adm-head__actions">
-      <a class="adm-btn adm-btn--ghost" href="{{ url('blog-details.html?post='.$post->slug) }}" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View</a>
+      <a class="adm-btn adm-btn--ghost" href="{{ url('blog-details?post='.$post->slug) }}" target="_blank" rel="noopener"><i class="fa-solid fa-eye"></i> View</a>
       <form method="post" action="{{ route('admin.blogs.destroy', $post) }}" data-confirm="Delete this post?">@csrf @method('delete')<button class="adm-btn adm-btn--danger" type="submit"><i class="fa-solid fa-trash"></i> Delete</button></form>
     </div>
   @endif
@@ -42,7 +42,7 @@
           @error('category')<span class="adm-error">{{ $message }}</span>@enderror
         </div>
         <x-admin.field name="read_time" label="Read time" :value="$post->read_time" required />
-        <x-admin.field name="slug" label="Address" :value="$post->slug" help="blog-details.html?post=address. Empty: made from the title." />
+        <x-admin.field name="slug" label="Address" :value="$post->slug" help="blog-details?post=address. Empty: made from the title." />
       </div>
     </section>
     <section class="adm-card">
@@ -51,7 +51,7 @@
         <x-admin.field name="image" label="{{ $post->image ? 'Replace cover photo' : 'Cover photo' }}" type="file" accept="image/*" />
         <x-admin.field name="alt" label="Cover description (alt text)" :value="$post->alt" />
         <x-admin.field name="shop_label" label="“Shop the look” button" :value="$post->shop_label" />
-        <x-admin.field name="shop_href" label="…links to" :value="$post->shop_href" help="A page, e.g. bridal.html" />
+        <x-admin.field name="shop_href" label="…links to" :value="$post->shop_href" help="A page, e.g. /bridal" />
       </div>
     </section>
     <div class="adm-form__bar">

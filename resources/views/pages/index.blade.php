@@ -53,11 +53,11 @@
 
       <ul class="site-menu" id="site-menu">
         <li><a href="#" aria-label="Home"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">H</span><span class="site-menu__char" style="--i:1">o</span><span class="site-menu__char" style="--i:2">m</span><span class="site-menu__char" style="--i:3">e</span></span></a></li>
-        <li><a href="our-shop.html" aria-label="Our Shop"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">O</span><span class="site-menu__char" style="--i:1">u</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">S</span><span class="site-menu__char" style="--i:5">h</span><span class="site-menu__char" style="--i:6">o</span><span class="site-menu__char" style="--i:7">p</span></span></a></li>
-        <li><a href="new-arrivals.html" aria-label="New Arrivals"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">N</span><span class="site-menu__char" style="--i:1">e</span><span class="site-menu__char" style="--i:2">w</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">A</span><span class="site-menu__char" style="--i:5">r</span><span class="site-menu__char" style="--i:6">r</span><span class="site-menu__char" style="--i:7">i</span><span class="site-menu__char" style="--i:8">v</span><span class="site-menu__char" style="--i:9">a</span><span class="site-menu__char" style="--i:10">l</span><span class="site-menu__char" style="--i:11">s</span></span></a></li>
-        <li><a href="bridal.html" aria-label="Bridal"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">B</span><span class="site-menu__char" style="--i:1">r</span><span class="site-menu__char" style="--i:2">i</span><span class="site-menu__char" style="--i:3">d</span><span class="site-menu__char" style="--i:4">a</span><span class="site-menu__char" style="--i:5">l</span></span></a></li>
-        <li><a href="sarees.html" aria-label="Sarees"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">S</span><span class="site-menu__char" style="--i:1">a</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3">e</span><span class="site-menu__char" style="--i:4">e</span><span class="site-menu__char" style="--i:5">s</span></span></a></li>
-        <li><a href="mighty-signature.html" aria-label="Mighty Signature"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">M</span><span class="site-menu__char" style="--i:1">i</span><span class="site-menu__char" style="--i:2">g</span><span class="site-menu__char" style="--i:3">h</span><span class="site-menu__char" style="--i:4">t</span><span class="site-menu__char" style="--i:5">y</span><span class="site-menu__char" style="--i:6"> </span><span class="site-menu__char" style="--i:7">S</span><span class="site-menu__char" style="--i:8">i</span><span class="site-menu__char" style="--i:9">g</span><span class="site-menu__char" style="--i:10">n</span><span class="site-menu__char" style="--i:11">a</span><span class="site-menu__char" style="--i:12">t</span><span class="site-menu__char" style="--i:13">u</span><span class="site-menu__char" style="--i:14">r</span><span class="site-menu__char" style="--i:15">e</span></span></a></li>
+        <li><a href="our-shop" aria-label="Our Shop"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">O</span><span class="site-menu__char" style="--i:1">u</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">S</span><span class="site-menu__char" style="--i:5">h</span><span class="site-menu__char" style="--i:6">o</span><span class="site-menu__char" style="--i:7">p</span></span></a></li>
+        <li><a href="new-arrivals" aria-label="New Arrivals"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">N</span><span class="site-menu__char" style="--i:1">e</span><span class="site-menu__char" style="--i:2">w</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">A</span><span class="site-menu__char" style="--i:5">r</span><span class="site-menu__char" style="--i:6">r</span><span class="site-menu__char" style="--i:7">i</span><span class="site-menu__char" style="--i:8">v</span><span class="site-menu__char" style="--i:9">a</span><span class="site-menu__char" style="--i:10">l</span><span class="site-menu__char" style="--i:11">s</span></span></a></li>
+        <li><a href="bridal" aria-label="Bridal"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">B</span><span class="site-menu__char" style="--i:1">r</span><span class="site-menu__char" style="--i:2">i</span><span class="site-menu__char" style="--i:3">d</span><span class="site-menu__char" style="--i:4">a</span><span class="site-menu__char" style="--i:5">l</span></span></a></li>
+        <li><a href="sarees" aria-label="Sarees"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">S</span><span class="site-menu__char" style="--i:1">a</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3">e</span><span class="site-menu__char" style="--i:4">e</span><span class="site-menu__char" style="--i:5">s</span></span></a></li>
+        <li><a href="mighty-signature" aria-label="Mighty Signature"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">M</span><span class="site-menu__char" style="--i:1">i</span><span class="site-menu__char" style="--i:2">g</span><span class="site-menu__char" style="--i:3">h</span><span class="site-menu__char" style="--i:4">t</span><span class="site-menu__char" style="--i:5">y</span><span class="site-menu__char" style="--i:6"> </span><span class="site-menu__char" style="--i:7">S</span><span class="site-menu__char" style="--i:8">i</span><span class="site-menu__char" style="--i:9">g</span><span class="site-menu__char" style="--i:10">n</span><span class="site-menu__char" style="--i:11">a</span><span class="site-menu__char" style="--i:12">t</span><span class="site-menu__char" style="--i:13">u</span><span class="site-menu__char" style="--i:14">r</span><span class="site-menu__char" style="--i:15">e</span></span></a></li>
       </ul>
 
       <div class="site-actions">
@@ -91,7 +91,7 @@
         <p class="section-subtitle zoom-in">Find your perfect drape,for every price</p>
       </div>
       <div class="wedding__grid" data-reveal="scene">
-        <a class="arch-card" href="sarees.html" style="--i:0">
+        <a class="arch-card" href="sarees" style="--i:0">
           <span class="arch-card__media" style="left:10.69px">
             <img src="assets/wedding/saree.png" alt="" style="--x:-59.672px;--y:-101.539px;--w:564.83px;--h:749.774px">
           </span>
@@ -99,7 +99,7 @@
           <span class="arch-card__sub" style="left:98.78px">Collections</span>
           <svg class="arch-card__trace" viewBox="0 0 417.367 621" aria-hidden="true"><path pathLength="1" d="M208.684 620.25H0.75V208.684A207.934 207.934 0 0 1 208.684 0.75A207.934 207.934 0 0 1 416.617 208.684V620.25Z"/></svg>
         </a>
-        <a class="arch-card" href="gown.html" style="--i:1">
+        <a class="arch-card" href="gown" style="--i:1">
           <span class="arch-card__media">
             <img src="assets/wedding/gown.png" alt="" style="--x:-0.373px;--y:-12.595px;--w:398.447px;--h:597.67px">
           </span>
@@ -107,7 +107,7 @@
           <span class="arch-card__sub" style="left:102.80px">Collections</span>
           <svg class="arch-card__trace" viewBox="0 0 417.367 621" aria-hidden="true"><path pathLength="1" d="M208.684 620.25H0.75V208.684A207.934 207.934 0 0 1 208.684 0.75A207.934 207.934 0 0 1 416.617 208.684V620.25Z"/></svg>
         </a>
-        <a class="arch-card" href="lahanga.html" style="--i:2">
+        <a class="arch-card" href="lahanga" style="--i:2">
           <span class="arch-card__media" style="left:10.69px">
             <img src="assets/wedding/lehenga.png" alt="" style="--x:-21.444px;--y:-27.24px;--w:418.911px;--h:629.792px">
           </span>
@@ -115,7 +115,7 @@
           <span class="arch-card__sub" style="left:129.64px">Collections</span>
           <svg class="arch-card__trace" viewBox="0 0 417.367 621" aria-hidden="true"><path pathLength="1" d="M208.684 620.25H0.75V208.684A207.934 207.934 0 0 1 208.684 0.75A207.934 207.934 0 0 1 416.617 208.684V620.25Z"/></svg>
         </a>
-        <a class="arch-card" href="ready-to-wear.html" style="--i:3">
+        <a class="arch-card" href="ready-to-wear" style="--i:3">
           <span class="arch-card__media" style="left:10.69px">
             <img src="assets/wedding/ready-to-wear.png" alt="" style="--x:-0.033px;--y:-6.887px;--w:394.766px;--h:592.149px">
           </span>
@@ -133,7 +133,7 @@
         <h2 class="section-title float-title"><span class="float-title__word" style="--i:0">New</span> <span class="float-title__word" style="--i:1">Arrivals</span></h2>
         <p class="section-subtitle zoom-in">Explore What’s New This Season</p>
       </div>
-      <div class="products__more"><a class="view-all" href="new-arrivals.html">View All New Arrivals</a></div>
+      <div class="products__more"><a class="view-all" href="new-arrivals">View All New Arrivals</a></div>
       <div class="product-grid" data-reveal="toggle">
         <article class="product" style="--i:0">
           <div class="product__media">
@@ -146,11 +146,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=na-1">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=na-1">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=na-1">Chiffon Peacock Green Saree with Crystal Embellished Teardrop Lace Border and Plain Body</a></h3>
+          <h3 class="product__title"><a href="product?p=na-1">Chiffon Peacock Green Saree with Crystal Embellished Teardrop Lace Border and Plain Body</a></h3>
           <p class="product__price">₹ 3,580.00</p>
         </article>
         <article class="product" style="--i:1">
@@ -164,11 +164,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=na-2">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=na-2">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=na-2">Organza Peacock Blue Black Lily Floral Butta Printed Saree with Beaded Zigzag Border</a></h3>
+          <h3 class="product__title"><a href="product?p=na-2">Organza Peacock Blue Black Lily Floral Butta Printed Saree with Beaded Zigzag Border</a></h3>
           <p class="product__price">₹ 3,550.00</p>
         </article>
         <article class="product" style="--i:2">
@@ -183,11 +183,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=na-3">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=na-3">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=na-3">Organza Cream Teal Blue and Olive Golden Wavy Stripe Printed Saree with Beaded...</a></h3>
+          <h3 class="product__title"><a href="product?p=na-3">Organza Cream Teal Blue and Olive Golden Wavy Stripe Printed Saree with Beaded...</a></h3>
           <p class="product__price">₹ 3,330.00</p>
         </article>
         <article class="product" style="--i:3">
@@ -201,11 +201,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=na-4">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=na-4">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=na-4">Organza Pink Multicolor Floral Embroidered Scalloped Border Saree with Sequin Work</a></h3>
+          <h3 class="product__title"><a href="product?p=na-4">Organza Pink Multicolor Floral Embroidered Scalloped Border Saree with Sequin Work</a></h3>
           <p class="product__price">₹ 13,900.00</p>
         </article>
       </div>
@@ -244,7 +244,7 @@
         <p class="section-subtitle">Inspired by women who wear tradition differently</p>
       </div>
       <div class="occasion-grid" data-reveal>
-        <a class="occasion-card" href="christmas.html">
+        <a class="occasion-card" href="christmas">
           <img class="occasion-card__base" src="assets/occasion/base.png" alt="">
           <img class="occasion-card__photo" src="assets/occasion/christmas.png" alt="" style="--x:0px;--y:0px;--w:447px;--h:560px">
           <span class="occasion-card__fade"></span>
@@ -252,7 +252,7 @@
           <span class="occasion-card__title">Christmas</span>
           <span class="btn-shop">Shop Now</span>
         </a>
-        <a class="occasion-card" href="diwali.html">
+        <a class="occasion-card" href="diwali">
           <img class="occasion-card__base" src="assets/occasion/base.png" alt="">
           <img class="occasion-card__photo" src="assets/occasion/diwali.png" alt="" style="--x:0px;--y:0px;--w:448px;--h:621px">
           <span class="occasion-card__fade"></span>
@@ -260,7 +260,7 @@
           <span class="occasion-card__title">Diwali</span>
           <span class="btn-shop">Shop Now</span>
         </a>
-        <a class="occasion-card" href="dussehra.html">
+        <a class="occasion-card" href="dussehra">
           <img class="occasion-card__base" src="assets/occasion/base.png" alt="">
           <img class="occasion-card__photo" src="assets/occasion/dussehra.png" alt="" style="--x:-132px;--y:-45px;--w:711px;--h:1060px">
           <span class="occasion-card__fade"></span>
@@ -268,7 +268,7 @@
           <span class="occasion-card__title">Dussehra</span>
           <span class="btn-shop">Shop Now</span>
         </a>
-        <a class="occasion-card" href="navaratri.html">
+        <a class="occasion-card" href="navaratri">
           <img class="occasion-card__base" src="assets/occasion/base.png" alt="">
           <img class="occasion-card__photo" src="assets/occasion/navaratri.png" alt="" style="--x:0px;--y:0px;--w:452px;--h:566px">
           <span class="occasion-card__fade"></span>
@@ -288,7 +288,7 @@
           </span>
           <span class="pattern-pill__label">Zari Woven</span>
         </a>
-        <a class="pattern-pill pattern-pill--main" href="pattern.html" style="left:208px;top:228px;--i:1" data-pattern-slot>
+        <a class="pattern-pill pattern-pill--main" href="pattern" style="left:208px;top:228px;--i:1" data-pattern-slot>
           <span class="pattern-pill__frame">
             <img src="assets/pattern/brocade.png" alt="" style="--x:-179px;--y:0px;--w:483px;--h:603px">
           </span>
@@ -343,7 +343,7 @@
         <h2 class="section-title float-title"><span class="float-title__word" style="--i:0">Ready</span> <span class="float-title__word" style="--i:1">to</span> <span class="float-title__word" style="--i:2">Wear</span> <span class="float-title__word" style="--i:3">Sarees</span></h2>
         <p class="section-subtitle zoom-in">Expertly pre-stitched for a flawless drape, these sarees deliver timeless sophistication and effortless ease.</p>
       </div>
-      <div class="products__more"><a class="view-all" href="ready-to-wear.html">View All Ready to Wear Sarees</a></div>
+      <div class="products__more"><a class="view-all" href="ready-to-wear">View All Ready to Wear Sarees</a></div>
       <div class="product-grid" data-reveal="toggle">
         <article class="product" style="--i:0">
           <div class="product__media">
@@ -356,11 +356,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=rtw-1">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=rtw-1">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=rtw-1">Powder Blue Ready to Wear Saree</a></h3>
+          <h3 class="product__title"><a href="product?p=rtw-1">Powder Blue Ready to Wear Saree</a></h3>
           <p class="product__price">₹ 3,675.00</p>
         </article>
         <article class="product" style="--i:1">
@@ -374,11 +374,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=rtw-2">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=rtw-2">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=rtw-2">Mocha Beige Ready to Wear Saree with Ruffled Edging</a></h3>
+          <h3 class="product__title"><a href="product?p=rtw-2">Mocha Beige Ready to Wear Saree with Ruffled Edging</a></h3>
           <p class="product__price">₹ 3,065.00</p>
         </article>
         <article class="product" style="--i:2">
@@ -392,11 +392,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=rtw-3">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=rtw-3">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=rtw-3">Violet Georgette Ready to Wear Saree with Designer...</a></h3>
+          <h3 class="product__title"><a href="product?p=rtw-3">Violet Georgette Ready to Wear Saree with Designer...</a></h3>
           <p class="product__price">₹ 4,595.00</p>
         </article>
         <article class="product" style="--i:3">
@@ -410,11 +410,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=rtw-4">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=rtw-4">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=rtw-4">Light Sage Green Ready to Wear Saree</a></h3>
+          <h3 class="product__title"><a href="product?p=rtw-4">Light Sage Green Ready to Wear Saree</a></h3>
           <p class="product__price">₹ 3,895.00</p>
         </article>
       </div>
@@ -476,7 +476,7 @@
         <h2 class="section-title float-title"><span class="float-title__word" style="--i:0">Bridal</span> <span class="float-title__word" style="--i:1">Gowns</span></h2>
         <p class="section-subtitle zoom-in">Wedding gowns designed to make your special day memorable.</p>
       </div>
-      <div class="products__more"><a class="view-all" href="bridal.html">View All Bridal Gowns</a></div>
+      <div class="products__more"><a class="view-all" href="bridal">View All Bridal Gowns</a></div>
       <div class="product-grid" data-reveal="toggle">
         <article class="product" style="--i:0">
           <div class="product__media">
@@ -489,11 +489,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=bg-1">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=bg-1">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=bg-1">White Net Bridal Gown with Veil</a></h3>
+          <h3 class="product__title"><a href="product?p=bg-1">White Net Bridal Gown with Veil</a></h3>
           <p class="product__price">₹ 31,875.00</p>
         </article>
         <article class="product" style="--i:1">
@@ -507,11 +507,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=bg-2">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=bg-2">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=bg-2">White Designer Bridal Gown with Veil</a></h3>
+          <h3 class="product__title"><a href="product?p=bg-2">White Designer Bridal Gown with Veil</a></h3>
           <p class="product__price">₹ 27,945.00</p>
         </article>
         <article class="product" style="--i:2">
@@ -526,11 +526,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=bg-3">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=bg-3">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=bg-3">White Net Designer Gown with Contrast Designs</a></h3>
+          <h3 class="product__title"><a href="product?p=bg-3">White Net Designer Gown with Contrast Designs</a></h3>
           <p class="product__price">₹ 31,875.00</p>
         </article>
         <article class="product" style="--i:3">
@@ -544,11 +544,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=bg-4">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=bg-4">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=bg-4">White Designer Net Bridal Gown with Veil</a></h3>
+          <h3 class="product__title"><a href="product?p=bg-4">White Designer Net Bridal Gown with Veil</a></h3>
           <p class="product__price">₹ 21,575.00</p>
         </article>
       </div>
@@ -575,11 +575,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=la-1">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=la-1">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=la-1">Mint Green Lacha with Silver Gold Floral Vine Embroidery</a></h3>
+          <h3 class="product__title"><a href="product?p=la-1">Mint Green Lacha with Silver Gold Floral Vine Embroidery</a></h3>
           <p class="product__price">₹ 5,195.00</p>
         </article>
         <article class="product" style="--i:1">
@@ -593,11 +593,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=la-2">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=la-2">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=la-2">Powder Blue With Silver Embroidered Lacha</a></h3>
+          <h3 class="product__title"><a href="product?p=la-2">Powder Blue With Silver Embroidered Lacha</a></h3>
           <p class="product__price">₹ 26,895.00</p>
         </article>
         <article class="product" style="--i:2">
@@ -611,11 +611,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=la-3">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=la-3">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=la-3">Violet Georgette Ready to Wear Saree with Designer...</a></h3>
+          <h3 class="product__title"><a href="product?p=la-3">Violet Georgette Ready to Wear Saree with Designer...</a></h3>
           <p class="product__price">₹ 4,595.00</p>
         </article>
         <article class="product" style="--i:3">
@@ -629,11 +629,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=la-4">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=la-4">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=la-4">Laurel Green Arabic Lacha in Designer Net and Shimmer Chiffon</a></h3>
+          <h3 class="product__title"><a href="product?p=la-4">Laurel Green Arabic Lacha in Designer Net and Shimmer Chiffon</a></h3>
           <p class="product__price">₹ 4,995.00</p>
         </article>
       </div>
@@ -646,7 +646,7 @@
         <h2 class="section-title float-title"><span class="float-title__word" style="--i:0">Dhawani</span> <span class="float-title__word" style="--i:1">Collection</span></h2>
         <p class="section-subtitle zoom-in">Traditional dhavani sets designed for festive days and cultural celebrations.</p>
       </div>
-      <div class="products__more"><a class="view-all" href="dhawani-collection.html">View All Dhawani Collections</a></div>
+      <div class="products__more"><a class="view-all" href="dhawani-collection">View All Dhawani Collections</a></div>
       <div class="product-grid" data-reveal="toggle">
         <article class="product" style="--i:0">
           <div class="product__media">
@@ -659,11 +659,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=dh-1">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=dh-1">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=dh-1">Ivory Floral Print Stitched Dhawani Set</a></h3>
+          <h3 class="product__title"><a href="product?p=dh-1">Ivory Floral Print Stitched Dhawani Set</a></h3>
           <p class="product__price">₹ 3,695.00</p>
         </article>
         <article class="product" style="--i:1">
@@ -677,11 +677,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=dh-2">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=dh-2">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=dh-2">Royal Blue Banarasi Silk Stitched Dhavani Set</a></h3>
+          <h3 class="product__title"><a href="product?p=dh-2">Royal Blue Banarasi Silk Stitched Dhavani Set</a></h3>
           <p class="product__price">₹ 14,895.00</p>
         </article>
         <article class="product" style="--i:2">
@@ -695,11 +695,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=dh-3">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=dh-3">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=dh-3">Peach Orange Banarasi Silk Stitched Dhavani Set</a></h3>
+          <h3 class="product__title"><a href="product?p=dh-3">Peach Orange Banarasi Silk Stitched Dhavani Set</a></h3>
           <p class="product__price">₹ 13,875.00</p>
         </article>
         <article class="product" style="--i:3">
@@ -713,11 +713,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=dh-4">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=dh-4">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=dh-4">Ivory and Deep Bottle Green Banarasi Silk Stitched Dhavani Set</a></h3>
+          <h3 class="product__title"><a href="product?p=dh-4">Ivory and Deep Bottle Green Banarasi Silk Stitched Dhavani Set</a></h3>
           <p class="product__price">₹ 4,995.00</p>
         </article>
       </div>
@@ -731,46 +731,46 @@
       </div>
       <div class="blog-grid">
         <article class="blog-card">
-          <a class="blog-card__media" href="blog-details.html?post=bridal-kanchipuram-saree-trends-2026"><span class="blog-card__crop">
+          <a class="blog-card__media" href="blog-details?post=bridal-kanchipuram-saree-trends-2026"><span class="blog-card__crop">
             <img src="assets/blogs/blog-1.png" alt="Bride in a pastel Kanchipuram saree" style="--x:-162.607px;--y:-0.008px;--w:755.213px;--h:431.42px">
           </span></a>
           <span class="blog-card__tag">Bridal Kanchipuram Saree</span>
-          <h3 class="blog-card__title"><a href="blog-details.html?post=bridal-kanchipuram-saree-trends-2026">Bridal Kanchipuram Saree Trends 2026: Pastel Shades, Lightweight Weaves &amp; Minimal Zari</a></h3>
+          <h3 class="blog-card__title"><a href="blog-details?post=bridal-kanchipuram-saree-trends-2026">Bridal Kanchipuram Saree Trends 2026: Pastel Shades, Lightweight Weaves &amp; Minimal Zari</a></h3>
         </article>
         <article class="blog-card">
-          <a class="blog-card__media" href="blog-details.html?post=manthrakodi-saree-styles-christian-brides"><span class="blog-card__crop">
+          <a class="blog-card__media" href="blog-details?post=manthrakodi-saree-styles-christian-brides"><span class="blog-card__crop">
             <img src="assets/blogs/blog-2.png" alt="Two women in Manthrakodi sarees" style="--x:-160.64px;--y:-0.008px;--w:751.66px;--h:429.39px">
           </span></a>
           <span class="blog-card__tag">Manthrakodi Saree</span>
-          <h3 class="blog-card__title"><a href="blog-details.html?post=manthrakodi-saree-styles-christian-brides">Traditional and Modern Manthrakodi Saree Styles for Christian Brides</a></h3>
+          <h3 class="blog-card__title"><a href="blog-details?post=manthrakodi-saree-styles-christian-brides">Traditional and Modern Manthrakodi Saree Styles for Christian Brides</a></h3>
         </article>
         <article class="blog-card">
-          <a class="blog-card__media" href="blog-details.html?post=best-onam-churidar-designs"><span class="blog-card__crop">
+          <a class="blog-card__media" href="blog-details?post=best-onam-churidar-designs"><span class="blog-card__crop">
             <img src="assets/blogs/blog-3.png" alt="Three women in Onam churidars" style="--x:-105.493px;--y:0px;--w:592.986px;--h:430.788px">
           </span></a>
           <span class="blog-card__tag">Onam Churidar</span>
-          <h3 class="blog-card__title"><a href="blog-details.html?post=best-onam-churidar-designs">10 Best Onam Churidar Designs to Shop This Festive Season</a></h3>
+          <h3 class="blog-card__title"><a href="blog-details?post=best-onam-churidar-designs">10 Best Onam Churidar Designs to Shop This Festive Season</a></h3>
         </article>
         <article class="blog-card">
-          <a class="blog-card__media" href="blog-details.html?post=traditional-vs-modern-dhavani-designs"><span class="blog-card__crop">
+          <a class="blog-card__media" href="blog-details?post=traditional-vs-modern-dhavani-designs"><span class="blog-card__crop">
             <img src="assets/blogs/blog-4.png" alt="Three women in dhavani sets" style="--x:-162.593px;--y:0px;--w:751.696px;--h:429.411px">
           </span></a>
           <span class="blog-card__tag">Dhavani Designs</span>
-          <h3 class="blog-card__title"><a href="blog-details.html?post=traditional-vs-modern-dhavani-designs">Traditional vs Modern Dhavani Designs: Which Style Is Right for You?</a></h3>
+          <h3 class="blog-card__title"><a href="blog-details?post=traditional-vs-modern-dhavani-designs">Traditional vs Modern Dhavani Designs: Which Style Is Right for You?</a></h3>
         </article>
         <article class="blog-card">
-          <a class="blog-card__media" href="blog-details.html?post=puliyilakkara-set-mundu-onam"><span class="blog-card__crop">
+          <a class="blog-card__media" href="blog-details?post=puliyilakkara-set-mundu-onam"><span class="blog-card__crop">
             <img src="assets/blogs/blog-5.png" alt="Three women in Puliyilakkara set mundu at an Onam celebration">
           </span></a>
           <span class="blog-card__tag">Puliyilakkara Set Mundu</span>
-          <h3 class="blog-card__title"><a href="blog-details.html?post=puliyilakkara-set-mundu-onam">Why Wearing a Puliyilakkara Set Mundu During Onam Is a Celebration of Kerala Identity</a></h3>
+          <h3 class="blog-card__title"><a href="blog-details?post=puliyilakkara-set-mundu-onam">Why Wearing a Puliyilakkara Set Mundu During Onam Is a Celebration of Kerala Identity</a></h3>
         </article>
         <article class="blog-card">
-          <a class="blog-card__media" href="blog-details.html?post=onam-churidar-designs-college-girls"><span class="blog-card__crop">
+          <a class="blog-card__media" href="blog-details?post=onam-churidar-designs-college-girls"><span class="blog-card__crop">
             <img src="assets/blogs/blog-6.png" alt="Three young women in Onam churidars sitting on steps">
           </span></a>
           <span class="blog-card__tag">Onam Churidar</span>
-          <h3 class="blog-card__title"><a href="blog-details.html?post=onam-churidar-designs-college-girls">Best Onam Churidar Designs for College Girls and Young Women</a></h3>
+          <h3 class="blog-card__title"><a href="blog-details?post=onam-churidar-designs-college-girls">Best Onam Churidar Designs for College Girls and Young Women</a></h3>
         </article>
       </div>
     </section>

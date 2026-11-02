@@ -38,7 +38,7 @@
 
       <article class="policy__body">
         <p class="policy__updated">Last updated: <time datetime="2026-10-29">29 October 2026</time></p>
-        <p class="policy__lead">The information on the Mighty Silks website is provided in good faith to help you discover and shop our collections. This disclaimer explains the limits of that information. Please read it alongside our <a href="terms-and-conditions.html">Terms &amp; Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        <p class="policy__lead">The information on the Mighty Silks website is provided in good faith to help you discover and shop our collections. This disclaimer explains the limits of that information. Please read it alongside our <a href="terms-and-conditions">Terms &amp; Conditions</a> and <a href="privacy-policy">Privacy Policy</a>.</p>
 
         <section id="general">
           <h2><span>1.</span> General Information</h2>
@@ -68,7 +68,7 @@
 
         <section id="pricing">
           <h2><span>5.</span> Pricing &amp; Errors</h2>
-          <p>We aim to show correct prices at all times. Occasionally, a price or offer may be shown incorrectly because of a technical or human error. In that case, we may cancel the affected order and refund any payment in full, as explained in our <a href="terms-and-conditions.html">Terms &amp; Conditions</a>.</p>
+          <p>We aim to show correct prices at all times. Occasionally, a price or offer may be shown incorrectly because of a technical or human error. In that case, we may cancel the affected order and refund any payment in full, as explained in our <a href="terms-and-conditions">Terms &amp; Conditions</a>.</p>
         </section>
 
         <section id="styling">

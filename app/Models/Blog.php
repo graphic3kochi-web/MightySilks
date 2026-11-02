@@ -19,7 +19,7 @@ class Blog extends Model
         ];
     }
 
-    /** The js/blogs.js entry blog-details.html renders. */
+    /** The js/blogs.js entry /blog-details renders. */
     public function toScript(): array
     {
         return array_filter([

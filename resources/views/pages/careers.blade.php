@@ -74,7 +74,7 @@
             <ul><li>Experience in fashion or luxury retail preferred</li><li>Warm, confident communication in English; Hindi, Malayalam or Arabic a plus</li><li>Flexible to work weekends and festive seasons</li></ul>
             <div class="careers-job__actions">
               <button class="pdp-btn pdp-btn--solid careers-job__apply" type="button" data-careers-apply="Fashion Sales Associate">Apply Now</button>
-              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details.html?job=fashion-sales-associate">View Details</a>
+              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details?job=fashion-sales-associate">View Details</a>
             </div>
           </div>
         </details>
@@ -85,7 +85,7 @@
             <ul><li>A strong eye for colour, texture and composition</li><li>Experience in fashion visual merchandising</li><li>A portfolio of past displays</li></ul>
             <div class="careers-job__actions">
               <button class="pdp-btn pdp-btn--solid careers-job__apply" type="button" data-careers-apply="Visual Merchandiser">Apply Now</button>
-              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details.html?job=visual-merchandiser">View Details</a>
+              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details?job=visual-merchandiser">View Details</a>
             </div>
           </div>
         </details>
@@ -96,7 +96,7 @@
             <ul><li>Customer service experience, ideally in e-commerce</li><li>Clear written and spoken English</li><li>Calm, patient and organised</li></ul>
             <div class="careers-job__actions">
               <button class="pdp-btn pdp-btn--solid careers-job__apply" type="button" data-careers-apply="Customer Care Executive">Apply Now</button>
-              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details.html?job=customer-care-executive">View Details</a>
+              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details?job=customer-care-executive">View Details</a>
             </div>
           </div>
         </details>
@@ -107,7 +107,7 @@
             <ul><li>Experience running fashion or lifestyle social accounts</li><li>Photography, video or design skills</li><li>Up to date with trends across Instagram, Pinterest and YouTube</li></ul>
             <div class="careers-job__actions">
               <button class="pdp-btn pdp-btn--solid careers-job__apply" type="button" data-careers-apply="Social Media &amp; Content Executive">Apply Now</button>
-              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details.html?job=social-media-content-executive">View Details</a>
+              <a class="pdp-btn pdp-btn--outline careers-job__apply" href="career-details?job=social-media-content-executive">View Details</a>
             </div>
           </div>
         </details>

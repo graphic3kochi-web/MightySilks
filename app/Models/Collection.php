@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Attributes\Guarded;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-/** A shop page's product grid (sarees.html, diwali.html…), in its own order. */
+/** A shop page's product grid (/sarees, /diwali…), in its own order. */
 #[Guarded(['id'])]
 class Collection extends Model
 {

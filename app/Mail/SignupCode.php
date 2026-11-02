@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 
-/** The 6-digit code that confirms a new account's email (signup.html); valid 10 minutes. */
+/** The 6-digit code that confirms a new account's email (/signup); valid 10 minutes. */
 class SignupCode extends Mailable
 {
     public function __construct(public string $name, public string $code) {}

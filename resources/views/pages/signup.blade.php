@@ -91,7 +91,7 @@
         </div>
 
         <p class="login__divider"><span>Already have an account?</span></p>
-        <a class="pdp-btn pdp-btn--outline login__create" href="login.html">Log In</a>
+        <a class="pdp-btn pdp-btn--outline login__create" href="login">Log In</a>
       </form>
     </section>
 

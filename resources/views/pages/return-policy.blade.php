@@ -44,7 +44,7 @@
 
         <section id="overview">
           <h2><span>1.</span> Overview</h2>
-          <p>This Return Policy applies to products bought on the Mighty Silks website. It should be read together with our <a href="terms-and-conditions.html">Terms &amp; Conditions</a>, <a href="shipping-policy.html">Shipping Policy</a> and <a href="payment-policy.html">Payment Policy</a>.</p>
+          <p>This Return Policy applies to products bought on the Mighty Silks website. It should be read together with our <a href="terms-and-conditions">Terms &amp; Conditions</a>, <a href="shipping-policy">Shipping Policy</a> and <a href="payment-policy">Payment Policy</a>.</p>
         </section>
 
         <section id="window">

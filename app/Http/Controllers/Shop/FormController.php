@@ -22,7 +22,7 @@ class FormController extends Controller
         return ['ok' => true];
     }
 
-    /** corporate-bulk.html */
+    /** /corporate-bulk */
     public function enquiry(Request $request)
     {
         $data = $request->validate([
@@ -53,7 +53,7 @@ class FormController extends Controller
         return ['ok' => true];
     }
 
-    /** contact.html: kept with the enquiries, the topic as its order type. */
+    /** /contact: kept with the enquiries, the topic as its order type. */
     public function contact(Request $request)
     {
         $data = $request->validate([
@@ -77,7 +77,7 @@ class FormController extends Controller
         return ['ok' => true];
     }
 
-    /** careers.html / career-details.html: the CV is kept privately (storage/app/private/cvs). */
+    /** /careers / /career-details: the CV is kept privately (storage/app/private/cvs). */
     public function apply(Request $request)
     {
         $data = $request->validate([
@@ -103,7 +103,7 @@ class FormController extends Controller
         return ['ok' => true];
     }
 
-    /** product.html's Write a Review: held for approval. */
+    /** /product's Write a Review: held for approval. */
     public function review(Request $request)
     {
         $data = $request->validate([

@@ -5,14 +5,14 @@
   @if (auth()->user()->is_admin)
   <a class="account-menu__btn account-menu__btn--primary" href="{{ route('admin.dashboard') }}">Admin Panel</a>
   @else
-  <a class="account-menu__btn account-menu__btn--primary" href="my-orders.html">My Orders</a>
+  <a class="account-menu__btn account-menu__btn--primary" href="my-orders">My Orders</a>
   @endif
   <form method="post" action="{{ route('logout') }}">
     @csrf
     <button class="account-menu__btn account-menu__btn--secondary" type="submit">Log out</button>
   </form>
 @else
-  <a class="account-menu__btn account-menu__btn--primary" href="login.html">Log in</a>
-  <a class="account-menu__btn account-menu__btn--secondary" href="signup.html">Create Account</a>
+  <a class="account-menu__btn account-menu__btn--primary" href="login">Log in</a>
+  <a class="account-menu__btn account-menu__btn--secondary" href="signup">Create Account</a>
 @endauth
 </div>

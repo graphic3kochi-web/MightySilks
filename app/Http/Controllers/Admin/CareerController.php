@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
-/** Open roles for careers.html / career-details.html. */
+/** Open roles for /careers / /career-details. */
 class CareerController extends Controller
 {
     public function index()

@@ -1032,9 +1032,9 @@ function initCart(button, panel) {
     deals.closest('.cart-deals').hidden = picks.length === 0
     deals.innerHTML = picks.map(([id, p]) => `
       <li class="cart-deal">
-        <a class="cart-deal__photo" href="product.html?p=${id}"><img src="${p.gallery[0]}" alt="" loading="lazy"></a>
+        <a class="cart-deal__photo" href="product?p=${id}"><img src="${p.gallery[0]}" alt="" loading="lazy"></a>
         <button class="cart-deal__add" type="button" aria-label="Add ${p.title} to cart" data-deal="${id}">${icon(PLUS)}</button>
-        <a class="cart-deal__name" href="product.html?p=${id}">${p.title}</a>
+        <a class="cart-deal__name" href="product?p=${id}">${p.title}</a>
         <p class="cart-deal__price">${formatRupees(Number(p.price.replace(/[^\d.]/g, '')))}</p>
       </li>`).join('')
     updateCartBadge()
@@ -1109,7 +1109,7 @@ const cartButton = document.querySelector('.site-actions__bag')
 const cartPanel = document.getElementById('cart-panel')
 const cartDrawer = cartButton && cartPanel ? initCart(cartButton, cartPanel) : null
 
-// Cart page (cart.html, Figma "Cart" 281:2253): a row per cart item with − / + quantity
+// Cart page (/cart, Figma "Cart" 281:2253): a row per cart item with − / + quantity
 // (− stops at 1, as in the design's greyed minus) and a bin to remove it; the subtotal follows.
 // An empty cart shows the empty state (the design's four sample sarees stay in the HTML only, for
 // when the script doesn't run: they aren't in the store's catalogue, so they can't be ordered).
@@ -1125,7 +1125,7 @@ function initCartPage(page) {
   function render() {
     rows.innerHTML = cart.items.map((item, i) => {
       const name = window.PRODUCTS && window.PRODUCTS[item.id]
-        ? `<a href="product.html?p=${item.id}">${item.name}</a>`
+        ? `<a href="product?p=${item.id}">${item.name}</a>`
         : item.name
       return `
       <li class="cart-row">
@@ -1167,7 +1167,7 @@ function initCartPage(page) {
 const cartPage = document.querySelector('[data-cart-page]')
 if (cartPage) initCartPage(cartPage)
 
-// Checkout page (checkout.html; no Figma frame, built in the cart page's style): the order summary
+// Checkout page (/checkout; no Figma frame, built in the cart page's style): the order summary
 // lists the saved cart, or with ?buy=<id> (a Buy Now button) just that product; standard shipping
 // is free from ₹1,999 (after the coupon), else ₹99, and express is ₹250 (the store's rates, from
 // window.SHOP). The coupon is the drawer's (kept to this order for Buy Now). Card fields show (and
@@ -1176,7 +1176,7 @@ if (cartPage) initCartPage(cartPage)
 const SHIPPING = (window.SHOP && window.SHOP.shipping) || { freeFrom: 1999, standard: 99, express: 250 }
 const BUY_NOW_KEY = 'mighty-silks-buy-now'
 
-// Placed orders (newest first, the last 20) in localStorage, for order-details.html.
+// Placed orders (newest first, the last 20) in localStorage, for /order-details.
 const ORDERS_KEY = 'mighty-silks-orders'
 function loadOrders() {
   try { return JSON.parse(localStorage.getItem(ORDERS_KEY)) || [] } catch { return [] }
@@ -1188,7 +1188,7 @@ function saveOrderRecord(record) {
   } catch { return false }
 }
 
-// The Buy Now product for checkout.html?buy=<id>: the clicked card's details, else the catalogue's.
+// The Buy Now product for /checkout?buy=<id>: the clicked card's details, else the catalogue's.
 function buyNowItem() {
   const id = new URLSearchParams(location.search).get('buy')
   if (!id) return null
@@ -1216,7 +1216,7 @@ function initCheckout(page) {
   if (buyNow) {
     const back = page.querySelector('.checkout__back')
     back.textContent = '‹ Back to product'
-    back.href = window.PRODUCTS && window.PRODUCTS[buyNow.id] ? `product.html?p=${buyNow.id}` : 'our-shop.html'
+    back.href = window.PRODUCTS && window.PRODUCTS[buyNow.id] ? `product?p=${buyNow.id}` : 'our-shop'
   }
 
   function totals() {
@@ -1342,7 +1342,7 @@ function initCheckout(page) {
       updateCartBadge()
     }
     if (saved) {
-      location.href = `order-details.html?order=${number}`
+      location.href = `order-details?order=${number}`
       return
     }
     done.focus({ preventScroll: true })
@@ -1357,7 +1357,7 @@ function initCheckout(page) {
 const checkoutPage = document.querySelector('[data-checkout]')
 if (checkoutPage) initCheckout(checkoutPage)
 
-// Order details page (order-details.html?order=<number>, opened after Place Order; no number:
+// Order details page (/order-details?order=<number>, opened after Place Order; no number:
 // the latest order). Shows the order: confirmation, delivery progress (placed today; delivery
 // expected in 7 days, or 3 by express), items, totals, contact, address and payment. The store's
 // copy comes first (it shows an order to the shopper who placed it), else the one saved here.
@@ -1421,11 +1421,11 @@ async function initOrderPage(page) {
 const orderPage = document.querySelector('[data-order-page]')
 if (orderPage) initOrderPage(orderPage)
 
-// Track your order (track-order.html): the store finds the order by its number (with or without
+// Track your order (/track-order): the store finds the order by its number (with or without
 // #, any case) and the email or phone used at checkout, and its progress shows. Progress is the
 // order's status as the store team sets it (Admin › Orders); an order without one follows its
 // date: packed after a day, shipped after two, delivered by the expected date (3 days express, 7
-// standard; as order-details.html). Recent orders placed in this browser are offered as shortcuts.
+// standard; as /order-details). Recent orders placed in this browser are offered as shortcuts.
 // done: days after ordering the step is complete (null: the expected delivery day). status: the
 // heading while this step is the next one to happen.
 const TRACK_STEPS = [
@@ -1456,7 +1456,7 @@ function initTrackOrder(form) {
     set('[data-track-number]', `#${record.number}`)
     set('[data-track-status-title]', cancelled ? 'Cancelled' : current === -1 ? 'Delivered' : TRACK_STEPS[current].status)
     set('[data-track-eta]', cancelled ? 'This order was cancelled. Any payment will be refunded.' : current === -1 ? `Delivered on ${formatDate(arrives)}` : `Expected by ${formatDate(arrives)}`)
-    result.querySelector('[data-track-details]').href = `order-details.html?order=${encodeURIComponent(record.number)}`
+    result.querySelector('[data-track-details]').href = `order-details?order=${encodeURIComponent(record.number)}`
     result.querySelector('[data-track-steps]').innerHTML = TRACK_STEPS.map((step, i) => {
       const when = i === 0 ? formatDate(placed) : step.done === null ? formatDate(arrives) : ''
       const state = isDone(step, i) ? ' is-done' : i === current && !cancelled ? ' is-current' : ''
@@ -1510,12 +1510,12 @@ function initTrackOrder(form) {
 const trackForm = document.querySelector('[data-track-form]')
 if (trackForm) initTrackOrder(trackForm)
 
-// Login page (login.html). Two ways in, chosen by the tabs: email + password, or phone number +
+// Login page (/login). Two ways in, chosen by the tabs: email + password, or phone number +
 // one-time code (Send Code, then Verify & Log In). The store checks either and signs the shopper
 // in (Remember me keeps them signed in), then goes home (an admin: to the admin panel). With no
 // SMS provider set up, the store writes the code to its log (and, in debug mode, says it here).
 
-// Password eye buttons (login.html, signup.html): show or hide the password beside them.
+// Password eye buttons (/login, /signup): show or hide the password beside them.
 document.querySelectorAll('[data-login-show]').forEach((show) => {
   const password = show.closest('.login__password').querySelector('input')
   show.addEventListener('click', () => {
@@ -1619,7 +1619,7 @@ function initLogin(page) {
 const loginPage = document.querySelector('[data-login]')
 if (loginPage) initLogin(loginPage)
 
-// Create account page (signup.html), in two steps. 1: checks the fields (passwords match, terms
+// Create account page (/signup), in two steps. 1: checks the fields (passwords match, terms
 // accepted) and the store emails a 6-digit code; no account exists yet. 2: the shopper enters the
 // code (Resend code sends a new one) and only then the store creates the account (newsletter
 // ticked: subscribes too), signs the shopper in, and it goes home. Editing a field after the code
@@ -1699,14 +1699,14 @@ function initSignup(page) {
       return fail(err.message, f.otp)
     }
     say(`Welcome, ${value('first-name')}! Your account is ready. Taking you to the home page…`, true)
-    setTimeout(() => { location.href = 'index.html' }, 1200)
+    setTimeout(() => { location.href = './' }, 1200)
   })
 }
 
 const signupPage = document.querySelector('[data-signup]')
 if (signupPage) initSignup(signupPage)
 
-// Career details page (career-details.html?job=<slug>): fills the write-up, overview card and title
+// Career details page (/career-details?job=<slug>): fills the write-up, overview card and title
 // from js/jobs.js (no slug: the first role), chooses the role in the form and lists the others.
 // A slug that isn't there shows "This role has closed" and hides the form.
 function initJobPage(page) {
@@ -1747,7 +1747,7 @@ function initJobPage(page) {
   document.querySelector('[data-job-others]').innerHTML = others.map((s) => {
     const o = jobs[s]
     return `
-      <li><a class="job-other" href="career-details.html?job=${encodeURIComponent(s)}">
+      <li><a class="job-other" href="career-details?job=${encodeURIComponent(s)}">
         <span class="job-other__title">${escapeHtml(o.title)}</span>
         <span class="job-other__meta">${escapeHtml(o.location)} · ${escapeHtml(o.type)}</span>
         <span class="job-other__more">View Details <span aria-hidden="true">→</span></span>
@@ -1758,7 +1758,7 @@ function initJobPage(page) {
 const jobPage = document.querySelector('[data-job-page]')
 if (jobPage) initJobPage(jobPage)
 
-// Careers page (careers.html). A role's Apply Now picks that role in the form and moves to it; the
+// Careers page (/careers). A role's Apply Now picks that role in the form and moves to it; the
 // form checks its fields and the CV (PDF or Word, up to 5 MB), sends the application (with the CV)
 // to the store, then thanks the applicant and resets.
 const CV_MAX_BYTES = 5 * 1024 * 1024
@@ -1808,7 +1808,7 @@ function initCareers(form) {
 const careersForm = document.querySelector('[data-careers-form]')
 if (careersForm) initCareers(careersForm)
 
-// Corporate & bulk enquiry (corporate-bulk.html): checks the fields (at least 10 pieces), sends
+// Corporate & bulk enquiry (/corporate-bulk): checks the fields (at least 10 pieces), sends
 // the enquiry to the store (Admin › Enquiries), then thanks the sender and resets.
 function initBulkEnquiry(form) {
   const status = form.querySelector('[data-bulk-status]')
@@ -1840,7 +1840,7 @@ function initBulkEnquiry(form) {
 const bulkForm = document.querySelector('[data-bulk-form]')
 if (bulkForm) initBulkEnquiry(bulkForm)
 
-// Contact form (contact.html): checks the fields, sends the message to the store (Admin ›
+// Contact form (/contact): checks the fields, sends the message to the store (Admin ›
 // Enquiries), then opens the thank-you page.
 function initContact(form) {
   const status = form.querySelector('[data-contact-status]')
@@ -1864,29 +1864,29 @@ function initContact(form) {
     } catch (err) {
       return say(err.message)
     }
-    location.href = 'thank-you.html'
+    location.href = 'thank-you'
   })
 }
 
 const contactForm = document.querySelector('[data-contact-form]')
 if (contactForm) initContact(contactForm)
 
-// Blog details page (blog-details.html?post=<slug>): fills the article from js/blogs.js (no slug:
+// Blog details page (/blog-details?post=<slug>): fills the article from js/blogs.js (no slug:
 // the first post), its Shop the Look link, share links, previous / next stories and up to three
 // related stories (same category first). A slug that isn't there shows "Story not found".
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-const postDate = (iso) => { // "15 Sep 2026", as blog.html writes them (en-IN would give "Sept")
+const postDate = (iso) => { // "15 Sep 2026", as /blog writes them (en-IN would give "Sept")
   const [y, m, d] = iso.split('-').map(Number)
   return `${d} ${MONTHS[m - 1]} ${y}`
 }
 const blogCard = (slug, post) => `
   <article class="blog-post">
-    <a class="blog-post__media" href="blog-details.html?post=${encodeURIComponent(slug)}" tabindex="-1" aria-hidden="true"><img src="${escapeHtml(post.image)}" alt=""></a>
+    <a class="blog-post__media" href="blog-details?post=${encodeURIComponent(slug)}" tabindex="-1" aria-hidden="true"><img src="${escapeHtml(post.image)}" alt=""></a>
     <span class="blog-card__tag">${escapeHtml(post.tag)}</span>
     <p class="blog-post__meta"><time datetime="${post.date}">${postDate(post.date)}</time> · ${escapeHtml(post.readTime)}</p>
-    <h3 class="blog-post__title"><a href="blog-details.html?post=${encodeURIComponent(slug)}">${escapeHtml(post.title)}</a></h3>
+    <h3 class="blog-post__title"><a href="blog-details?post=${encodeURIComponent(slug)}">${escapeHtml(post.title)}</a></h3>
     <p class="blog-post__excerpt">${escapeHtml(post.excerpt)}</p>
-    <a class="blog-post__more" href="blog-details.html?post=${encodeURIComponent(slug)}">Read More <span aria-hidden="true">→</span></a>
+    <a class="blog-post__more" href="blog-details?post=${encodeURIComponent(slug)}">Read More <span aria-hidden="true">→</span></a>
   </article>`
 
 function initPostPage(page) {
@@ -1952,7 +1952,7 @@ function initPostPage(page) {
     const link = page.querySelector(sel)
     link.hidden = !s
     if (!s) return
-    link.href = `blog-details.html?post=${encodeURIComponent(s)}`
+    link.href = `blog-details?post=${encodeURIComponent(s)}`
     link.querySelector('.post__pager-title').textContent = posts[s].title
   }
   pager('[data-post-prev]', slugs[i - 1])
@@ -1972,7 +1972,7 @@ function initPostPage(page) {
 const postPage = document.querySelector('[data-post-page]')
 if (postPage) initPostPage(postPage)
 
-// Blog page (blog.html): the category chips show only the posts tagged with that category
+// Blog page (/blog): the category chips show only the posts tagged with that category
 // (data-category, space-separated); All shows every post.
 function initBlogFilters(group) {
   const posts = [...document.querySelectorAll('[data-blog-list] .blog-post')]
@@ -1994,7 +1994,7 @@ function initBlogFilters(group) {
 const blogFilters = document.querySelector('[data-blog-filters]')
 if (blogFilters) initBlogFilters(blogFilters)
 
-// Help center (help-center.html): the search box and topic cards filter the FAQs together. A
+// Help center (/help-center): the search box and topic cards filter the FAQs together. A
 // question shows when it's in the chosen topic (or no topic is chosen) and contains every word
 // typed; topics with nothing left are hidden. A search opens the matching answers.
 function initHelpCenter(search) {
@@ -2046,7 +2046,7 @@ function initHelpCenter(search) {
 const helpSearch = document.querySelector('[data-help-search]')
 if (helpSearch) initHelpCenter(helpSearch)
 
-// Policy pages (privacy-policy.html): the contents list marks the section being read (the last one
+// Policy pages (/privacy-policy): the contents list marks the section being read (the last one
 // whose heading has passed the top third of the screen).
 function initPolicyToc(policy) {
   const links = [...policy.querySelectorAll('.policy__toc-list a')]
@@ -2067,7 +2067,7 @@ function initPolicyToc(policy) {
 const policy = document.querySelector('[data-policy]')
 if (policy) initPolicyToc(policy)
 
-// Newsletter sign-up (blog.html): checks the email, adds it to the store's subscribers (Admin ›
+// Newsletter sign-up (/blog): checks the email, adds it to the store's subscribers (Admin ›
 // Subscribers) and says thanks.
 document.querySelectorAll('[data-newsletter-form]').forEach((form) => {
   const status = form.parentElement.querySelector('[data-newsletter-status]')
@@ -2092,10 +2092,10 @@ document.querySelectorAll('[data-newsletter-form]').forEach((form) => {
 
 // Add to Cart / Buy Now (product cards' .btn-cart and Buy Now, the product page's [data-add-to-cart]).
 // Add to Cart adds the product (or one more of it): the product page's then goes to the cart page
-// (cart.html), the cards' slide the cart in. Buy Now leaves the cart alone and checks out just
-// that product: the card's own name, price and shown photo are handed to checkout.html?buy=<id>
+// (/cart), the cards' slide the cart in. Buy Now leaves the cart alone and checks out just
+// that product: the card's own name, price and shown photo are handed to /checkout?buy=<id>
 // (through sessionStorage). The product is identified by its catalogue id (the card's
-// product.html?p= link, or the product page's own); without the catalogue the card's text and
+// /product?p= link, or the product page's own); without the catalogue the card's text and
 // shown (captioned) photo are used.
 const BUY_NOW = '[data-buy-now], .product__quick button'
 
@@ -2115,11 +2115,11 @@ document.querySelectorAll(`.btn-cart, [data-add-to-cart], ${BUY_NOW}`).forEach((
   const product = productFromCard(btn.closest('.product, [data-product]'))
   if (btn.matches(BUY_NOW)) {
     try { sessionStorage.setItem(BUY_NOW_KEY, JSON.stringify({ ...product, qty: 1 })) } catch {}
-    location.href = `checkout.html?buy=${encodeURIComponent(product.id)}`
+    location.href = `checkout?buy=${encodeURIComponent(product.id)}`
     return
   }
   addToCart(catalogueItem(product.id) || product)
-  if (btn.matches('[data-add-to-cart]')) location.href = 'cart.html'
+  if (btn.matches('[data-add-to-cart]')) location.href = 'cart'
   else if (cartDrawer) cartDrawer.open()
 }))
 

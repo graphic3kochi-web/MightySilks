@@ -30,7 +30,7 @@
               <strong>{{ $review->title ?: 'Review' }}</strong> <span class="muted">by {{ $review->name }} · {{ $review->created_at->diffForHumans() }}</span>
               <p class="muted" style="margin-top:4px; color:var(--ink-2)">{{ $review->body }}</p>
             </td>
-            <td>@if ($review->product)<a href="{{ url('product.html?p='.$review->product->code) }}" target="_blank" rel="noopener">{{ \Illuminate\Support\Str::limit($review->product->title, 40) }}</a>@else<span class="muted">Removed product</span>@endif</td>
+            <td>@if ($review->product)<a href="{{ url('product?p='.$review->product->code) }}" target="_blank" rel="noopener">{{ \Illuminate\Support\Str::limit($review->product->title, 40) }}</a>@else<span class="muted">Removed product</span>@endif</td>
             <td><span class="adm-stars" aria-label="{{ $review->rating }} of 5">{{ str_repeat('★', $review->rating) }}<span style="color:#e2dcec">{{ str_repeat('★', 5 - $review->rating) }}</span></span></td>
             <td><span class="adm-badge adm-badge--{{ $review->status }}">{{ \App\Models\Review::STATUSES[$review->status] }}</span></td>
             <td>

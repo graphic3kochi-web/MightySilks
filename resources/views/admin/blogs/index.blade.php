@@ -25,7 +25,7 @@
             <td><span class="adm-badge adm-badge--{{ $post->is_published ? 'active' : 'closed' }}">{{ $post->is_published ? 'Published' : 'Draft' }}</span></td>
             <td>
               <div class="adm-actions">
-                <a class="adm-btn adm-btn--ghost adm-btn--sm" href="{{ url('blog-details.html?post='.$post->slug) }}" target="_blank" rel="noopener" aria-label="View"><i class="fa-solid fa-eye"></i></a>
+                <a class="adm-btn adm-btn--ghost adm-btn--sm" href="{{ url('blog-details?post='.$post->slug) }}" target="_blank" rel="noopener" aria-label="View"><i class="fa-solid fa-eye"></i></a>
                 <a class="adm-btn adm-btn--ghost adm-btn--sm" href="{{ route('admin.blogs.edit', $post) }}">Edit</a>
               </div>
             </td>

@@ -2,7 +2,7 @@
 
 @section('title', 'Mighty Silks — Page Not Found')
 
-{{-- The site links its assets and pages relatively (css/styles.css, about.html), so a missing
+{{-- The site links its assets and pages relatively (css/styles.css, /about), so a missing
      nested URL (/orders/x/y) would look for them under that path; resolve them from the root. --}}
 @section('head')
 <base href="{{ url('/') }}/">
@@ -26,18 +26,18 @@
       <p class="not-found__lead">The page you're looking for may have moved, sold out or never existed. Let's get you back to the collections.</p>
 
       <div class="not-found__actions">
-        <a class="pdp-btn pdp-btn--solid" href="index.html">Back to Home</a>
-        <a class="pdp-btn pdp-btn--outline" href="our-shop.html">Shop All</a>
+        <a class="pdp-btn pdp-btn--solid" href="{{ url('/') }}">Back to Home</a>
+        <a class="pdp-btn pdp-btn--outline" href="our-shop">Shop All</a>
       </div>
 
       <nav class="not-found__links" aria-label="Popular pages">
         <p>Or try one of these:</p>
         <ul>
-          <li><a href="new-arrivals.html">New Arrivals</a></li>
-          <li><a href="sarees.html">Sarees</a></li>
-          <li><a href="bridal.html">Bridal</a></li>
-          <li><a href="track-order.html">Track Order</a></li>
-          <li><a href="help-center.html">Help Center</a></li>
+          <li><a href="new-arrivals">New Arrivals</a></li>
+          <li><a href="sarees">Sarees</a></li>
+          <li><a href="bridal">Bridal</a></li>
+          <li><a href="track-order">Track Order</a></li>
+          <li><a href="help-center">Help Center</a></li>
         </ul>
       </nav>
     </section>

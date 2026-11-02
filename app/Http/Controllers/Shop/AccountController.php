@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
 
-/** Shopper accounts for login.html / signup.html (session based, so the pages know who's in). */
+/** Shopper accounts for /login / /signup (session based, so the pages know who's in). */
 class AccountController extends Controller
 {
     /**
@@ -158,7 +158,7 @@ class AccountController extends Controller
             'ok' => true,
             'name' => strtok($user->name, ' '),
             'admin' => $user->is_admin,
-            'redirect' => $user->is_admin ? route('admin.dashboard') : url('index.html'),
+            'redirect' => $user->is_admin ? route('admin.dashboard') : url('/'),
         ];
     }
 

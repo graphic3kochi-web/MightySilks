@@ -7,7 +7,7 @@ use App\Models\Enquiry;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
-/** Corporate & bulk enquiries (corporate-bulk.html). */
+/** Corporate & bulk enquiries (/corporate-bulk). */
 class EnquiryController extends Controller
 {
     public function index(Request $request)

@@ -13,10 +13,10 @@
                   <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
                 </div>
                 <div class="product__quick">
-                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p={{ $product->code }}">Quick View</a>
+                  <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p={{ $product->code }}">Quick View</a>
                 </div>
               </div>
             </div>
-            <h3 class="product__title"><a href="product.html?p={{ $product->code }}">{{ $product->title }}</a></h3>
+            <h3 class="product__title"><a href="product?p={{ $product->code }}">{{ $product->title }}</a></h3>
             <p class="product__price">{{ inr($product->price) }}</p>
           </article>

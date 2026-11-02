@@ -1,29 +1,29 @@
-// Our Shop (our-shop.html), New Arrivals (new-arrivals.html, the same page with only the cards
-// marked data-new), Bridal (bridal.html, only the wedding / bridal cards, gowns first) and Sarees
-// (sarees.html, the saree and ready-to-wear cards), Mighty Signature (mighty-signature.html, the
-// Kalyan Signature collection, ks-1 – ks-12) and Gowns (gown.html, the Mahalekshmi Bridal Gowns
-// collection: mg-1 – mg-11 plus bg-1 – bg-4), Lahanga (lahanga.html, the Mahalekshmi Bridal
-// Lehengas collection, ml-1 – ml-6) and Ready to Wear (ready-to-wear.html, the Mahalekshmi Ready to
+// Our Shop (/our-shop), New Arrivals (/new-arrivals, the same page with only the cards
+// marked data-new), Bridal (/bridal, only the wedding / bridal cards, gowns first) and Sarees
+// (/sarees, the saree and ready-to-wear cards), Mighty Signature (/mighty-signature, the
+// Kalyan Signature collection, ks-1 – ks-12) and Gowns (/gown, the Mahalekshmi Bridal Gowns
+// collection: mg-1 – mg-11 plus bg-1 – bg-4), Lahanga (/lahanga, the Mahalekshmi Bridal
+// Lehengas collection, ml-1 – ml-6) and Ready to Wear (/ready-to-wear, the Mahalekshmi Ready to
 // Wear Sarees collection: mr-1 – mr-35 plus rtw-1 – rtw-4) and Christmas Collections
-// (christmas.html, the first 12 of the Kalyan Christmas collection, kc-1 – kc-12) and Diwali
-// Collections (diwali.html, the first 12 of the Kalyan Diwali Sarees collection, kd-1 – kd-12) and
-// Dussehra Collections (dussehra.html, the first 12 of the Kalyan Dussera collection: du-1 – du-9
-// plus kc-8, ks-4, kd-11) and Navaratri Collections (navaratri.html, the first 12 of the Kalyan
-// Navratri Sarees collection: nv-1 – nv-10 plus kc-4, kc-6) and Brocade Sarees (pattern.html, the
+// (/christmas, the first 12 of the Kalyan Christmas collection, kc-1 – kc-12) and Diwali
+// Collections (/diwali, the first 12 of the Kalyan Diwali Sarees collection, kd-1 – kd-12) and
+// Dussehra Collections (/dussehra, the first 12 of the Kalyan Dussera collection: du-1 – du-9
+// plus kc-8, ks-4, kd-11) and Navaratri Collections (/navaratri, the first 12 of the Kalyan
+// Navratri Sarees collection: nv-1 – nv-10 plus kc-4, kc-6) and Brocade Sarees (/pattern, the
 // Kalyan Brocade Art Silk Sarees collection: kb-1 – kb-18 plus du-2, nv-5, kd-1, kd-3, kd-6, kd-8) and
-// Kanchipuram Silk Sarees (kanchipuram-silk-sarees.html, the Mahalekshmi collection: mk-1 – mk-40) and
-// Semi Silk Sarees (semi-silk-sarees.html, the Mahalekshmi collection: mss-1 – mss-8) and Kerala
-// Sarees (kerala-sarees.html, the Mahalekshmi collection: mke-1 – mke-36) and Pure Silk Sarees
-// (pure-silk-sarees.html, the Mahalekshmi Silk Saree collection: mps-1 – mps-40) and Unstitched
-// Salwar Suits (unstitched-salwar-suits.html, the Mahalekshmi collection: mus-1 – mus-18) and Organza
-// Sarees (organza-sarees.html, the Mahalekshmi collection: mor-1 – mor-40) and Dhawani Collection
-// (dhawani-collection.html, the site's dhavani sets dh-1 – dh-4) and Designer Sarees
-// (designer-sarees.html, the Mahalekshmi collection: mds-1 – mds-4) and Frocks Collection
-// (frocks-collection.html, the Mahalekshmi Frocks collection: mfr-1) and Banarasi Georgette Sarees
-// (banarasi-georgette-sarees.html, the Mahalekshmi collection: mbg-1 – mbg-50) and Fancy Sarees
-// (fancy-sarees.html, the Mahalekshmi collection: mfs-1 – mfs-13) and Semi Banarasi Sarees
-// (semi-banarasi-sarees.html, the Mahalekshmi collection: msb-1 – msb-6) and Bridal Sarees
-// (bridal-sarees.html, the Mahalekshmi collection: mbs-1 – mbs-40):
+// Kanchipuram Silk Sarees (/kanchipuram-silk-sarees, the Mahalekshmi collection: mk-1 – mk-40) and
+// Semi Silk Sarees (/semi-silk-sarees, the Mahalekshmi collection: mss-1 – mss-8) and Kerala
+// Sarees (/kerala-sarees, the Mahalekshmi collection: mke-1 – mke-36) and Pure Silk Sarees
+// (/pure-silk-sarees, the Mahalekshmi Silk Saree collection: mps-1 – mps-40) and Unstitched
+// Salwar Suits (/unstitched-salwar-suits, the Mahalekshmi collection: mus-1 – mus-18) and Organza
+// Sarees (/organza-sarees, the Mahalekshmi collection: mor-1 – mor-40) and Dhawani Collection
+// (/dhawani-collection, the site's dhavani sets dh-1 – dh-4) and Designer Sarees
+// (/designer-sarees, the Mahalekshmi collection: mds-1 – mds-4) and Frocks Collection
+// (/frocks-collection, the Mahalekshmi Frocks collection: mfr-1) and Banarasi Georgette Sarees
+// (/banarasi-georgette-sarees, the Mahalekshmi collection: mbg-1 – mbg-50) and Fancy Sarees
+// (/fancy-sarees, the Mahalekshmi collection: mfs-1 – mfs-13) and Semi Banarasi Sarees
+// (/semi-banarasi-sarees, the Mahalekshmi collection: msb-1 – msb-6) and Bridal Sarees
+// (/bridal-sarees, the Mahalekshmi collection: mbs-1 – mbs-40):
 // the Price / Color / Pattern drop-downs
 // and the Filters drawer filter the
 // product grid, and Featured sorts it. Classic script (loaded after js/main.js) so the page also

@@ -62,7 +62,7 @@
         <strong data-cart-total>₹0</strong>
         <button type="button" data-cart-view-details>View Details</button>
       </div>
-      <a class="cart-checkout" href="checkout.html" data-cart-checkout>Checkout</a>
+      <a class="cart-checkout" href="checkout" data-cart-checkout>Checkout</a>
       <p class="cart-secure"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Secure checkout</p>
     </footer>
   </aside>

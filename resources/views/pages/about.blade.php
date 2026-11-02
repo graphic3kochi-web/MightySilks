@@ -25,7 +25,7 @@
         <h2 class="about-heading" id="about-story-title">Woven with Tradition, Made for Today</h2>
         <p>Mighty Silks began with a simple belief: every woman deserves to feel extraordinary in what she wears. From the looms of Kanchipuram and Banaras to the ateliers behind today's ready-to-wear designs, we bring together the finest of Indian textile craft in one place.</p>
         <p>Each saree, lehenga and gown in our collection is chosen for the quality of its weave, the richness of its colour and the care of its finish, so the pieces you wear to your most important moments are ones you'll treasure for years.</p>
-        <a class="pdp-btn pdp-btn--solid about-btn" href="our-shop.html">Explore the Collection</a>
+        <a class="pdp-btn pdp-btn--solid about-btn" href="our-shop">Explore the Collection</a>
       </div>
       <div class="about-story__photo">
         <img src="assets/banners/timeless-glow.png" alt="A woman in a gold embroidered lehenga seated in a sandstone arcade">
@@ -74,25 +74,25 @@
       <p class="about-eyebrow">Discover</p>
       <h2 class="about-heading" id="about-collections-title">Our Collections</h2>
       <div class="about-collections__grid">
-        <a class="arch-card" href="sarees.html">
+        <a class="arch-card" href="sarees">
           <span class="arch-card__media"><img src="assets/wedding/saree.png" alt=""></span>
           <span class="arch-card__title">Saree</span>
           <span class="arch-card__sub">Collections</span>
           <svg class="arch-card__trace" viewBox="0 0 417.367 621" aria-hidden="true"><path pathLength="1" d="M208.684 620.25H0.75V208.684A207.934 207.934 0 0 1 208.684 0.75A207.934 207.934 0 0 1 416.617 208.684V620.25Z"/></svg>
         </a>
-        <a class="arch-card" href="gown.html">
+        <a class="arch-card" href="gown">
           <span class="arch-card__media"><img src="assets/wedding/gown.png" alt=""></span>
           <span class="arch-card__title">Gown</span>
           <span class="arch-card__sub">Collections</span>
           <svg class="arch-card__trace" viewBox="0 0 417.367 621" aria-hidden="true"><path pathLength="1" d="M208.684 620.25H0.75V208.684A207.934 207.934 0 0 1 208.684 0.75A207.934 207.934 0 0 1 416.617 208.684V620.25Z"/></svg>
         </a>
-        <a class="arch-card" href="lahanga.html">
+        <a class="arch-card" href="lahanga">
           <span class="arch-card__media"><img src="assets/wedding/lehenga.png" alt=""></span>
           <span class="arch-card__title">Lahanga</span>
           <span class="arch-card__sub">Collections</span>
           <svg class="arch-card__trace" viewBox="0 0 417.367 621" aria-hidden="true"><path pathLength="1" d="M208.684 620.25H0.75V208.684A207.934 207.934 0 0 1 208.684 0.75A207.934 207.934 0 0 1 416.617 208.684V620.25Z"/></svg>
         </a>
-        <a class="arch-card" href="ready-to-wear.html">
+        <a class="arch-card" href="ready-to-wear">
           <span class="arch-card__media"><img src="assets/wedding/ready-to-wear.png" alt=""></span>
           <span class="arch-card__title">Ready To Wear</span>
           <span class="arch-card__sub">Collections</span>

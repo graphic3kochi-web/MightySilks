@@ -58,7 +58,7 @@
             </td>
             <td>
               <div class="adm-actions">
-                <a class="adm-btn adm-btn--ghost adm-btn--sm" href="{{ url('product.html?p='.$product->code) }}" target="_blank" rel="noopener" aria-label="View on site"><i class="fa-solid fa-eye"></i></a>
+                <a class="adm-btn adm-btn--ghost adm-btn--sm" href="{{ url('product?p='.$product->code) }}" target="_blank" rel="noopener" aria-label="View on site"><i class="fa-solid fa-eye"></i></a>
                 <a class="adm-btn adm-btn--ghost adm-btn--sm" href="{{ route('admin.products.edit', $product) }}">Edit</a>
               </div>
             </td>

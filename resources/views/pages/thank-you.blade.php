@@ -8,7 +8,7 @@
 @endsection
 
 @php
-  // thank-you.html?order=<number>: thanks for that order and links to it; otherwise a general thank-you.
+  // /thank-you?order=<number>: thanks for that order and links to it; otherwise a general thank-you.
   $order = preg_match('/^[A-Za-z0-9-]{1,32}$/', (string) request('order')) ? request('order') : null;
 @endphp
 
@@ -34,11 +34,11 @@
 
       <div class="thanks__actions">
         @if ($order)
-          <a class="pdp-btn pdp-btn--solid" href="order-details.html?order={{ $order }}">View Order</a>
+          <a class="pdp-btn pdp-btn--solid" href="order-details?order={{ $order }}">View Order</a>
         @endif
-        <a class="pdp-btn {{ $order ? 'pdp-btn--outline' : 'pdp-btn--solid' }}" href="our-shop.html">Continue Shopping</a>
+        <a class="pdp-btn {{ $order ? 'pdp-btn--outline' : 'pdp-btn--solid' }}" href="our-shop">Continue Shopping</a>
         @unless ($order)
-          <a class="pdp-btn pdp-btn--outline" href="index.html">Back to Home</a>
+          <a class="pdp-btn pdp-btn--outline" href="{{ url('/') }}">Back to Home</a>
         @endunless
       </div>
 
@@ -57,12 +57,12 @@
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
             <strong>On its way</strong>
-            <span>Follow it any time on <a href="track-order.html">Track Order</a>.</span>
+            <span>Follow it any time on <a href="track-order">Track Order</a>.</span>
           </li>
         </ol>
       @endif
 
-      <p class="thanks__help">Questions? Visit our <a href="help-center.html">Help Center</a> or write to <a href="mailto:info@mightysilks.ae">info@mightysilks.ae</a>.</p>
+      <p class="thanks__help">Questions? Visit our <a href="help-center">Help Center</a> or write to <a href="mailto:info@mightysilks.ae">info@mightysilks.ae</a>.</p>
     </section>
 
   </main>

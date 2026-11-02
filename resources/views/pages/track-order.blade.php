@@ -46,7 +46,7 @@
             <h2 class="track__status" data-track-status-title></h2>
             <p class="track__eta" data-track-eta></p>
           </div>
-          <a class="pdp-btn pdp-btn--outline track__details" href="order-details.html" data-track-details>View Order Details</a>
+          <a class="pdp-btn pdp-btn--outline track__details" href="order-details" data-track-details>View Order Details</a>
         </div>
 
         <ol class="order-steps track__steps" aria-label="Order progress" data-track-steps></ol>
@@ -58,7 +58,7 @@
         </div>
       </div>
 
-      <p class="track__help">Need help with your order? Visit our <a href="help-center.html">Help Center</a> or call us toll free on <a href="tel:800644489">800644489</a>.</p>
+      <p class="track__help">Need help with your order? Visit our <a href="help-center">Help Center</a> or call us toll free on <a href="tel:800644489">800644489</a>.</p>
     </section>
 
   </main>

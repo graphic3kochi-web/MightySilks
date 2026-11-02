@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
 
-/** Checkout (checkout.html), order details, invoices, My Orders and order tracking. */
+/** Checkout (/checkout), order details, invoices, My Orders and order tracking. */
 class OrderController extends Controller
 {
     /**
@@ -119,7 +119,7 @@ class OrderController extends Controller
             return $order;
         });
 
-        // This browser may look the order up again (order-details.html) without signing in.
+        // This browser may look the order up again (/order-details) without signing in.
         $request->session()->push('orders', $order->number);
 
         // Confirmation with the PDF invoice; the store gets a copy at MAIL_ORDER_RECIPIENT (.env)
@@ -136,7 +136,7 @@ class OrderController extends Controller
         return response()->json(['order' => $order->load('items')->toRecord()], 201);
     }
 
-    /** order-details.html: for the shopper who placed it (this session or their account) or an admin. */
+    /** /order-details: for the shopper who placed it (this session or their account) or an admin. */
     public function show(Request $request, string $number)
     {
         return ['order' => $this->findViewable($request, $number)->toRecord()];
@@ -150,7 +150,7 @@ class OrderController extends Controller
         return $order->invoicePdf()->download($order->invoiceFilename());
     }
 
-    /** my-orders.html: the signed-in shopper's orders, newest first, each with its invoice. */
+    /** /my-orders: the signed-in shopper's orders, newest first, each with its invoice. */
     public function mine(Request $request)
     {
         $user = $request->user();
@@ -161,7 +161,7 @@ class OrderController extends Controller
         return view('account.orders', compact('orders'));
     }
 
-    /** track-order.html: the order number plus the email or phone used at checkout. */
+    /** /track-order: the order number plus the email or phone used at checkout. */
     public function track(Request $request)
     {
         $data = $request->validate(['order' => 'required|string|max:30', 'contact' => 'required|string|max:120']);

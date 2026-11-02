@@ -68,7 +68,7 @@ class Order extends Model
             ->setPaper('a4')->setOption('isFontSubsettingEnabled', true);
     }
 
-    /** The order as js/main.js keeps it (order-details.html, track-order.html). */
+    /** The order as js/main.js keeps it (/order-details, /track-order). */
     public function toRecord(): array
     {
         return [

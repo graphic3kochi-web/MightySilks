@@ -43,7 +43,7 @@
 
         <section id="overview">
           <h2><span>1.</span> Overview</h2>
-          <p>This Shipping Policy applies to all orders placed on the Mighty Silks website. We currently deliver across India. It should be read together with our <a href="terms-and-conditions.html">Terms &amp; Conditions</a> and <a href="payment-policy.html">Payment Policy</a>.</p>
+          <p>This Shipping Policy applies to all orders placed on the Mighty Silks website. We currently deliver across India. It should be read together with our <a href="terms-and-conditions">Terms &amp; Conditions</a> and <a href="payment-policy">Payment Policy</a>.</p>
         </section>
 
         <section id="options">
@@ -81,7 +81,7 @@
 
         <section id="tracking">
           <h2><span>5.</span> Tracking Your Order</h2>
-          <p>Once your order is dispatched, we will send you an email with your tracking number and a link to follow your parcel. You can also check its progress any time on our <a href="track-order.html">Track Your Order</a> page.</p>
+          <p>Once your order is dispatched, we will send you an email with your tracking number and a link to follow your parcel. You can also check its progress any time on our <a href="track-order">Track Your Order</a> page.</p>
         </section>
 
         <section id="address">

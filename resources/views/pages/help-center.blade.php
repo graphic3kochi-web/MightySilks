@@ -72,14 +72,14 @@
       <div class="help-group" data-help-group="orders">
         <h3 class="help-group__title">Orders &amp; Tracking</h3>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">How do I place an order?</span></summary><div class="careers-job__body"><p>Browse our collections, choose your item and click <strong>Add to Cart</strong> or <strong>Buy Now</strong>. Open your cart, select <strong>Checkout</strong>, enter your contact and delivery details, choose a shipping and payment method, and place your order. You'll see a confirmation straight away.</p></div></details>
-        <details class="careers-job help-faq"><summary><span class="careers-job__title">How can I track my order?</span></summary><div class="careers-job__body"><p>Once your order is dispatched, we'll email you a tracking number and link. You can also follow your order's progress on our <a href="track-order.html">Track Your Order</a> page.</p></div></details>
+        <details class="careers-job help-faq"><summary><span class="careers-job__title">How can I track my order?</span></summary><div class="careers-job__body"><p>Once your order is dispatched, we'll email you a tracking number and link. You can also follow your order's progress on our <a href="track-order">Track Your Order</a> page.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">Can I change or cancel my order?</span></summary><div class="careers-job__body"><p>Yes, as long as it hasn't been dispatched. Contact us as soon as possible with your order number. Cancellations before dispatch are free and fully refunded. Once dispatched, an order can't be cancelled, but you can return it after delivery.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">I didn't receive an order confirmation. What should I do?</span></summary><div class="careers-job__body"><p>Please check your spam or promotions folder first. If you still can't find it, contact us with the email address or phone number you used, and we'll confirm your order.</p></div></details>
       </div>
 
       <div class="help-group" data-help-group="shipping">
         <h3 class="help-group__title">Shipping &amp; Delivery</h3>
-        <details class="careers-job help-faq"><summary><span class="careers-job__title">How much does shipping cost?</span></summary><div class="careers-job__body"><p>Standard Delivery is <strong>free</strong> on orders of ₹1,999 or more (after any coupon), and ₹99 below that. Express Delivery costs ₹250. See our <a href="shipping-policy.html">Shipping Policy</a> for details.</p></div></details>
+        <details class="careers-job help-faq"><summary><span class="careers-job__title">How much does shipping cost?</span></summary><div class="careers-job__body"><p>Standard Delivery is <strong>free</strong> on orders of ₹1,999 or more (after any coupon), and ₹99 below that. Express Delivery costs ₹250. See our <a href="shipping-policy">Shipping Policy</a> for details.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">How long will delivery take?</span></summary><div class="careers-job__body"><p>Orders are dispatched within 1–2 business days. Standard Delivery then takes 5–7 business days and Express Delivery 2–3 business days. Remote areas and festive seasons may take a little longer.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">Do you ship outside India?</span></summary><div class="careers-job__body"><p>We currently ship within India only. If you'd like to order from abroad, please contact us and we'll let you know if we can help.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">Can I change my delivery address?</span></summary><div class="careers-job__body"><p>Yes, before your order is dispatched. Contact us with your order number and the new address as soon as possible.</p></div></details>
@@ -87,7 +87,7 @@
 
       <div class="help-group" data-help-group="returns">
         <h3 class="help-group__title">Returns &amp; Exchanges</h3>
-        <details class="careers-job help-faq"><summary><span class="careers-job__title">What is your return policy?</span></summary><div class="careers-job__body"><p>You can return or exchange eligible items within <strong>7 days</strong> of delivery. Items must be unused, unwashed and in their original packaging with all tags attached. Read the full <a href="return-policy.html">Return Policy</a>.</p></div></details>
+        <details class="careers-job help-faq"><summary><span class="careers-job__title">What is your return policy?</span></summary><div class="careers-job__body"><p>You can return or exchange eligible items within <strong>7 days</strong> of delivery. Items must be unused, unwashed and in their original packaging with all tags attached. Read the full <a href="return-policy">Return Policy</a>.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">How do I request a return or exchange?</span></summary><div class="careers-job__body"><p>Contact us within 7 days of delivery with your order number, the item and the reason. Once approved, we'll arrange a pickup or share the address to send it to.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">Which items can't be returned?</span></summary><div class="careers-job__body"><p>Customised or altered items, sarees with stitched blouses or fall and pico work done at your request, clearance sale items and gift cards can't be returned unless they arrive damaged or incorrect.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">My item arrived damaged or wrong. What do I do?</span></summary><div class="careers-job__body"><p>We're sorry! Please contact us within <strong>48 hours</strong> of delivery with your order number and photos or an unboxing video. We'll arrange a free pickup and send a replacement or a full refund.</p></div></details>
@@ -95,7 +95,7 @@
 
       <div class="help-group" data-help-group="payments">
         <h3 class="help-group__title">Payments &amp; Refunds</h3>
-        <details class="careers-job help-faq"><summary><span class="careers-job__title">Which payment methods do you accept?</span></summary><div class="careers-job__body"><p>UPI (Google Pay, PhonePe, Paytm and more), credit and debit cards (Visa, Mastercard, RuPay) and Cash on Delivery where available. See our <a href="payment-policy.html">Payment Policy</a>.</p></div></details>
+        <details class="careers-job help-faq"><summary><span class="careers-job__title">Which payment methods do you accept?</span></summary><div class="careers-job__body"><p>UPI (Google Pay, PhonePe, Paytm and more), credit and debit cards (Visa, Mastercard, RuPay) and Cash on Delivery where available. See our <a href="payment-policy">Payment Policy</a>.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">Is Cash on Delivery available?</span></summary><div class="careers-job__body"><p>Yes, for eligible orders and delivery locations. Choose <strong>Cash on Delivery</strong> at checkout and keep the exact amount ready when your order arrives.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">Money was deducted but my order failed. What now?</span></summary><div class="careers-job__body"><p>Don't worry. Your bank or payment provider usually reverses the amount automatically within 5–7 business days. If it doesn't, contact us with your transaction details.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">When will I get my refund?</span></summary><div class="careers-job__body"><p>Approved refunds are processed within <strong>5–10 business days</strong> to your original payment method. Cash on Delivery orders are refunded by bank transfer or UPI.</p></div></details>
@@ -104,8 +104,8 @@
 
       <div class="help-group" data-help-group="account">
         <h3 class="help-group__title">Account &amp; Login</h3>
-        <details class="careers-job help-faq"><summary><span class="careers-job__title">Do I need an account to shop?</span></summary><div class="careers-job__body"><p>No, you can check out as a guest. An account makes checkout faster and lets you see your orders and wishlist in one place. <a href="signup.html">Create an account</a>.</p></div></details>
-        <details class="careers-job help-faq"><summary><span class="careers-job__title">Can I log in with my phone number?</span></summary><div class="careers-job__body"><p>Yes. On the <a href="login.html">Log In</a> page, choose <strong>Phone Number</strong>, enter your number and we'll send you a one-time code to sign in.</p></div></details>
+        <details class="careers-job help-faq"><summary><span class="careers-job__title">Do I need an account to shop?</span></summary><div class="careers-job__body"><p>No, you can check out as a guest. An account makes checkout faster and lets you see your orders and wishlist in one place. <a href="signup">Create an account</a>.</p></div></details>
+        <details class="careers-job help-faq"><summary><span class="careers-job__title">Can I log in with my phone number?</span></summary><div class="careers-job__body"><p>Yes. On the <a href="login">Log In</a> page, choose <strong>Phone Number</strong>, enter your number and we'll send you a one-time code to sign in.</p></div></details>
         <details class="careers-job help-faq"><summary><span class="careers-job__title">I forgot my password. What should I do?</span></summary><div class="careers-job__body"><p>Click <strong>Forgot password?</strong> on the Log In page to reset it, or log in with your phone number and a one-time code instead.</p></div></details>
       </div>
 
@@ -136,7 +136,7 @@
           <span class="help-contact__detail">info@mightysilks.ae</span>
           <span class="help-contact__detail">Include your order number if you have one</span>
         </a>
-        <a class="help-contact__card" href="about.html">
+        <a class="help-contact__card" href="about">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
           <span class="help-contact__name">Visit Us</span>
           <span class="help-contact__detail">The Burlington Tower, Business Bay</span>

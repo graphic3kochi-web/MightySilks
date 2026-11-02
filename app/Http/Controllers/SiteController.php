@@ -7,11 +7,13 @@ use App\Models\Collection;
 use App\Models\JobOpening;
 use App\Models\Product;
 use App\Models\Setting;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 /**
- * The storefront: every page keeps its static-site URL (about.html…), rendered from
- * resources/views/pages; shop pages list their collection's products from the database.
+ * The storefront: each page at a clean URL (/about…; the old about.html redirects), rendered
+ * from resources/views/pages; shop pages list their collection's products from the database.
  */
 class SiteController extends Controller
 {
@@ -23,6 +25,14 @@ class SiteController extends Controller
         $products = $collection ? $collection->products()->where('is_active', true)->get() : collect();
 
         return view("pages.$page", compact('products'));
+    }
+
+    /** about.html → /about (index.html → /), keeping the query string: old links, bookmarks and emails. */
+    public function legacy(Request $request, string $page): RedirectResponse
+    {
+        $query = $request->getQueryString();
+
+        return redirect(($page === 'index' ? '/' : "/$page").($query ? "?$query" : ''), 301);
     }
 
     /** js/products.js: the catalogue the product page, cart and checkout read. */

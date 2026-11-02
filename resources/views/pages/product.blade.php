@@ -120,11 +120,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=ss-1">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=ss-1">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=ss-1">Semi Silk Saree Mustard Yellow with Silver Zari Geometric Brocade Pallu and Magenta Border</a></h3>
+          <h3 class="product__title"><a href="product?p=ss-1">Semi Silk Saree Mustard Yellow with Silver Zari Geometric Brocade Pallu and Magenta Border</a></h3>
           <p class="product__price">₹ 4,595.00</p>
         </article>
         <article class="product" data-category="saree" data-color="purple" data-pattern="zari-brocade stripes" data-fabric="semi-silk" data-blouse="yes" data-occasion="festive wedding">
@@ -138,11 +138,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=ss-2">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=ss-2">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=ss-2">Semi Silk Saree Deep Purple with Rose Copper Zari Brocade Striped Pallu and Paisley Border</a></h3>
+          <h3 class="product__title"><a href="product?p=ss-2">Semi Silk Saree Deep Purple with Rose Copper Zari Brocade Striped Pallu and Paisley Border</a></h3>
           <p class="product__price">₹ 4,595.00</p>
         </article>
         <article class="product" data-category="saree" data-color="mehandi-green" data-pattern="zari-brocade" data-fabric="semi-silk" data-blouse="yes" data-occasion="festive">
@@ -157,11 +157,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=ss-3">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=ss-3">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=ss-3">Semi Silk Saree Olive Green with Golden Zari Geometric Weave Pallu and Purple Tassels</a></h3>
+          <h3 class="product__title"><a href="product?p=ss-3">Semi Silk Saree Olive Green with Golden Zari Geometric Weave Pallu and Purple Tassels</a></h3>
           <p class="product__price">₹ 3,760.00</p>
         </article>
         <article class="product" data-category="saree" data-color="purple magenta" data-pattern="zari-butta" data-fabric="semi-silk" data-blouse="yes" data-occasion="festive wedding">
@@ -175,11 +175,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=ss-4">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=ss-4">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=ss-4">Semi Silk Deep Purple Zari Floral Jaal Magenta Pallu Diamond Booti saree</a></h3>
+          <h3 class="product__title"><a href="product?p=ss-4">Semi Silk Deep Purple Zari Floral Jaal Magenta Pallu Diamond Booti saree</a></h3>
           <p class="product__price">₹ 4,595.00</p>
         </article>
         <article class="product" data-category="saree" data-color="teal" data-pattern="plain-body" data-fabric="chiffon" data-blouse="yes" data-occasion="festive party" data-new>
@@ -193,11 +193,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=na-1">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=na-1">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=na-1">Chiffon Peacock Green Saree with Crystal Embellished Teardrop Lace Border and Plain Body</a></h3>
+          <h3 class="product__title"><a href="product?p=na-1">Chiffon Peacock Green Saree with Crystal Embellished Teardrop Lace Border and Plain Body</a></h3>
           <p class="product__price">₹ 3,580.00</p>
         </article>
         <article class="product" data-category="saree" data-color="peacock-blue black" data-pattern="printed floral-print" data-fabric="organza" data-blouse="yes" data-occasion="festive party" data-new>
@@ -211,11 +211,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=na-2">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=na-2">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=na-2">Organza Peacock Blue Black Lily Floral Butta Printed Saree with Beaded Zigzag Border</a></h3>
+          <h3 class="product__title"><a href="product?p=na-2">Organza Peacock Blue Black Lily Floral Butta Printed Saree with Beaded Zigzag Border</a></h3>
           <p class="product__price">₹ 3,550.00</p>
         </article>
         <article class="product" data-category="saree" data-color="pink multi" data-pattern="embroidery" data-fabric="organza" data-blouse="yes" data-occasion="wedding party" data-new>
@@ -229,11 +229,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=na-4">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=na-4">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=na-4">Organza Pink Multicolor Floral Embroidered Scalloped Border Saree with Sequin Work</a></h3>
+          <h3 class="product__title"><a href="product?p=na-4">Organza Pink Multicolor Floral Embroidered Scalloped Border Saree with Sequin Work</a></h3>
           <p class="product__price">₹ 13,900.00</p>
         </article>
         <article class="product" data-category="ready-to-wear" data-color="violet" data-pattern="embroidery" data-fabric="georgette" data-blouse="yes" data-occasion="party">
@@ -247,11 +247,11 @@
                 <button class="btn-wish" type="button" aria-label="Add to wishlist"><img src="assets/icons/heart.svg" alt=""></button>
               </div>
               <div class="product__quick">
-                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product.html?p=rtw-3">Quick View</a>
+                <button type="button">Buy Now</button><span class="product__quick-divider"><img src="assets/icons/divider.svg" alt=""></span><a href="product?p=rtw-3">Quick View</a>
               </div>
             </div>
           </div>
-          <h3 class="product__title"><a href="product.html?p=rtw-3">Violet Georgette Ready to Wear Saree with Designer...</a></h3>
+          <h3 class="product__title"><a href="product?p=rtw-3">Violet Georgette Ready to Wear Saree with Designer...</a></h3>
           <p class="product__price">₹ 4,595.00</p>
         </article>
         </div>

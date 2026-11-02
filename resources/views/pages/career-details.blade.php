@@ -18,10 +18,10 @@
 
     <!-- ============ Career details ============ -->
     <!-- No Figma frame for this page: built as the Careers page. js/main.js fills it from
-         js/jobs.js for career-details.html?job=<slug> (no slug: the first role), lists the other
+         js/jobs.js for /career-details?job=<slug> (no slug: the first role), lists the other
          roles and, for a slug that isn't there, says the role has closed. -->
     <section class="job" aria-labelledby="job-title" data-job-page>
-      <nav class="job__crumbs" aria-label="Breadcrumb"><a href="careers.html">Careers</a><span aria-hidden="true">/</span><a href="careers.html#open-positions">Open Positions</a><span aria-hidden="true">/</span><span aria-current="page" data-job-crumb></span></nav>
+      <nav class="job__crumbs" aria-label="Breadcrumb"><a href="careers">Careers</a><span aria-hidden="true">/</span><a href="careers#open-positions">Open Positions</a><span aria-hidden="true">/</span><span aria-current="page" data-job-crumb></span></nav>
 
       <div class="job__layout" data-job-content>
         <article class="job__main">
@@ -50,14 +50,14 @@
             <div><dt>Experience</dt><dd data-job-experience></dd></div>
           </dl>
           <button class="pdp-btn pdp-btn--solid job__apply" type="button" data-careers-apply>Apply Now</button>
-          <a class="job__back" href="careers.html#open-positions">‹ Back to all openings</a>
+          <a class="job__back" href="careers#open-positions">‹ Back to all openings</a>
         </aside>
       </div>
 
       <div class="job__missing" data-job-missing hidden>
         <h1 class="about-heading">This Role Has Closed</h1>
         <p>The position you're looking for is no longer open. Take a look at our current openings instead.</p>
-        <a class="pdp-btn pdp-btn--solid about-btn" href="careers.html#open-positions">See Current Openings</a>
+        <a class="pdp-btn pdp-btn--solid about-btn" href="careers#open-positions">See Current Openings</a>
       </div>
     </section>
 

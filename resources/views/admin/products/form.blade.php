@@ -8,7 +8,7 @@
 <div class="adm-head">
   <div>
     <h1>{{ $product->exists ? 'Edit Product' : 'Add Product' }}</h1>
-    @if ($product->exists)<p>{{ $product->code }} · <a href="{{ url('product.html?p='.$product->code) }}" target="_blank" rel="noopener">View on site</a></p>@endif
+    @if ($product->exists)<p>{{ $product->code }} · <a href="{{ url('product?p='.$product->code) }}" target="_blank" rel="noopener">View on site</a></p>@endif
   </div>
   @if ($product->exists)
     <div class="adm-head__actions">
@@ -33,7 +33,7 @@
         <x-admin.field name="price" label="Price (₹)" type="number" step="0.01" min="0" :value="$product->price" required />
         <x-admin.field name="stock" label="Stock" type="number" min="0" :value="$product->stock" required />
         <x-admin.field name="sku" label="SKU" :value="$product->sku" />
-        <x-admin.field name="code" label="Product code" :value="$product->code" help="The link: product.html?p=code. Leave empty to generate one." />
+        <x-admin.field name="code" label="Product code" :value="$product->code" help="The link: /product?p=code. Leave empty to generate one." />
         <x-admin.field name="alt" label="Photo description (alt text)" :value="$product->alt" wide />
       </div>
     </section>

@@ -1,8 +1,8 @@
-// Product page (product.html): the thumbnails switch the main photo, and the offer coupon copies
+// Product page (/product): the thumbnails switch the main photo, and the offer coupon copies
 // its code. Classic script (loaded after js/main.js) so the page also works from file://.
 (() => {
 
-// Which product: product.html?p=<id> (js/products.js), as linked from every product card. Without
+// Which product: /product?p=<id> (js/products.js), as linked from every product card. Without
 // (or with an unknown) id the page keeps the organza saree it is written for. Runs first so the
 // gallery and sliders below pick up the new photos and cards.
 const productId = new URLSearchParams(location.search).get('p')

@@ -133,7 +133,7 @@
 
         <section id="privacy">
           <h2><span>12.</span> Privacy</h2>
-          <p>We handle your personal information as described in our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+          <p>We handle your personal information as described in our <a href="privacy-policy">Privacy Policy</a>.</p>
         </section>
 
         <section id="governing-law">

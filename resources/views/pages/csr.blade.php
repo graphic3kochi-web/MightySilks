@@ -131,7 +131,7 @@
       </div>
       <div class="csr-partner__actions">
         <a class="pdp-btn pdp-btn--solid about-btn" href="mailto:info@mightysilks.ae?subject=CSR%20Partnership">Get in Touch</a>
-        <a class="pdp-btn pdp-btn--outline about-btn" href="our-shop.html">Shop Consciously</a>
+        <a class="pdp-btn pdp-btn--outline about-btn" href="our-shop">Shop Consciously</a>
       </div>
     </section>
 

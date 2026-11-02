@@ -29,7 +29,7 @@
             <td><span class="adm-badge adm-badge--{{ $job->is_open ? 'active' : 'closed' }}">{{ $job->is_open ? 'Open' : 'Closed' }}</span></td>
             <td>
               <div class="adm-actions">
-                <a class="adm-btn adm-btn--ghost adm-btn--sm" href="{{ url('career-details.html?job='.$job->slug) }}" target="_blank" rel="noopener" aria-label="View"><i class="fa-solid fa-eye"></i></a>
+                <a class="adm-btn adm-btn--ghost adm-btn--sm" href="{{ url('career-details?job='.$job->slug) }}" target="_blank" rel="noopener" aria-label="View"><i class="fa-solid fa-eye"></i></a>
                 <a class="adm-btn adm-btn--ghost adm-btn--sm" href="{{ route('admin.careers.edit', $job) }}">Edit</a>
               </div>
             </td>

@@ -92,7 +92,7 @@
         </fieldset>
 
         <div class="checkout__actions">
-          <a class="checkout__back" href="cart.html">‹ Return to cart</a>
+          <a class="checkout__back" href="cart">‹ Return to cart</a>
           <button class="pdp-btn pdp-btn--solid checkout__submit" type="submit">Place Order</button>
         </div>
         <p class="checkout__error" role="alert" data-checkout-status></p>
@@ -143,13 +143,13 @@
     <div class="checkout-message" data-checkout-empty hidden>
       <h2>Your cart is empty.</h2>
       <p>Add a few favourites before checking out.</p>
-      <a class="pdp-btn pdp-btn--solid" href="our-shop.html">Continue Shopping</a>
+      <a class="pdp-btn pdp-btn--solid" href="our-shop">Continue Shopping</a>
     </div>
 
     <div class="checkout-message" data-checkout-done tabindex="-1" hidden>
       <h2>Thank you for your order!</h2>
       <p>Order <strong data-checkout-order-number></strong> is confirmed. A confirmation has been sent to <strong data-checkout-order-email></strong>.</p>
-      <a class="pdp-btn pdp-btn--solid" href="our-shop.html">Continue Shopping</a>
+      <a class="pdp-btn pdp-btn--solid" href="our-shop">Continue Shopping</a>
     </div>
 
   </main>

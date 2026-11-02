@@ -24,7 +24,7 @@ class JobOpening extends Model
         return $this->hasMany(JobApplication::class);
     }
 
-    /** The js/jobs.js entry career-details.html renders. */
+    /** The js/jobs.js entry /career-details renders. */
     public function toScript(): array
     {
         return array_filter([
