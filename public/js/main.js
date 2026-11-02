@@ -41,6 +41,11 @@ window.addEventListener('resize', fitPage)
 // The scroll scenes are set up for one mode at load; crossing the breakpoint reloads into the other.
 fluidQuery.addEventListener('change', () => window.location.reload())
 
+// Sticky header: html.is-scrolled once the page leaves the top, for the header's bar / shadow.
+const markScrolled = () => document.documentElement.classList.toggle('is-scrolled', window.scrollY > 8)
+markScrolled()
+window.addEventListener('scroll', markScrolled, { passive: true })
+
 // Menu button (fluid mode): opens the menu full screen (page scroll locked while open); closes
 // on a link, Esc or the button.
 const siteHeader = document.querySelector('.site-header')

@@ -42,6 +42,10 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 html, body { margin: 0; background: #fff; }
+/* The sticky header's height (design px): other sticky panels sit below it, and in-page links
+   (#enquiry…) stop below it. Outside .page the design px are scaled by --page-zoom by hand. */
+:root { --header-h: 102px; }
+html { scroll-padding-top: calc(var(--header-h) * var(--page-zoom, 1) + 16px); }
 body { overflow-x: hidden; font-family: var(--font-body); color: #000; }
 img { display: block; max-width: none; }
 button { font: inherit; color: inherit; }
@@ -188,6 +192,19 @@ button { font: inherit; color: inherit; }
   display: flex;
   align-items: flex-start;
 }
+/* Home page: fixed over the page, clear over the hero, then a dark bar once the page scrolls
+   (html.is-scrolled, js/main.js). No transform / filter here: the phone menu inside it is
+   position: fixed and must stay full screen. */
+.site-header.site-header--overlay {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  width: auto;
+  padding: 0 171.149px 18px;
+  transition: background-color 0.35s ease, box-shadow 0.35s ease;
+}
+.is-scrolled .site-header--overlay { background: rgba(5, 3, 10, 0.92); box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25); }
 
 .logo {
   position: relative;
@@ -1538,7 +1555,9 @@ button { font: inherit; color: inherit; }
 /* ---------- Our Shop page (our-shop.html, Figma "Our-Shop" 261:24) ---------- */
 
 /* Header: the site header, dark on white, over a light grey rule. */
-.shop-header { position: relative; height: 102px; background: #fff; }
+/* Sticks to the top on every page; a soft shadow once the page scrolls (html.is-scrolled). */
+.shop-header { position: sticky; top: 0; z-index: 100; height: 102px; background: #fff; transition: box-shadow 0.35s ease; }
+.is-scrolled .shop-header { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
 /* Full-width 1px rules (the SVG keeps its design width; the wrapper clips it on narrow screens). */
 .shop-rule { position: absolute; left: 0; right: 0; height: 1px; overflow: hidden; }
 .shop-header__rule { top: 101px; }
@@ -2230,7 +2249,7 @@ button.shop-toolbar__label:hover span:last-child { text-decoration: underline; }
 .checkout__back:hover { text-decoration: underline; }
 .checkout__submit { padding: 20px 80px; }
 
-.checkout-summary { position: sticky; top: 40px; padding: 40px; background: #f7f7f7; font-family: var(--font-body); }
+.checkout-summary { position: sticky; top: calc(var(--header-h) + 24px); padding: 40px; background: #f7f7f7; font-family: var(--font-body); }
 .checkout-summary__title { margin: 0 0 24px; font: 500 22px/normal var(--font-body); }
 .checkout-summary__items { display: grid; gap: 20px; margin: 0; padding: 0 0 24px; border-bottom: 1px solid #d9d9d9; list-style: none; }
 .checkout-item { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; align-items: center; gap: 16px; }
@@ -2632,7 +2651,7 @@ button.shop-toolbar__label:hover span:last-child { text-decoration: underline; }
 /* ---------- Policy pages (privacy-policy.html): contents list beside the policy text ---------- */
 
 .policy { display: grid; grid-template-columns: 300px minmax(0, 860px); justify-content: center; gap: 96px; align-items: start; width: 1404px; margin: 0 auto; padding: 80px 0 120px; font-family: var(--font-body); }
-.policy__toc { position: sticky; top: 40px; padding: 32px; background: #f7f7f7; }
+.policy__toc { position: sticky; top: calc(var(--header-h) + 24px); padding: 32px; background: #f7f7f7; }
 .policy__toc-title { margin: 0 0 16px; font: 500 14px/normal var(--font-body); letter-spacing: 0.15em; text-transform: uppercase; }
 .policy__toc-list { display: grid; gap: 2px; margin: 0; padding: 0; list-style: none; counter-reset: toc; }
 .policy__toc-list li { counter-increment: toc; }
@@ -2803,7 +2822,7 @@ button.shop-toolbar__label:hover span:last-child { text-decoration: underline; }
 .job__text { margin: 0; color: #333; font-size: 17px; line-height: 1.8; }
 .job__list { margin: 0; padding-left: 22px; color: #333; font-size: 17px; line-height: 1.8; }
 .job__list li + li { margin-top: 6px; }
-.job__card { position: sticky; top: 40px; padding: 40px; background: #f7f7f7; }
+.job__card { position: sticky; top: calc(var(--header-h) + 24px); padding: 40px; background: #f7f7f7; }
 .job__card-title { margin: 0 0 24px; font: 500 22px/normal var(--font-body); }
 .job__facts { display: grid; gap: 0; margin: 0 0 32px; }
 .job__facts > div { display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid #d9d9d9; }
@@ -2894,7 +2913,7 @@ button.shop-toolbar__label:hover span:last-child { text-decoration: underline; }
 .post__body li + li { margin-top: 8px; }
 .post__body blockquote { margin: 40px 0; padding: 8px 0 8px 32px; border-left: 3px solid #000; font: 400 30px/1.35 var(--font-display); }
 
-.post__aside { position: sticky; top: 40px; display: grid; gap: 24px; }
+.post__aside { position: sticky; top: calc(var(--header-h) + 24px); display: grid; gap: 24px; }
 .post__aside-title { margin: 0 0 16px; font: 500 14px/normal var(--font-body); letter-spacing: 0.15em; text-transform: uppercase; }
 .post__share-links { display: flex; gap: 10px; }
 .post__share-btn { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid #d9d9d9; border-radius: 50%; background: #fff; color: #000; cursor: pointer; transition: border-color 0.2s, background-color 0.2s; }
@@ -3085,7 +3104,7 @@ button.shop-toolbar__label:hover span:last-child { text-decoration: underline; }
    ============================================================================================= */
 
 @media (max-width: 1199.98px) {
-  :root { --gutter: 24px; --section-space: clamp(48px, 7vw, 80px); }
+  :root { --gutter: 24px; --section-space: clamp(48px, 7vw, 80px); --header-h: 94px; }
   .page { width: auto; zoom: 1; }
 
   .section-head { padding: 0 var(--gutter); }
@@ -3102,6 +3121,7 @@ button.shop-toolbar__label:hover span:last-child { text-decoration: underline; }
     align-items: center;
     padding: 14px var(--gutter);
   }
+  .site-header.site-header--overlay { padding: 14px var(--gutter); }
   .logo { margin-top: 0; }
   .site-actions { gap: 22px; height: auto; margin: 0 0 0 auto; }
   .nav-toggle {
@@ -3697,7 +3717,7 @@ button.shop-toolbar__label:hover span:last-child { text-decoration: underline; }
 }
 
 @media (max-width: 575.98px) {
-  :root { --gutter: 16px; }
+  :root { --gutter: 16px; --header-h: 73px; }
 
   /* Login: too narrow for two social buttons in a row, so they stack; slimmer card padding. */
   .login__social,

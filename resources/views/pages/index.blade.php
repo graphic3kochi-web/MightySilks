@@ -11,6 +11,38 @@
 @endsection
 
 @section('header')
+<!-- ============ Header: fixed over the page (not inside the pinned hero, so the sections that
+     slide over the hero never cover it); clear over the hero, a dark bar once scrolled. ============ -->
+  <nav class="site-header site-header--overlay" aria-label="Main">
+    <a class="logo" href="#" aria-label="Mighty Silks home">
+      <span class="logo__mark"><img src="assets/hero/logo-mark.png" alt=""></span>
+      <img class="logo__wordmark" src="assets/hero/logo-mighty.svg" alt="">
+      <span class="logo__silks">Silks</span>
+    </a>
+
+    <ul class="site-menu" id="site-menu">
+      <li><a href="#" aria-label="Home"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">H</span><span class="site-menu__char" style="--i:1">o</span><span class="site-menu__char" style="--i:2">m</span><span class="site-menu__char" style="--i:3">e</span></span></a></li>
+      <li><a href="our-shop" aria-label="Our Shop"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">O</span><span class="site-menu__char" style="--i:1">u</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">S</span><span class="site-menu__char" style="--i:5">h</span><span class="site-menu__char" style="--i:6">o</span><span class="site-menu__char" style="--i:7">p</span></span></a></li>
+      <li><a href="new-arrivals" aria-label="New Arrivals"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">N</span><span class="site-menu__char" style="--i:1">e</span><span class="site-menu__char" style="--i:2">w</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">A</span><span class="site-menu__char" style="--i:5">r</span><span class="site-menu__char" style="--i:6">r</span><span class="site-menu__char" style="--i:7">i</span><span class="site-menu__char" style="--i:8">v</span><span class="site-menu__char" style="--i:9">a</span><span class="site-menu__char" style="--i:10">l</span><span class="site-menu__char" style="--i:11">s</span></span></a></li>
+      <li><a href="bridal" aria-label="Bridal"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">B</span><span class="site-menu__char" style="--i:1">r</span><span class="site-menu__char" style="--i:2">i</span><span class="site-menu__char" style="--i:3">d</span><span class="site-menu__char" style="--i:4">a</span><span class="site-menu__char" style="--i:5">l</span></span></a></li>
+      <li><a href="sarees" aria-label="Sarees"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">S</span><span class="site-menu__char" style="--i:1">a</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3">e</span><span class="site-menu__char" style="--i:4">e</span><span class="site-menu__char" style="--i:5">s</span></span></a></li>
+      <li><a href="mighty-signature" aria-label="Mighty Signature"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">M</span><span class="site-menu__char" style="--i:1">i</span><span class="site-menu__char" style="--i:2">g</span><span class="site-menu__char" style="--i:3">h</span><span class="site-menu__char" style="--i:4">t</span><span class="site-menu__char" style="--i:5">y</span><span class="site-menu__char" style="--i:6"> </span><span class="site-menu__char" style="--i:7">S</span><span class="site-menu__char" style="--i:8">i</span><span class="site-menu__char" style="--i:9">g</span><span class="site-menu__char" style="--i:10">n</span><span class="site-menu__char" style="--i:11">a</span><span class="site-menu__char" style="--i:12">t</span><span class="site-menu__char" style="--i:13">u</span><span class="site-menu__char" style="--i:14">r</span><span class="site-menu__char" style="--i:15">e</span></span></a></li>
+    </ul>
+
+    <div class="site-actions">
+      <button class="icon-btn site-actions__search" type="button" aria-label="Search" aria-controls="search-panel" aria-expanded="false"><img src="assets/icons/nav-search.svg" alt=""></button>
+      <button class="icon-btn" type="button" aria-label="Wishlist"><img src="assets/icons/nav-heart.svg" alt=""></button>
+      <button class="icon-btn site-actions__account" type="button" aria-label="Account" aria-controls="account-menu" aria-expanded="false" aria-haspopup="true"><img src="assets/icons/nav-user.svg" alt=""></button>
+      <span class="site-actions__divider"><img src="assets/icons/nav-divider.svg" alt=""></span>
+      <button class="icon-btn site-actions__bag" type="button" aria-label="Shopping bag" aria-controls="cart-panel" aria-expanded="false"><img src="assets/icons/nav-bag.svg" alt=""><span class="cart-badge" data-cart-badge aria-hidden="true" hidden>0</span></button>
+    </div>
+
+    <!-- Menu button: shown below 1200px, where the menu becomes a drop-down panel. -->
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="site-menu" aria-expanded="false">
+      <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
+    </button>
+  </nav>
+
 <!-- ============ Hero (Figma 147:8) ============ -->
   <!-- .hero-pin adds the scroll distance during which the hero stays pinned and plays its
        zoom/split animation (enabled by js/main.js). -->
@@ -43,36 +75,6 @@
     <p class="hero__text hero__text--stays" aria-hidden="true">that Stays</p>
     <p class="hero__text hero__text--elegance" aria-hidden="true">Elegance</p>
     </div>
-
-    <nav class="site-header" aria-label="Main">
-      <a class="logo" href="#" aria-label="Mighty Silks home">
-        <span class="logo__mark"><img src="assets/hero/logo-mark.png" alt=""></span>
-        <img class="logo__wordmark" src="assets/hero/logo-mighty.svg" alt="">
-        <span class="logo__silks">Silks</span>
-      </a>
-
-      <ul class="site-menu" id="site-menu">
-        <li><a href="#" aria-label="Home"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">H</span><span class="site-menu__char" style="--i:1">o</span><span class="site-menu__char" style="--i:2">m</span><span class="site-menu__char" style="--i:3">e</span></span></a></li>
-        <li><a href="our-shop" aria-label="Our Shop"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">O</span><span class="site-menu__char" style="--i:1">u</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">S</span><span class="site-menu__char" style="--i:5">h</span><span class="site-menu__char" style="--i:6">o</span><span class="site-menu__char" style="--i:7">p</span></span></a></li>
-        <li><a href="new-arrivals" aria-label="New Arrivals"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">N</span><span class="site-menu__char" style="--i:1">e</span><span class="site-menu__char" style="--i:2">w</span><span class="site-menu__char" style="--i:3"> </span><span class="site-menu__char" style="--i:4">A</span><span class="site-menu__char" style="--i:5">r</span><span class="site-menu__char" style="--i:6">r</span><span class="site-menu__char" style="--i:7">i</span><span class="site-menu__char" style="--i:8">v</span><span class="site-menu__char" style="--i:9">a</span><span class="site-menu__char" style="--i:10">l</span><span class="site-menu__char" style="--i:11">s</span></span></a></li>
-        <li><a href="bridal" aria-label="Bridal"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">B</span><span class="site-menu__char" style="--i:1">r</span><span class="site-menu__char" style="--i:2">i</span><span class="site-menu__char" style="--i:3">d</span><span class="site-menu__char" style="--i:4">a</span><span class="site-menu__char" style="--i:5">l</span></span></a></li>
-        <li><a href="sarees" aria-label="Sarees"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">S</span><span class="site-menu__char" style="--i:1">a</span><span class="site-menu__char" style="--i:2">r</span><span class="site-menu__char" style="--i:3">e</span><span class="site-menu__char" style="--i:4">e</span><span class="site-menu__char" style="--i:5">s</span></span></a></li>
-        <li><a href="mighty-signature" aria-label="Mighty Signature"><span aria-hidden="true"><span class="site-menu__char" style="--i:0">M</span><span class="site-menu__char" style="--i:1">i</span><span class="site-menu__char" style="--i:2">g</span><span class="site-menu__char" style="--i:3">h</span><span class="site-menu__char" style="--i:4">t</span><span class="site-menu__char" style="--i:5">y</span><span class="site-menu__char" style="--i:6"> </span><span class="site-menu__char" style="--i:7">S</span><span class="site-menu__char" style="--i:8">i</span><span class="site-menu__char" style="--i:9">g</span><span class="site-menu__char" style="--i:10">n</span><span class="site-menu__char" style="--i:11">a</span><span class="site-menu__char" style="--i:12">t</span><span class="site-menu__char" style="--i:13">u</span><span class="site-menu__char" style="--i:14">r</span><span class="site-menu__char" style="--i:15">e</span></span></a></li>
-      </ul>
-
-      <div class="site-actions">
-        <button class="icon-btn site-actions__search" type="button" aria-label="Search" aria-controls="search-panel" aria-expanded="false"><img src="assets/icons/nav-search.svg" alt=""></button>
-        <button class="icon-btn" type="button" aria-label="Wishlist"><img src="assets/icons/nav-heart.svg" alt=""></button>
-        <button class="icon-btn site-actions__account" type="button" aria-label="Account" aria-controls="account-menu" aria-expanded="false" aria-haspopup="true"><img src="assets/icons/nav-user.svg" alt=""></button>
-        <span class="site-actions__divider"><img src="assets/icons/nav-divider.svg" alt=""></span>
-        <button class="icon-btn site-actions__bag" type="button" aria-label="Shopping bag" aria-controls="cart-panel" aria-expanded="false"><img src="assets/icons/nav-bag.svg" alt=""><span class="cart-badge" data-cart-badge aria-hidden="true" hidden>0</span></button>
-      </div>
-
-      <!-- Menu button: shown below 1200px, where the menu becomes a drop-down panel. -->
-      <button class="nav-toggle" type="button" aria-label="Menu" aria-controls="site-menu" aria-expanded="false">
-        <span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span>
-      </button>
-    </nav>
   </header>
   </div>
 
