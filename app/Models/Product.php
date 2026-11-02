@@ -51,6 +51,23 @@ class Product extends Model
         $query->where('is_active', true);
     }
 
+    /**
+     * Site search (/search, the header's suggestions): every word must appear in the title, code,
+     * SKU, category or a filter slug, so "red silk saree" narrows rather than widens. A plural
+     * ending is dropped ("sarees" finds "Saree").
+     */
+    #[Scope]
+    protected function search(Builder $query, string $terms): void
+    {
+        $words = preg_split('/\s+/', mb_strtolower(trim($terms)), -1, PREG_SPLIT_NO_EMPTY);
+        foreach (array_slice($words, 0, 8) as $word) {
+            $word = mb_strlen($word) > 3 ? preg_replace('/(?<!s)s$/', '', $word) : $word;
+            $like = '%'.addcslashes($word, '%_\\').'%';
+            $query->where(fn (Builder $q) => $q
+                ->whereAny(['title', 'page_title', 'code', 'sku', 'category', 'color', 'pattern', 'fabric', 'occasion'], 'like', $like));
+        }
+    }
+
     public function image(): ?string
     {
         return $this->gallery[0] ?? $this->card_layers[0]['src'] ?? null;

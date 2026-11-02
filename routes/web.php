@@ -38,6 +38,7 @@ Route::prefix('api')->group(function () {
         Route::post('reviews', [FormController::class, 'review']);
     });
     Route::get('orders/{number}', [OrderController::class, 'show']);
+    Route::get('search', [SiteController::class, 'suggest'])->middleware('throttle:60,1');
 });
 Route::post('logout', [AccountController::class, 'logout'])->name('logout');
 

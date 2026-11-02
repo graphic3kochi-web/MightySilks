@@ -780,8 +780,38 @@ function initSearch(button, panel) {
   button.addEventListener('click', open)
   panel.querySelectorAll('[data-search-close]').forEach((el) => el.addEventListener('click', close))
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close() })
-  // No search results page yet: keep the bar open instead of reloading the page.
-  panel.querySelector('form').addEventListener('submit', (e) => e.preventDefault())
+
+  // Suggestions: a moment after typing stops, the first few matches (api/search) appear under
+  // the bar with a link to all of them. Enter submits the form to /search?q=… (an empty box
+  // stays put). Answers that arrive after newer typing are ignored.
+  const form = panel.querySelector('form')
+  const results = panel.querySelector('[data-search-results]')
+  let typingTimer = null
+  let latest = ''
+  const allLink = (q, total) => `<a class="search-results__all" href="search?q=${encodeURIComponent(q)}">See all ${total} result${total === 1 ? '' : 's'} for “${escapeHtml(q)}” <span aria-hidden="true">→</span></a>`
+  async function suggest(q) {
+    latest = q
+    if (q.length < 2) { results.hidden = true; return }
+    let data
+    try { data = await api(`api/search?q=${encodeURIComponent(q)}`) } catch { return }
+    if (q !== latest) return
+    results.innerHTML = data.total
+      ? `<ul class="search-results__list">${data.products.map((p) => `
+          <li><a class="search-result" href="product?p=${encodeURIComponent(p.code)}">
+            <img class="search-result__photo" src="${escapeHtml(p.image || '')}" alt="" loading="lazy">
+            <span class="search-result__text"><span class="search-result__title">${escapeHtml(p.title)}</span><span class="search-result__meta">${escapeHtml(p.category)}</span></span>
+            <span class="search-result__price">${escapeHtml(p.price)}</span>
+          </a></li>`).join('')}</ul>${allLink(q, data.total)}`
+      : `<p class="search-results__empty">No products found for “${escapeHtml(q)}”. Try another word, like a colour or fabric.</p>`
+    results.hidden = false
+  }
+  input.addEventListener('input', () => {
+    clearTimeout(typingTimer)
+    typingTimer = setTimeout(() => suggest(input.value.trim()), 250)
+  })
+  form.addEventListener('submit', (e) => {
+    if (!input.value.trim()) e.preventDefault()
+  })
 }
 
 const searchButton = document.querySelector('.site-actions__search')

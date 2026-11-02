@@ -21,6 +21,14 @@ class SiteController extends Controller
     {
         abort_unless(view()->exists("pages.$page"), 404);
 
+        // /search?q=…: the matching products in the shop grid.
+        if ($page === 'search') {
+            $q = trim((string) request('q'));
+            $products = $q === '' ? collect() : Product::active()->search($q)->orderBy('position')->get();
+
+            return view('pages.search', compact('products', 'q'));
+        }
+
         $collection = Collection::where('slug', $page)->first();
         $products = $collection ? $collection->products()->where('is_active', true)->get() : collect();
 
@@ -33,6 +41,27 @@ class SiteController extends Controller
         $query = $request->getQueryString();
 
         return redirect(($page === 'index' ? '/' : "/$page").($query ? "?$query" : ''), 301);
+    }
+
+    /** api/search?q=…: the header search's suggestions, the first few matches and how many there are. */
+    public function suggest(Request $request): array
+    {
+        $q = trim((string) $request->query('q'));
+        if (mb_strlen($q) < 2) {
+            return ['total' => 0, 'products' => []];
+        }
+        $matches = Product::active()->search($q)->orderBy('position');
+
+        return [
+            'total' => (clone $matches)->count(),
+            'products' => $matches->limit(6)->get()->map(fn (Product $p) => [
+                'code' => $p->code,
+                'title' => $p->title,
+                'category' => $p->categoryLabel(),
+                'price' => inr($p->price),
+                'image' => $p->image(),
+            ])->all(),
+        ];
     }
 
     /** js/products.js: the catalogue the product page, cart and checkout read. */
