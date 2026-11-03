@@ -7,6 +7,7 @@
   @else
   <a class="account-menu__btn account-menu__btn--primary" href="my-orders">My Orders</a>
   @endif
+  <a class="account-menu__btn account-menu__btn--secondary" href="my-profile">My Profile</a>
   <form method="post" action="{{ route('logout') }}">
     @csrf
     <button class="account-menu__btn account-menu__btn--secondary" type="submit">Log out</button>
@@ -14,5 +15,6 @@
 @else
   <a class="account-menu__btn account-menu__btn--primary" href="login">Log in</a>
   <a class="account-menu__btn account-menu__btn--secondary" href="signup">Create Account</a>
+  <a class="account-menu__btn account-menu__btn--secondary" href="my-profile">My Profile</a>
 @endauth
 </div>

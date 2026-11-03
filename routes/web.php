@@ -4,12 +4,18 @@ use App\Http\Controllers\Admin;
 use App\Http\Controllers\Shop\AccountController;
 use App\Http\Controllers\Shop\FormController;
 use App\Http\Controllers\Shop\OrderController;
+use App\Http\Controllers\Shop\ProfileController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
 // ---------- Storefront: clean URLs (/about); the pages themselves are registered last ----------
 Route::get('/', [SiteController::class, 'page'])->name('home');
 Route::get('my-orders', [OrderController::class, 'mine'])->name('my-orders');
+Route::get('my-profile', [ProfileController::class, 'show'])->name('profile');
+Route::middleware('auth')->group(function () {
+    Route::put('my-profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::put('my-profile/password', [ProfileController::class, 'password'])->name('profile.password');
+});
 Route::get('orders/{number}/invoice', [OrderController::class, 'invoice'])->name('orders.invoice');
 // The static site's old addresses (about.html, index.html) move permanently, query string and all.
 Route::get('{page}.html', [SiteController::class, 'legacy'])->where('page', '[a-z0-9-]+');
